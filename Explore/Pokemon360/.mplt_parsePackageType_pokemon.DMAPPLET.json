@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "9lwKLCSvJC0iwDrZWrY4gv",
+    "name" : "mplt_parsePackageType_pokemon",
+    "type" : "DMAPPLET",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010WU44000000000002G"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-06-22T21:59:22.625Z",
+  "objectRefs" : [ {
+    "id" : "0g8kLFnmGlNcm76qSo2cqv",
+    "name" : "prs_pokemonPkg",
+    "type" : "PARSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0g8kLFnmGlNcm76qSo2cqv"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Pokemon360"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

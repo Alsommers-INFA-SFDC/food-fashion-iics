@@ -1,0 +1,170 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "documentType" : "DMAPPLET",
+    "name" : "mplt_parsePackageType_pokemon",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Parse -> Output",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      },
+      {
+        "link" : "Input -> Parse",
+        "groupLink" : "DefaultGroup -> Input group:"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-09T21:56:39.109Z",
+        "name" : "Input",
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "fields" : [
+          {
+            "name" : "in_productName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          }
+        ]
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-09T21:56:39.111Z",
+        "name" : "Output",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "fieldMappingMode" : "MANUAL",
+        "fields" : [
+          {
+            "name" : "out_PokemonPackType",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "PkgType",
+              "toField" : {
+                "name" : "out_PokemonPackType"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-09T21:58:27.414Z",
+        "name" : "Parse",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@0g8kLFnmGlNcm76qSo2cqv",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "in_productName",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "prs_pokemonPkg"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "prs_pokemonPkg",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "PkgType",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            },
+            {
+              "name" : "Overflow",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            },
+            {
+              "name" : "Unparsed",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-06-22 14:59:22 PDT"
+}

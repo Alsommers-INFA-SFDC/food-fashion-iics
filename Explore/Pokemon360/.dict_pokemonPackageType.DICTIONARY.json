@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "jv3yWJIZJu7jmU4rSXJ2wz",
+    "name" : "dict_pokemonPackageType",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "jv3yWJIZJu7jmU4rSXJ2wz"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-22T21:59:22.624Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
