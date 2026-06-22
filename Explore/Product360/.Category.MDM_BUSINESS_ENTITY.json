@@ -1,0 +1,2871 @@
+{
+  "objectInfo" : {
+    "id" : "gH0v3QxUIKPk4MkWMVEGAQ",
+    "name" : "Category",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "p360.category"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2026-06-22T22:02:32.853Z",
+  "objectRefs" : [ {
+    "id" : "7PBCrBJ9ZoLg1ofrzqV12m",
+    "name" : "Default",
+    "type" : "MDM_SRC_SYSTEM",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "b360.default.system"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Business360"
+  }, {
+    "id" : "fmiRJM29sgekGV9s0RJt0b",
+    "name" : "Category Classification Types",
+    "type" : "MDM_REFERENCE_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "rdm.value.be.ent_category_classification_types"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "ggxfAOlrnQAkOPvHrBU98p",
+    "name" : "Clothing Attributes",
+    "type" : "MDM_DYNAMIC_POOL",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "clothing_attributes"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  }, {
+    "id" : "74iMqfs7FCgjDS97S7hXky",
+    "name" : "Language",
+    "type" : "MDM_REFERENCE_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "rdm.value.be._ent_language"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Reference360"
+  }, {
+    "id" : "17l0szTZE4qlEtQhTnJ7s9",
+    "name" : "Sport Based Shoe Attributes",
+    "type" : "MDM_DYNAMIC_POOL",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "sport_based_shoe_attributes"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "krDx6f0ruoqjuKCgHQKhKK",
+    "name" : "Oils",
+    "type" : "MDM_DYNAMIC_POOL",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "oils"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "f31Ym0L9JiSicJUBgtUFO2",
+    "name" : "Attribute Management Taxonomy",
+    "type" : "MDM_HIERARCHY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Fashion Size",
+        "path" : "REG/Default/Fashion Size",
+        "internalId" : "fashion_size",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Fashion Size",
+          "internalId" : "ent_fashion_size"
+        }
+      }, {
+        "name" : "Retail Channel",
+        "path" : "REG/Default/Retail Channel",
+        "internalId" : "retail_channel",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Retail Channel",
+          "internalId" : "ent_retail_channel"
+        }
+      }, {
+        "name" : "Category Classification Types",
+        "path" : "REG/Default/Category Classification Types",
+        "internalId" : "category_classification_types",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Classification Types",
+          "internalId" : "ent_category_classification_types"
+        }
+      }, {
+        "name" : "Goya- Warehouse List",
+        "path" : "REG/Default/Goya- Warehouse List",
+        "internalId" : "goya_warehouse_list",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya- Warehouse List",
+          "internalId" : "ent_goya_warehouse_list"
+        }
+      }, {
+        "name" : "Goya Item Storage Type",
+        "path" : "REG/Default/Goya Item Storage Type",
+        "internalId" : "goya_item_storage_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Goya Item Storage Type",
+          "internalId" : "ent_goya_item_storage_type"
+        }
+      }, {
+        "name" : "GDSN Temperature Class",
+        "path" : "REG/Default/GDSN Temperature Class",
+        "internalId" : "gdsn_temperature_class",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Temperature Class",
+          "internalId" : "ent_gdsn_temperature_class"
+        }
+      }, {
+        "name" : "GDSN Measurement Precision Servings",
+        "path" : "REG/Default/GDSN Measurement Precision Servings",
+        "internalId" : "gdsn_measurement_precision_servings",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Measurement Precision Servings",
+          "internalId" : "ent_gdsn_measurement_precision_servings"
+        }
+      }, {
+        "name" : "Trade Item Measurement Type",
+        "path" : "REG/Default/Trade Item Measurement Type",
+        "internalId" : "trade_item_measurement_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Trade Item Measurement Type",
+          "internalId" : "ent_trade_item_measurement_type"
+        }
+      }, {
+        "name" : "GDSN Preparation Type",
+        "path" : "REG/Default/GDSN Preparation Type",
+        "internalId" : "gdsn_preparation_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Preparation Type",
+          "internalId" : "ent_gdsn_preparation_type"
+        }
+      }, {
+        "name" : "Short List Language",
+        "path" : "REG/Default/Short List Language",
+        "internalId" : "short_list_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Short List Language",
+          "internalId" : "ent_short_list_language"
+        }
+      }, {
+        "name" : "Nutrition Unit of Measure",
+        "path" : "REG/Default/Nutrition Unit of Measure",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition Unit of Measure"
+        }
+      }, {
+        "name" : "Nutrition",
+        "path" : "REG/Reference360/Nutrition",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Nutrition Category",
+          "internalId" : "plm_nutrition_category"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Nutrition"
+        }
+      }, {
+        "name" : "Packaging Size Type",
+        "path" : "REG/Product360/GDSN Data/Packaging Size Type",
+        "internalId" : "packaging_size_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Size Type",
+          "internalId" : "ent_packaging_size_type"
+        }
+      }, {
+        "name" : "Category Minor",
+        "path" : "REG/Default/Category Minor",
+        "internalId" : "category_minor",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Minor",
+          "internalId" : "ent_category_minor"
+        }
+      }, {
+        "name" : "Category Major",
+        "path" : "REG/Default/Category Major",
+        "internalId" : "category_major",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Category Major",
+          "internalId" : "ent_category_major"
+        }
+      }, {
+        "name" : "GDSN Packaging Material Type",
+        "path" : "REG/Reference360/GDSN Packaging Material Type",
+        "internalId" : "packaging_material_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Packaging Material Type",
+          "internalId" : "ent_packaging_material_type"
+        }
+      }, {
+        "name" : "GDSN Packaging Labelling Type",
+        "path" : "REG/Reference360/GDSN Packaging Labelling Type",
+        "internalId" : "gdsn_packaging_labelling_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Labelling Type",
+          "internalId" : "ent_gdsn_packaging_labelling_type"
+        }
+      }, {
+        "name" : "GDSN Allergen Type",
+        "path" : "REG/Reference360/GDSN Allergen Type",
+        "internalId" : "gdsn_allergen_type",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Allergen Type",
+          "internalId" : "ent_gdsn_allergen_type"
+        }
+      }, {
+        "name" : "GDSN Trade Item Date On Packaging",
+        "path" : "REG/Reference360/GDSN Trade Item Date On Packaging",
+        "internalId" : "gdsn_trade_item_date_on_packaging",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Trade Item Date On Packaging",
+          "internalId" : "ent_gdsn_trade_item_date_on_packaging"
+        }
+      }, {
+        "name" : "GDSN Variable Trade Item",
+        "path" : "REG/Reference360/GDSN Variable Trade Item",
+        "internalId" : "gdsn_variable_trade_item",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Variable Trade Item",
+          "internalId" : "ent_gdsn_variable_trade_item"
+        }
+      }, {
+        "name" : "GDSN Package Type",
+        "path" : "REG/Reference360/GDSN Package Type",
+        "internalId" : "gdsn_package_type",
+        "alternativeCodeLists" : [ {
+          "name" : "Goya Packaing Type",
+          "internalId" : "goya_packaing_type"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Package Type",
+          "internalId" : "ent_gdsn_package_type"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      }, {
+        "name" : "GDSN Packaging Claim Element",
+        "path" : "REG/Reference360/GDSN Packaging Claim Element",
+        "internalId" : "gdsn_packaging_claim_element",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Packaging Claim Element",
+          "internalId" : "ent_gdsn_packaging_claim_element"
+        }
+      }, {
+        "name" : "infap360mm_UOM",
+        "path" : "REG/Product360/Material Master Extension/infap360mm_UOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infap360mm_UOM"
+        }
+      }, {
+        "name" : "infa360rtl_SubBrand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SubBrand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SubBrand"
+        }
+      }, {
+        "name" : "infa360rtl_SizeUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_SizeUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_SizeUOM"
+        }
+      }, {
+        "name" : "infa360rtl_WeightUOM",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_WeightUOM",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_WeightUOM"
+        }
+      }, {
+        "name" : "infa360rtl_Brand",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_Brand",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_Brand"
+        }
+      }, {
+        "name" : "infa360rtl_ItemType",
+        "path" : "REG/Product360/Retail Extension/infa360rtl_ItemType",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise infa360rtl_ItemType"
+        }
+      }, {
+        "name" : "Currency",
+        "path" : "REG/Reference360/Currency",
+        "internalId" : "_currency",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Currency",
+          "internalId" : "_ent_currency"
+        }
+      }, {
+        "name" : "SellingPriceType",
+        "path" : "REG/Reference360/SellingPriceType",
+        "internalId" : "_sellingpricetype",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise SellingPriceType",
+          "internalId" : "_ent_sellingpricetype"
+        }
+      }, {
+        "name" : "ItemAvailability",
+        "path" : "REG/Reference360/ItemAvailability",
+        "internalId" : "_itemavailability",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemAvailability",
+          "internalId" : "_ent_itemavailability"
+        }
+      }, {
+        "name" : "Country",
+        "path" : "REG/Reference360/Country",
+        "internalId" : "_country",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Country",
+          "internalId" : "_ent_country"
+        }
+      }, {
+        "name" : "Language",
+        "path" : "REG/Reference360/Language",
+        "internalId" : "_language",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Language",
+          "internalId" : "_ent_language"
+        }
+      }, {
+        "name" : "ItemStatus",
+        "path" : "REG/Reference360/ItemStatus",
+        "internalId" : "_itemstatus",
+        "alternativeCodeLists" : [ {
+          "name" : "PLM Status",
+          "internalId" : "plm_status"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise ItemStatus",
+          "internalId" : "_ent_itemstatus"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "attribute_management_taxonomy_hierarchy"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
