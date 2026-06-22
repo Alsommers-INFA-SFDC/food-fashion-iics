@@ -1,0 +1,645 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping5",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-22T18:54:13.458Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "SegmentCode"
+            },
+            "name" : "SegmentCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SegmentTitle"
+            },
+            "name" : "SegmentTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SegmentDefinition"
+            },
+            "name" : "SegmentDefinition",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FamilyCode"
+            },
+            "name" : "FamilyCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FamilyTitle"
+            },
+            "name" : "FamilyTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FamilyDefinition"
+            },
+            "name" : "FamilyDefinition",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClassCode"
+            },
+            "name" : "ClassCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClassTitle"
+            },
+            "name" : "ClassTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClassDefinition"
+            },
+            "name" : "ClassDefinition",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BrickCode"
+            },
+            "name" : "BrickCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BrickTitle"
+            },
+            "name" : "BrickTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BrickDefinition_Includes"
+            },
+            "name" : "BrickDefinition_Includes",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BrickDefinition_Excludes"
+            },
+            "name" : "BrickDefinition_Excludes",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeCode"
+            },
+            "name" : "AttributeCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeTitle"
+            },
+            "name" : "AttributeTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeDefinition"
+            },
+            "name" : "AttributeDefinition",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeValueCode"
+            },
+            "name" : "AttributeValueCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeValueTitle"
+            },
+            "name" : "AttributeValueTitle",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AttributeValueDefinition"
+            },
+            "name" : "AttributeValueDefinition",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9w6v9aBeXSffjj2jt9kAMj",
+          "connectionName" : "infa360rtl_conn_flat_file",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "GPC_data.csv",
+            "label" : "GPC_data.csv",
+            "objectName" : "GPC_data.csv",
+            "path" : "GPC_data.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "SegmentCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "SegmentCode",
+                "nativeName" : "SegmentCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "SegmentTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "SegmentTitle",
+                "nativeName" : "SegmentTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "SegmentDefinition",
+                "fieldType" : "CONNECTOR",
+                "label" : "SegmentDefinition",
+                "nativeName" : "SegmentDefinition",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "FamilyCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "FamilyCode",
+                "nativeName" : "FamilyCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "FamilyTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "FamilyTitle",
+                "nativeName" : "FamilyTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "FamilyDefinition",
+                "fieldType" : "CONNECTOR",
+                "label" : "FamilyDefinition",
+                "nativeName" : "FamilyDefinition",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ClassCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "ClassCode",
+                "nativeName" : "ClassCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ClassTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "ClassTitle",
+                "nativeName" : "ClassTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ClassDefinition",
+                "fieldType" : "CONNECTOR",
+                "label" : "ClassDefinition",
+                "nativeName" : "ClassDefinition",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "BrickCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "BrickCode",
+                "nativeName" : "BrickCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "BrickTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "BrickTitle",
+                "nativeName" : "BrickTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "BrickDefinition_Includes",
+                "fieldType" : "CONNECTOR",
+                "label" : "BrickDefinition_Includes",
+                "nativeName" : "BrickDefinition_Includes",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "BrickDefinition_Excludes",
+                "fieldType" : "CONNECTOR",
+                "label" : "BrickDefinition_Excludes",
+                "nativeName" : "BrickDefinition_Excludes",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeCode",
+                "nativeName" : "AttributeCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeTitle",
+                "nativeName" : "AttributeTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeDefinition",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeDefinition",
+                "nativeName" : "AttributeDefinition",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeValueCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeValueCode",
+                "nativeName" : "AttributeValueCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeValueTitle",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeValueTitle",
+                "nativeName" : "AttributeValueTitle",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "AttributeValueDefinition",
+                "fieldType" : "CONNECTOR",
+                "label" : "AttributeValueDefinition",
+                "nativeName" : "AttributeValueDefinition",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "GPC_data.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2026-06-22T18:54:13.458Z",
+        "name" : "Target",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "useDynamicFileName" : "false",
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-06-22 15:00:45 PDT"
+}

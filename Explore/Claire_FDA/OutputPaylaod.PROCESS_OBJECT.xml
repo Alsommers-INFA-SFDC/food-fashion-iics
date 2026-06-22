@@ -1,0 +1,110 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>tYICf5GkeHy2uI5-gt-213131-2026-05-29T19:49:10.313Z::po.xml</types1:EntryId>
+      <types1:Name>OutputPaylaod</types1:Name>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-05-29T19:49:10Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-06-11T15:04:46Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="OutputPaylaod"
+                        isByCopy="true"
+                        name="OutputPaylaod">
+            <description/>
+            <tags/>
+            <detail>
+               <field label="description"
+                      name="description"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="BrandOwner"
+                      name="BrandOwner"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="gtinUpc"
+                      name="gtinUpc"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="ingredients"
+                      name="ingredients"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="brandedFoodCategory"
+                      name="brandedFoodCategory"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="servingSize"
+                      name="servingSize"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="packageWeight"
+                      name="packageWeight"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="servingSizeUnit"
+                      name="servingSizeUnit"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="carbohydrates"
+                      name="carbohydrates"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="fiber"
+                      name="fiber"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label="protein"
+                      name="protein"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>jE6BufEM6QqbJZW4sEiQ09</types1:GUID>
+      <types1:DisplayName>OutputPaylaod</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-22T22:00:45.043Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "itVt2JU0vAaezDabbRygWG",
+    "name" : "app-USDAfoodDatabase",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "bcifSB7O2htghGZ-gt-210973-2026-05-29T19:56:55.019Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-22T22:00:45.413Z",
+  "objectRefs" : [ {
+    "id" : "aXLffLiNueqdbsmUyU2pEk",
+    "name" : "USDA Food Database",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Jaaa-gt-209991-2026-05-29T18:57:33.574Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Integrations"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

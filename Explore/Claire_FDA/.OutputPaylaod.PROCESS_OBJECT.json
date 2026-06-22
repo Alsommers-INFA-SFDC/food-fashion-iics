@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "jE6BufEM6QqbJZW4sEiQ09",
+    "name" : "OutputPaylaod",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "tYICf5GkeHy2uI5-gt-213131-2026-05-29T19:49:10.313Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-22T22:00:45.413Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

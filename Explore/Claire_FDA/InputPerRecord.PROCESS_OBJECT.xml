@@ -1,0 +1,52 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>3a-gt-213200-2026-05-29T19:55:20.877Z::po.xml</types1:EntryId>
+      <types1:Name>InputPerRecord-3</types1:Name>
+      <types1:ParentFlowIds>9TXjyRUDv2vSx0a-gt-211103-2026-05-29T20:04:18.978Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-05-29T19:55:21Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="InputPerRecord"
+                        isByCopy="true"
+                        name="InputPerRecord-3">
+            <description/>
+            <tags/>
+            <detail>
+               <field label="payload"
+                      name="payload"
+                      nullable="true"
+                      required="false"
+                      type="objectlist">
+                  <options>
+                     <option name="relationshipName">Child</option>
+                     <option name="referenceTo">$po:InputPayload-3</option>
+                     <option name="guid">28ztOk6cPgcfj2YCju0GcU</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field label="docId"
+                      name="docId"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>l0KBjfvQr6RdPp9ySSXnYY</types1:GUID>
+      <types1:DisplayName>InputPerRecord</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-22T22:00:45.205Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

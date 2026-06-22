@@ -1,0 +1,272 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>9TXjyRUDv2vSx0a-gt-211103-2026-05-29T20:04:18.978Z::pd.xml</types1:EntryId>
+      <types1:Name>prc_CLAIRE_USDAdb</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-05-29T20:04:19Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-06-11T16:22:54Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-06-11T16:22:57Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.prc_CLAIRE_USDAdb/prc_CLAIRE_USDAdb.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="96oWD5zQvwebAzbsd23JSv"
+                  displayName="prc_CLAIRE_USDAdb"
+                  name="prc_CLAIRE_USDAdb"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="request" type="objectlist">
+                  <options>
+                     <option name="referenceTo">$po:InputPerRecord-3</option>
+                     <option hide="true" name="multiSelect">true</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">l0KBjfvQr6RdPp9ySSXnYY</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="resposne" type="objectlist">
+                  <options>
+                     <option name="referenceTo">$po:OutputPerRecord-3</option>
+                     <option hide="true" name="multiSelect">true</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">5fjvmkTlExycE5P6KRcZY3</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_fdaId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_recordId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_outputPayload" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_ingredients" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_description" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_GTINupc" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_BrandOwner" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_foodCategory" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_servingSize" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_packageWeight" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_servingSizeUnit" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_fiber" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_protein" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_carbohydrates" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload inputWholePayload="true" outputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="mprcgk6b" targetId="mprcgk6a"/>
+               </start>
+               <assignment id="mprcgk6a">
+                  <title>Assignment to tmp_fdaId, tmp_recordId</title>
+                  <operation source="formula" to="temp.tmp_fdaId">
+                     <expression language="XQuery">$input.request[1]/payload[1]/fdcId </expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_recordId">
+                     <expression language="XQuery">$input.request[1]/docId </expression>
+                  </operation>
+                  <link id="mprcgk6n" targetId="mprcgk6m"/>
+               </assignment>
+               <assignment id="mprcgk6y">
+                  <title>Assignment to tmp_outputPayload, tmp_ingredients etc.</title>
+                  <operation source="field" to="temp.tmp_outputPayload">output.ressponse</operation>
+                  <operation source="formula" to="temp.tmp_ingredients">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload /text()
+  let $ingredientsStart := substring-after($json,
+  '"ingredients":"')
+  let $ingredients := substring-before($ingredientsStart,
+  '","')
+  return $ingredients</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_description">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload /text()
+  let $descriptionStart := substring-after($json,
+  '"description":"')
+  let $description := substring-before($descriptionStart,
+  '","')
+  return $description</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_fiber">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload/text()
+  let $nutrientByName := substring-after($json, '"fiber"')
+  let $nutrientBlock := substring-before($nutrientByName, '}')
+  let $number := normalize-space(substring-after($nutrientBlock, '"value":'))
+  return concat($number, ' g')
+</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_BrandOwner">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload /text()
+  let $brandOwner := substring-after($json,
+  '"brandOwner":"')
+  let $brandOwner := substring-before($brandOwner,
+  '","')
+  return $brandOwner</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_protein">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload/text()
+  let $nutrientByName := substring-after($json, '"protein"')
+  let $nutrientBlock := substring-before($nutrientByName, '}')
+  let $number := normalize-space(substring-after($nutrientBlock, '"value":'))
+  return concat($number, ' g')
+</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_carbohydrates">
+                     <expression language="XQuery">let $json := $temp.tmp_outputPayload/text()
+  let $nutrientByName := substring-after($json, '"carbohydrates"')
+  let $nutrientBlock := substring-before($nutrientByName, '}')
+  let $number := normalize-space(substring-after($nutrientBlock, '"value":'))
+  return concat($number, ' g')
+</expression>
+                  </operation>
+                  <link id="mq9k27tz" targetId="mq9k27ty"/>
+               </assignment>
+               <assignment id="mq9k27ty">
+                  <title>Assignment to docId, gtinUpc etc.</title>
+                  <operation source="field" to="output.resposne[1]/docId">input.request[1]/docId</operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/gtinUpc">
+                     <expression language="XQuery">$temp.tmp_GTINupc </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/BrandOwner">
+                     <expression language="XQuery">$temp.tmp_BrandOwner </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/description">
+                     <expression language="XQuery">$temp.tmp_description </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/ingredients">
+                     <expression language="XQuery">$temp.tmp_ingredients </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/protein">
+                     <expression language="XQuery">$temp.tmp_protein </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/fiber">
+                     <expression language="XQuery">$temp.tmp_fiber </expression>
+                  </operation>
+                  <operation source="formula" to="output.resposne[1]/payload[1]/carbohydrates">
+                     <expression language="XQuery">$temp.tmp_carbohydrates </expression>
+                  </operation>
+                  <link id="mq9k27u0" targetId="c"/>
+               </assignment>
+               <service id="mprcgk6m">
+                  <title>Service 1</title>
+                  <serviceName>app-USDAfoodDatabase:Get Food Data by fdcID</serviceName>
+                  <serviceGUID>itVt2JU0vAaezDabbRygWG</serviceGUID>
+                  <serviceInput>
+                     <parameter name="fdcID" source="field" updatable="true">temp.tmp_fdaId</parameter>
+                  </serviceInput>
+                  <link id="mprcgk6z" targetId="mprcgk6y"/>
+               </service>
+               <end id="c"/>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>196c0c51-5617-4edf-8070-2ebb56a65c70</ns1:Id>
+               <ns1:Name>american deli cheese</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-05-29T20:14:59Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-06-11T16:03:49Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+	 "request": [
+	 	 {
+	 	 	 "payload": {
+	 	 	 	 "fdcId": "1926497",
+	 	 	 	 "sys": {
+	 	 	 	 	 "groupId": ""
+	 	 	 	 }
+	 	 	 },
+	 	 	 "docId": ""
+	 	 }
+	 ]
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>96oWD5zQvwebAzbsd23JSv</types1:GUID>
+      <types1:DisplayName>prc_CLAIRE_USDAdb</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-22T22:00:45.249Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

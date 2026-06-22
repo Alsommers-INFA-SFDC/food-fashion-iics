@@ -1,0 +1,87 @@
+{
+  "objectInfo" : {
+    "id" : "96oWD5zQvwebAzbsd23JSv",
+    "name" : "prc_CLAIRE_USDAdb",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "9TXjyRUDv2vSx0a-gt-211103-2026-05-29T20:04:18.978Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-22T22:00:45.411Z",
+  "objectRefs" : [ {
+    "id" : "l0KBjfvQr6RdPp9ySSXnYY",
+    "name" : "InputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "3a-gt-213200-2026-05-29T19:55:20.877Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Claire_FDA"
+  }, {
+    "id" : "5fjvmkTlExycE5P6KRcZY3",
+    "name" : "OutputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "PVEQrXhNUdyOoMd-gt-210947-2026-05-29T19:56:10.661Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Claire_FDA"
+  }, {
+    "id" : "itVt2JU0vAaezDabbRygWG",
+    "name" : "app-USDAfoodDatabase",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "bcifSB7O2htghGZ-gt-210973-2026-05-29T19:56:55.019Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Claire_FDA"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
