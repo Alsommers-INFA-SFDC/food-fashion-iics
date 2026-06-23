@@ -1,0 +1,415 @@
+{
+  "objectInfo" : {
+    "id" : "3xataGiwE11hUKAPFXM2oO",
+    "name" : "pallet.integrity_validation_1759435281541",
+    "type" : "MDM_ENRICHMENT_SCENARIO_GROUP",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet.integrity_validation_1759435281541"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Scenario group for Integrity Check Validation",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2026-06-23T13:20:28.386Z",
+  "objectRefs" : [ {
+    "id" : "6s6ZnZg7I83kmMP6yFVAQ7",
+    "name" : "pallet.1759435401445.8584",
+    "type" : "MDM_ENRICHMENT_PROVIDER_MAPPING",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet.1759435401445.8584"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Total Consumer Units in Pack Not equals to 0",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  }, {
+    "id" : "iCU9jo08ociey8fJcNf0YZ",
+    "name" : "pallet.1759435281338.5898",
+    "type" : "MDM_ENRICHMENT_PROVIDER_MAPPING",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet.1759435281338.5898"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Unit Descriptor is inaccurate",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  }, {
+    "id" : "aQbBj6SN2m9kShOZEWSa2C",
+    "name" : "Pallet",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Highest Level of Shipping Hierarchy",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  }, {
+    "id" : "55MZpPUikkAi76Xmh8aN02",
+    "name" : "pallet.1759435328357.489",
+    "type" : "MDM_ENRICHMENT_PROVIDER_MAPPING",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet.1759435328357.489"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Total Consumer Units in Pack is not greater than 0",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  }, {
+    "id" : "5PaFWJe76eGhd0faHl0Psg",
+    "name" : "pallet.1759435366159.3247",
+    "type" : "MDM_ENRICHMENT_PROVIDER_MAPPING",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
+          "version" : "202604.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "c360" : {
+          "version" : "202604.01"
+        },
+        "mde" : {
+          "version" : "202604.01"
+        },
+        "s360" : {
+          "version" : "202604.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED",
+      "referenceDataAssets" : [ {
+        "name" : "Boolean Yes No",
+        "path" : "REG/Default/Boolean Yes No",
+        "internalId" : "boolean_yes_no",
+        "alternativeCodeLists" : [ ],
+        "defaultCodeList" : {
+          "name" : "Enterprise Boolean Yes No",
+          "internalId" : "ent_boolean_yes_no"
+        }
+      }, {
+        "name" : "GDSN Unit Descriptor",
+        "path" : "REG/Reference360/GDSN Unit Descriptor",
+        "internalId" : "gdsn_unit_descriptor",
+        "alternativeCodeLists" : [ {
+          "name" : "GOYA Unit Descriptor",
+          "internalId" : "goya_unit_descriptor"
+        } ],
+        "defaultCodeList" : {
+          "name" : "Enterprise GDSN Unit Descriptor",
+          "internalId" : "ent_gdsn_unit_descriptor"
+        }
+      } ]
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "pallet.1759435366159.3247"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "non-mix pack count should be 1",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

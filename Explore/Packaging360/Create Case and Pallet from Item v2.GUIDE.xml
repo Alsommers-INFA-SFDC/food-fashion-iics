@@ -1,0 +1,872 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>LWEQT53nQciSrZM-gt-734600-2025-10-29T15:58:30.606Z::gt.xml</types1:EntryId>
+      <types1:Name>Create_Case_and_Pallet_from_Item_v2</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2025-10-29T15:58:31Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2025-12-05T16:37:24Z</types1:ModificationDate>
+      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2025-12-05T16:38:15Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.Create_Case_and_Pallet_from_Item_v2/Create_Case_and_Pallet_from_Item_v2.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="Create Case and Pallet from Item v2"
+                         doneOnEndStep="false"
+                         name="Create_Case_and_Pallet_from_Item_v2"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="null"
+                          name="in_EachBusinessId"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="null"
+                          name="in_ItemName"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="tmp_case_gtin" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_case_description" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_case_includded_each_item" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_case_unit_descriptor_lu" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_itemBusinessID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_itemName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_casePayload" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_countOfEach" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_pallet_gtin" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_pallet_title" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_pallet_ti" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_pallet_hi" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_pallet_isStackable" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_StackCount" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_palletPayLoad" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_palletUnitType" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyInternalId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_rootAssignBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_caseAssignBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_eachAssignBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_palletInternalId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_newHierarhcyURL" type="url">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="urlDisplayReadonlyAs">Link</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_packToPallet" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_eachToPack" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_CountofEachinPack" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="a18HOHHMXKRYmf8y6Hto22Aa-start-udb9edc29-ea1e-411f-b4c9-a2a6a1c3d903">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null"
+                             id="wcb67168d-fa60-48c1-a3ce-7192d7b85079"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Serviceb064ad7b-9f71-495b-8361-d33278881ab0">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Serviceb064ad7b-9f71-495b-8361-d33278881ab0">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <actions>
+                     <action alt="null"
+                             id="f15dae510-1e5c-4591-8a50-53df4d77b598"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Serviceba6aa78f-9b06-4b3d-88c7-95044095d487">
+                  <title>Get Item Record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-p1cca6fc5-84bf-4d85-9fe4-91f025550182"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-vc9af8efb-397f-46e6-bc08-246cae27d671"
+                                name="beName"
+                                source="constant"
+                                updatable="false">p360.item</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-n93dd3dd9-5531-4942-b410-980f505fa8c5"
+                                name="businessId"
+                                source="field"
+                                updatable="false">input.in_EachBusinessId</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="eb8de75ee-cac1-4b3d-b175-07af707cd2d7"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Servicea5c43991-c48a-4817-b6ac-282f019b53ac">
+                  <title>Create Case</title>
+                  <serviceName>AppConnection-MDMSaaS:Create New Record with SourcePK</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-h0c00be80-11c4-449d-9b64-776d26a28727"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-t8c9600eb-12a3-4be2-b927-7d1cebe34ea0"
+                                name="beName"
+                                source="constant"
+                                updatable="false">shipping_packaging</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-p9ea84910-bfab-42dd-83ff-b97e01f40673"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_case_gtin</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-oab59b504-8f59-47dd-b643-c04cbddc0688"
+                                name="sourcePk"
+                                source="field"
+                                updatable="false">temp.tmp_case_gtin</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-s0eee430e-ab44-4a72-b7cc-ee623b8a8b1f"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-occ436cea-10c1-4d8b-8476-2d4c969b822f"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_casePayload</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="f332cc2c9-1c14-4f08-8eb1-2bb55556491d"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Service9a6644a2-5d9b-4233-953c-8f7bf64ad4e1">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Service9a6644a2-5d9b-4233-953c-8f7bf64ad4e1">
+                  <title>Create Pallet</title>
+                  <serviceName>AppConnection-MDMSaaS:Create New Record with SourcePK</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-eb02ee5a2-9bde-4874-9c2e-8dee6109f53a"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-eab282d24-9c92-48fe-92ec-a2d44e791850"
+                                name="beName"
+                                source="constant"
+                                updatable="false">pallet</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-ef805defa-b4ae-4cd0-90b6-84a6a9f03908"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-z65902598-bc35-4481-bfac-2cab4f102dda"
+                                name="sourcePk"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-baef4a4f0-eb69-43cc-98ae-f35f8b58cafc"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-g25a9ea53-fd75-4ff2-a5f0-91404886e3cc"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_palletPayLoad</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="t7ce4426b-fb0a-442f-aaf1-21985825cc25"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Assignment9955b4b9-b4b9-4a3f-a50c-bd53484c890f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Serviceda822b2d-0755-4478-9477-4eedce607dbf">
+                  <title>Post Hierarchy Instance</title>
+                  <serviceName>AppConnection-MDMSaaS:Post Hierarchy Instance</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-nfaeb4718-3fe1-4ed0-b1a4-c6a63bbd23a0"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-e9e60657b-c0c7-49a3-886f-e2ec0bef7d91"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-t65397406-dac8-4de1-aa6a-eec4f040b5b0"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyBody</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="o3bd41cef-a316-4481-bd1c-e4526b591aa7"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Service2a9e74b5-9498-4c91-9544-42769a6433e8">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Service2a9e74b5-9498-4c91-9544-42769a6433e8">
+                  <title>GET hierarchy ID by search</title>
+                  <serviceName>AppConnection-MDMSaaS:GET hierarchy ID by search</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-oeaeb4162-d6eb-41c3-a00b-07f71fbe8507"
+                                name="sessionID"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-s0bcbdea9-a22a-499c-b778-81855ee06730"
+                                name="hierarchyName"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-b8ed9d59f-fcdc-43c8-b609-9484d23a824b"
+                                name="findInstanceName"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyName</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="f4f1092cc-bcc0-4347-8ab0-d167d5d2bced"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Assignment19eb8992-335f-4d07-b48d-62e9ec45761a">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Service6717a2e8-f05e-4570-80fb-41752fec7a15">
+                  <title>Get Internal ID of BE record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get Internal ID of BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-n50ce1cc1-4602-4019-8566-b6773b3dcc48"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-nb3467df4-a02e-4115-bd09-99d8515c5003"
+                                name="beName"
+                                source="constant"
+                                updatable="false">pallet</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-ae53844ea-e657-4b72-a1a0-004eb240b382"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="o9a42733c-292e-484b-9e3c-354f151d996f"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Assignmente7077d38-8cfc-4c47-806b-4917406e7d74">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Servicea1e9609e-fdc7-4b9b-84cf-91d39753d4d2">
+                  <title>PUT Hierarchy Root Node </title>
+                  <serviceName>AppConnection-MDMSaaS:PUT Hierarchy Root Node </serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-ve5c28846-c1a9-40b3-86e4-10973d096fed"
+                                name="sessionID"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-l316205b0-e625-4855-b9b3-b772970f3f6d"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-w4f7b84a1-975f-4859-8b04-236172142bc9"
+                                name="hierarchyID"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyInternalId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-sed981b4a-e245-456c-9efe-d85bdb51615c"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_rootAssignBody</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="t07f57e81-a29e-4815-b27d-ea5fd2c442e9"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Service6e3db0fc-4c63-464f-8a6e-b924c7fa2a45">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Service6e3db0fc-4c63-464f-8a6e-b924c7fa2a45">
+                  <title>POST Hierarchy Relationship Case to Palelt</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-body"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_packToPallet</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy_hierarchy</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">shipping_packaging_to_pallet</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="f0de0f591-6606-4e5a-90cb-0ce1c2821f71"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Serviceea66be11-e942-40d4-b286-00794c70fe3d">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a18HOHHMXKRYmf8y6Hto22Aa-Serviceea66be11-e942-40d4-b286-00794c70fe3d">
+                  <title>POST Hierarchy Relationship each to Case</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">p360_item_to_shipping_packaging</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-body"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_eachToPack</parameter>
+                     <parameter id="a18HOHHMXKRYmf8y6Hto22Aa-hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy_hierarchy</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="vc7f01c5f-b732-4ebe-9855-6d229363b1aa"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-end-u710857a8-fd72-491c-9b56-c2ec61670521">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen dontShowScreen="true"
+                          id="a18HOHHMXKRYmf8y6Hto22Aa-end-u710857a8-fd72-491c-9b56-c2ec61670521"
+                          outcomeId="a18HOHHMXKRYmf8y6Hto22Aa-outcome-1761848455234">
+                  <title>End</title>
+                  <body contentType="text/html">&lt;p&gt;Success&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;New Case, Pallet and Hierarchy Has been Created.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_newHierarhcyURL" readonly="readonly" type="text" value="tmp_newHierarhcyURL (temp)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actions/>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.tmp_newHierarhcyURL"
+                                     readonly="true"
+                                     renderingType="url"
+                                     required="false"
+                                     type="url">
+                        <options>
+                           <option name="required">false</option>
+                           <option name="urlDisplayReadonlyAs">Link</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+                  <redirectTo name="temp.tmp_newHierarhcyURL" type="url"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <assignment id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57">
+                  <title>Validate Business ID of Each Item</title>
+                  <operation source="screen" to="temp.tmp_itemBusinessID">screen.temp.tmp_itemBusinessID</operation>
+                  <operation source="screen" to="temp.tmp_itemName">screen.temp.tmp_itemName</operation>
+                  <screen id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57-servicescreen">
+                     <title>Validate Business ID of Each Item</title>
+                     <body contentType="text/html">&lt;p&gt;&lt;img src="https://t4.ftcdn.net/jpg/01/25/36/71/360_F_125367167_JnrCHTqtZhAbWS3doG4tt631usPHiPnr.jpg" alt="Package Images &amp;ndash; Browse 12,399,400 Stock Photos, Vectors ..." width="274" height="274"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;BusinessID:&amp;nbsp; &lt;input class="" name="screen.temp.tmp_itemBusinessID" type="text" value="tmp_itemBusinessID (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Item Name:&amp;nbsp; &lt;input class="" name="screen.temp.tmp_itemName" type="text" value="tmp_itemName (temp)"&gt;&lt;/p&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="screen.temp.tmp_itemBusinessID"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="field">input.in_EachBusinessId</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_itemName"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="field">input.in_ItemName</option>
+                              <option name="text_size">250</option>
+                              <option name="length">250</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null"
+                             id="zf72afee6-d9c4-4b88-8dee-f3b7be4616f1"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Serviceba6aa78f-9b06-4b3d-88c7-95044095d487">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f">
+                  <title>Enter Packaging Information</title>
+                  <operation source="screen" to="temp.tmp_case_gtin">screen.temp.tmp_case_gtin</operation>
+                  <operation source="screen" to="temp.tmp_case_description">screen.temp.tmp_case_description</operation>
+                  <operation source="screen" to="temp.tmp_case_unit_descriptor_lu">screen.temp.tmp_case_unit_descriptor_lu</operation>
+                  <operation source="field" to="temp.tmp_case_includded_each_item">input.in_EachBusinessId</operation>
+                  <operation source="screen" to="temp.tmp_CountofEachinPack">screen.temp.tmp_CountofEachinPack</operation>
+                  <operation source="formula" to="temp.tmp_casePayload">
+                     <expression language="XQuery">'{ 
+  "gtin": "' || $temp.tmp_case_gtin || '",
+  "description": "' || $temp.tmp_case_description || '",
+  "total_consumer_units_in_pack": ' || $temp.tmp_CountofEachinPack  || ',
+  "included_each_item": { 
+    "_businessId": "' || $input.in_EachBusinessId || '" 
+  },
+  "unit_descriptor": { 
+    "Code": "' || $temp.tmp_case_unit_descriptor_lu || '", 
+    "Name": "Case"
+  }
+}'
+</expression>
+                  </operation>
+                  <operation source="screen" to="temp.tmp_pallet_gtin">screen.temp.tmp_pallet_gtin</operation>
+                  <operation source="screen" to="temp.tmp_pallet_title">screen.temp.tmp_pallet_title</operation>
+                  <operation source="screen" to="temp.tmp_pallet_hi">screen.temp.tmp_pallet_hi</operation>
+                  <operation source="screen" to="temp.tmp_pallet_ti">screen.temp.tmp_pallet_ti</operation>
+                  <operation source="screen" to="temp.tmp_pallet_isStackable">screen.temp.tmp_pallet_isStackable</operation>
+                  <operation source="constant" to="temp.tmp_palletUnitType">pallet</operation>
+                  <operation source="screen" to="temp.tmp_StackCount">screen.temp.tmp_StackCount</operation>
+                  <operation source="formula" to="temp.tmp_palletPayLoad">
+                     <expression language="XQuery">'{ 
+  "pallet_id": ' || '"' || $temp.tmp_pallet_gtin || '"'  ||',
+  "pallet_hi": ' || '"' ||  $temp.tmp_pallet_hi || '"'  ||',
+  "pallet_ti": ' || '"' ||  $temp.tmp_pallet_ti || '"'  ||',
+  "title": ' || '"' ||  $temp.tmp_pallet_title || '"'  ||',
+  "stack_count": ' || $temp.tmp_StackCount ||',
+  "child_gtin": 
+    { "_businessId": ' || '"' || $temp.tmp_case_gtin || '"'  ||'},
+  "unit_descriptor": 
+    { "Code":' || '"' || "PALLET" || '"'  ||' , "Name": "Pallet"},
+    "is_stackable":
+    {"Name": "Yes", "Code": "yes"}
+}'</expression>
+                  </operation>
+                  <screen id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f-servicescreen">
+                     <title>Enter Packaging Information</title>
+                     <body contentType="text/html">&lt;div class="container"&gt;
+&lt;div class="image-container"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="image-container"&gt;&lt;img src="data:image/png;base64,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"&gt;&lt;/div&gt;
+&lt;div class="image-container"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="image-container"&gt;&lt;em&gt;GTIN and Descriptions pre-populated from EACH data&lt;/em&gt;&lt;/div&gt;
+&lt;div class="image-container"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="image-container"&gt;
+&lt;table style="border-collapse: collapse; width: 74.2694%; height: 338.188px; background-color: rgb(222, 237, 237); border: 1px outset rgb(222, 237, 237); margin-left: 0px; margin-right: auto;" border="1"&gt;&lt;colgroup&gt;&lt;col style="width: 18.1521%;"&gt;&lt;col style="width: 26.3439%;"&gt;&lt;col style="width: 23.0047%;"&gt;&lt;col style="width: 32.5396%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 43px;"&gt;&lt;/tr&gt;
+&lt;tr style="height: 42px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 42px;"&gt;&lt;strong&gt;Inner Pack GTIN&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 42px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp;&lt;input id="case-gtin" name="screen.temp.tmp_case_gtin" type="text" value="tmp_case_gtin (temp)"&gt;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 42px;"&gt;&lt;strong&gt;Inner Pack Description&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 42px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp;&lt;input id="case-description" name="screen.temp.tmp_case_description" type="text" value="tmp_case_description (temp)"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 60px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 60px;"&gt;&lt;strong&gt;Inner Pack Type&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 60px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp;&lt;input id="case-type" name="screen.temp.tmp_case_unit_descriptor_lu" type="text" value="tmp_case_unit_descriptor_lu (temp)"&gt;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 60px;"&gt;&lt;strong&gt;Count of Each in Inner Pack&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 60px; border-color: rgb(222, 237, 237);"&gt;&lt;input name="screen.temp.tmp_CountofEachinPack" type="text" value="tmp_CountofEachinPack (temp)"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 16.7969px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 16.7969px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 16.7969px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 16.7969px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 16.7969px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 58.7969px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Pallet GTIN&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp; &lt;input id="pallet-gtin" name="screen.temp.tmp_pallet_gtin" type="text" value="tmp_pallet_gtin (temp)"&gt;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Pallet Description&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp;&lt;input id="pallet-description" name="screen.temp.tmp_pallet_title" type="text" value="tmp_pallet_title (temp)"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 58.7969px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Pallet TI&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&lt;label for="pallet-ti"&gt;&amp;nbsp; &lt;/label&gt;&lt;input id="pallet-ti" name="screen.temp.tmp_pallet_ti" type="text" value="tmp_pallet_ti (temp)"&gt;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Pallet HI&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp;&lt;input id="pallet-hi" name="screen.temp.tmp_pallet_hi" type="text" value="tmp_pallet_hi (temp)"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 58.7969px;"&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Is Stackable?&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&amp;nbsp; &lt;input id="is-stackable" class="" name="screen.temp.tmp_pallet_isStackable" type="text" value="tmp_pallet_isStackable (temp)"&gt;&lt;/td&gt;
+&lt;td style="border-color: rgb(222, 237, 237); height: 58.7969px;"&gt;&lt;strong&gt;Stackable Count&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="height: 58.7969px; border-color: rgb(222, 237, 237);"&gt;&lt;input name="screen.temp.tmp_StackCount" type="text" value="tmp_StackCount (temp)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="form-container"&gt;
+&lt;div id="packaging-section" class="section"&gt;&lt;/div&gt;
+&lt;div id="pallet-section" class="section"&gt;
+&lt;div class="form-row"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="screen.temp.tmp_case_gtin"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath 20||$input.in_EachBusinessId</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_case_description"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath "Case of :" || $temp.tmp_case_includded_each_item || $input.in_ItemName</option>
+                              <option name="length">200</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_case_unit_descriptor_lu"
+                                        readonly="false"
+                                        renderingType="picklist"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option hide="true" name="valuelist.source">csv</option>
+                              <option hide="true" name="valuelist.csvdata">CASE, DISPLAY_SHIPPER</option>
+                              <option name="values">[{"label":"CASE","value":"CASE"},{"label":" DISPLAY_SHIPPER","value":" DISPLAY_SHIPPER"}]</option>
+                              <option name="defaultvalue">CASE</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_CountofEachinPack"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_gtin"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath 202||$input.in_EachBusinessId </option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_title"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath  "Pallet: " || $input.in_ItemName </option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_ti"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_hi"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_isStackable"
+                                        readonly="false"
+                                        renderingType="picklist"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="constant">Yes</option>
+                              <option hide="true" name="valuelist.source">csv</option>
+                              <option hide="true" name="valuelist.csvdata">Yes, No</option>
+                              <option name="values">[{"label":"Yes","value":"Yes"},{"label":" No","value":" No"}]</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_StackCount"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null"
+                             id="md529891b-ea62-4458-a8fb-7b9884935d9e"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Servicea5c43991-c48a-4817-b6ac-282f019b53ac">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment9955b4b9-b4b9-4a3f-a50c-bd53484c890f">
+                  <title>hierarchyBodyBuild</title>
+                  <operation source="formula" to="temp.tmp_hierarchyName">
+                     <expression language="XQuery">fn:replace( $temp.tmp_pallet_title , " ", "+")</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_hierarchyBody">
+                     <expression language="XQuery">'{ 
+  "name": ' || '"' || $temp.tmp_pallet_title ||  '"'  ||',
+  "fields": 
+    { "description":""}
+
+}'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_packToPallet">
+                     <expression language="XQuery">'{
+"_from": {
+"businessEntity":"shipping_packaging",
+"businessId": ' || '"' || $temp.tmp_case_gtin || '"'  ||'
+},
+"_to":{
+"businessEntity":"pallet",
+"businessId": ' || '"' || $temp.tmp_pallet_gtin || '"'  ||'
+}
+}'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_eachToPack">
+                     <expression language="XQuery">'{
+"_from": {
+"businessEntity":"p360.item",
+"businessId": ' || '"' || $input.in_EachBusinessId || '"'  ||'
+},
+"_to":{
+"businessEntity":"shipping_packaging",
+"businessId": ' || '"' || $temp.tmp_case_gtin || '"'  ||'
+}
+}'</expression>
+                  </operation>
+                  <actions>
+                     <action alt="null"
+                             id="zd44994cf-8523-4a93-84ea-9901189ec247"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Serviceda822b2d-0755-4478-9477-4eedce607dbf">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a18HOHHMXKRYmf8y6Hto22Aa-Assignment19eb8992-335f-4d07-b48d-62e9ec45761a">
+                  <title>Assignment to tmp_hierarchyInternalId</title>
+                  <operation source="field" to="temp.tmp_hierarchyInternalId">output.hierarchyId</operation>
+                  <actions>
+                     <action alt="null"
+                             id="zb68074aa-da8c-4b23-bbc4-d587ca581e6b"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Service6717a2e8-f05e-4570-80fb-41752fec7a15">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a18HOHHMXKRYmf8y6Hto22Aa-Assignmente7077d38-8cfc-4c47-806b-4917406e7d74">
+                  <title>Assignment to tmp_rootAssignBody, tmp_palletInternalId</title>
+                  <operation source="field" to="temp.tmp_palletInternalId">output.internalId</operation>
+                  <operation source="formula" to="temp.tmp_rootAssignBody">
+                     <expression language="XQuery">'[
+{ 
+  "id": ' || '"' || $temp.tmp_palletInternalId || '"'  ||',
+  
+  "_meta": 
+    { "type":"pallet"}
+}
+]'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_newHierarhcyURL">
+                     <expression language="XQuery">'https://usw1-mdm.dmp-us.informaticacloud.com/ui-x360-app/app/p360/hierarchy/new-hierarchy/trade_item_hierarchy_hierarchy/'||$temp.tmp_hierarchyInternalId</expression>
+                  </operation>
+                  <actions>
+                     <action alt="null"
+                             id="rcfed7e43-2945-4147-b856-19251db554da"
+                             targetScreen="a18HOHHMXKRYmf8y6Hto22Aa-Servicea1e9609e-fdc7-4b9b-84cf-91d39753d4d2">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>8HOHHMXKRYmf8y6Hto22Aa</types1:GUID>
+      <types1:DisplayName>Create Case and Pallet from Item v2</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:20:19.383Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

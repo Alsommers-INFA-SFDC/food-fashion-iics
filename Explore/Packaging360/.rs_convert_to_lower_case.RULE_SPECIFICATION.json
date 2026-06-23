@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "1F51dWFGvu1iYb4ee02jkH",
+    "name" : "rs_convert_to_lower_case",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "1F51dWFGvu1iYb4ee02jkH"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts input strings to lowercase.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-23T13:20:28.385Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

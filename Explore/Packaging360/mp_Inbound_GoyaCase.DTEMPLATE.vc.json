@@ -1,0 +1,4786 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "mp_Inbound_GoyaCase",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Expression -> pack_root"
+      },
+      {
+        "link" : "mp_Inbound_Goya_Case -> Expression"
+      },
+      {
+        "link" : "Normalizer -> pack_weight"
+      },
+      {
+        "link" : "Expression -> Normalizer"
+      },
+      {
+        "link" : "Expression -> pack_rel_itemtoCase"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:00:30.236Z",
+        "name" : "mp_Inbound_Goya_Case",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Item_number____"
+            },
+            "name" : "Item_number____",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Item_Type"
+            },
+            "name" : "Item_Type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Name"
+            },
+            "name" : "Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Alt_Name_Description"
+            },
+            "name" : "Alt_Name_Description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Size"
+            },
+            "name" : "Size",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Pack_Size"
+            },
+            "name" : "Pack_Size",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Status"
+            },
+            "name" : "Status",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "U_M"
+            },
+            "name" : "U_M",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Business_Area"
+            },
+            "name" : "Business_Area",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Product_Group"
+            },
+            "name" : "Product_Group",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Prod_line_"
+            },
+            "name" : "Prod_line_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Item_Group"
+            },
+            "name" : "Item_Group",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sales_Category_Major"
+            },
+            "name" : "Sales_Category_Major",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sales_Category_Minor"
+            },
+            "name" : "Sales_Category_Minor",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Inventory_Category_Minor"
+            },
+            "name" : "Inventory_Category_Minor",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Inventory_Category_Major"
+            },
+            "name" : "Inventory_Category_Major",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RM_Type"
+            },
+            "name" : "RM_Type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Unit_Height"
+            },
+            "name" : "Unit_Height",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Unit_Width"
+            },
+            "name" : "Unit_Width",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Unit_Length"
+            },
+            "name" : "Unit_Length",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Unit_Gross_Weight"
+            },
+            "name" : "Unit_Gross_Weight",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "__Case_Height"
+            },
+            "name" : "__Case_Height",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "_Case_Width_"
+            },
+            "name" : "_Case_Width_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "_Case_Length"
+            },
+            "name" : "_Case_Length",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Case_Unit_Weight"
+            },
+            "name" : "Case_Unit_Weight",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "__Case_Gross_Weight"
+            },
+            "name" : "__Case_Gross_Weight",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "____Volume_"
+            },
+            "name" : "____Volume_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Item_Storage"
+            },
+            "name" : "Item_Storage",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Unit_UPC"
+            },
+            "name" : "Unit_UPC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Case_UPC"
+            },
+            "name" : "Case_UPC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TI"
+            },
+            "name" : "TI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "HI"
+            },
+            "name" : "HI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Stackable_"
+            },
+            "name" : "Stackable_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Stackable_Height"
+            },
+            "name" : "Stackable_Height",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_Type"
+            },
+            "name" : "Packaging_Type",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Alergens"
+            },
+            "name" : "Alergens",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Kosher"
+            },
+            "name" : "Kosher",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Gluten_Free"
+            },
+            "name" : "Gluten_Free",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Organic_"
+            },
+            "name" : "Organic_",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Product_Life"
+            },
+            "name" : "Product_Life",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SHELF_LIFE"
+            },
+            "name" : "SHELF_LIFE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MIN_TRANSFER"
+            },
+            "name" : "MIN_TRANSFER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MIN_DAYS_TO_RECEIVE"
+            },
+            "name" : "MIN_DAYS_TO_RECEIVE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MAX_DAYS_TO_RECEIVE"
+            },
+            "name" : "MAX_DAYS_TO_RECEIVE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Product_Date_Method"
+            },
+            "name" : "Product_Date_Method",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COO"
+            },
+            "name" : "COO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Preparation_Method"
+            },
+            "name" : "Preparation_Method",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Label_Language"
+            },
+            "name" : "Label_Language",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@aS74JYpKPaGbuOjo9Tz7U8",
+          "connectionName" : "GoogleCloudStore",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "dataFormat" : {
+            "formatId" : "Flat",
+            "validateHSchema" : "false",
+            "attributes" : [
+              {
+                "name" : "delimiter",
+                "value" : ","
+              },
+              {
+                "name" : "escapeChar",
+                "value" : "\\"
+              },
+              {
+                "name" : "qualifier",
+                "value" : "\""
+              },
+              {
+                "name" : "qualifierMode",
+                "value" : "MINIMAL"
+              },
+              {
+                "name" : "disableEscapeChar",
+                "value" : "true"
+              },
+              {
+                "name" : "codePage",
+                "value" : "UTF-8"
+              },
+              {
+                "name" : "headerLineNumber",
+                "value" : "1"
+              },
+              {
+                "name" : "firstDataRow",
+                "value" : "2"
+              },
+              {
+                "name" : "targetHeader",
+                "value" : "With Header"
+              },
+              {
+                "name" : "importColumnFromFirstLine",
+                "value" : "true"
+              },
+              {
+                "name" : "generateHeader",
+                "value" : "true"
+              },
+              {
+                "name" : "fixedWidthMode",
+                "value" : "false"
+              },
+              {
+                "name" : "maxRowsToPreview",
+                "value" : "0"
+              }
+            ]
+          },
+          "object" : {
+            "name" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "label" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "objectName" : "goya_test_data_csv",
+            "objectType" : "googleStorage",
+            "path" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Item_number____",
+                "fieldType" : "PARSER",
+                "label" : "Item number    ",
+                "nativeName" : "Item number    ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Item_Type",
+                "fieldType" : "PARSER",
+                "label" : "Item Type",
+                "nativeName" : "Item Type",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Name",
+                "fieldType" : "PARSER",
+                "label" : "Name",
+                "nativeName" : "Name",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Alt_Name_Description",
+                "fieldType" : "PARSER",
+                "label" : "Alt Name Description",
+                "nativeName" : "Alt Name Description",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Size",
+                "fieldType" : "PARSER",
+                "label" : "Size",
+                "nativeName" : "Size",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Pack_Size",
+                "fieldType" : "PARSER",
+                "label" : "Pack Size",
+                "nativeName" : "Pack Size",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Status",
+                "fieldType" : "PARSER",
+                "label" : "Status",
+                "nativeName" : "Status",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "U_M",
+                "fieldType" : "PARSER",
+                "label" : "U/M",
+                "nativeName" : "U/M",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Business_Area",
+                "fieldType" : "PARSER",
+                "label" : "Business Area",
+                "nativeName" : "Business Area",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Product_Group",
+                "fieldType" : "PARSER",
+                "label" : "Product Group",
+                "nativeName" : "Product Group",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Prod_line_",
+                "fieldType" : "PARSER",
+                "label" : "Prod line ",
+                "nativeName" : "Prod line ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Item_Group",
+                "fieldType" : "PARSER",
+                "label" : "Item Group",
+                "nativeName" : "Item Group",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sales_Category_Major",
+                "fieldType" : "PARSER",
+                "label" : "Sales Category Major",
+                "nativeName" : "Sales Category Major",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sales_Category_Minor",
+                "fieldType" : "PARSER",
+                "label" : "Sales Category Minor",
+                "nativeName" : "Sales Category Minor",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Inventory_Category_Minor",
+                "fieldType" : "PARSER",
+                "label" : "Inventory Category Minor",
+                "nativeName" : "Inventory Category Minor",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Inventory_Category_Major",
+                "fieldType" : "PARSER",
+                "label" : "Inventory Category Major",
+                "nativeName" : "Inventory Category Major",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "RM_Type",
+                "fieldType" : "PARSER",
+                "label" : "RM Type",
+                "nativeName" : "RM Type",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Unit_Height",
+                "fieldType" : "PARSER",
+                "label" : "Unit Height",
+                "nativeName" : "Unit Height",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Unit_Width",
+                "fieldType" : "PARSER",
+                "label" : "Unit Width",
+                "nativeName" : "Unit Width",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Unit_Length",
+                "fieldType" : "PARSER",
+                "label" : "Unit Length",
+                "nativeName" : "Unit Length",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Unit_Gross_Weight",
+                "fieldType" : "PARSER",
+                "label" : "Unit Gross Weight",
+                "nativeName" : "Unit Gross Weight",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "__Case_Height",
+                "fieldType" : "PARSER",
+                "label" : "  Case Height",
+                "nativeName" : "  Case Height",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "_Case_Width_",
+                "fieldType" : "PARSER",
+                "label" : " Case Width ",
+                "nativeName" : " Case Width ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "_Case_Length",
+                "fieldType" : "PARSER",
+                "label" : " Case Length",
+                "nativeName" : " Case Length",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Case_Unit_Weight",
+                "fieldType" : "PARSER",
+                "label" : "Case Unit Weight",
+                "nativeName" : "Case Unit Weight",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "__Case_Gross_Weight",
+                "fieldType" : "PARSER",
+                "label" : "  Case Gross Weight",
+                "nativeName" : "  Case Gross Weight",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "____Volume_",
+                "fieldType" : "PARSER",
+                "label" : "    Volume ",
+                "nativeName" : "    Volume ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Item_Storage",
+                "fieldType" : "PARSER",
+                "label" : "Item Storage",
+                "nativeName" : "Item Storage",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Unit_UPC",
+                "fieldType" : "PARSER",
+                "label" : "Unit UPC",
+                "nativeName" : "Unit UPC",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Case_UPC",
+                "fieldType" : "PARSER",
+                "label" : "Case UPC",
+                "nativeName" : "Case UPC",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "TI",
+                "fieldType" : "PARSER",
+                "label" : "TI",
+                "nativeName" : "TI",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "HI",
+                "fieldType" : "PARSER",
+                "label" : "HI",
+                "nativeName" : "HI",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Stackable_",
+                "fieldType" : "PARSER",
+                "label" : "Stackable ",
+                "nativeName" : "Stackable ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Stackable_Height",
+                "fieldType" : "PARSER",
+                "label" : "Stackable Height",
+                "nativeName" : "Stackable Height",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_Type",
+                "fieldType" : "PARSER",
+                "label" : "Packaging Type",
+                "nativeName" : "Packaging Type",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Alergens",
+                "fieldType" : "PARSER",
+                "label" : "Alergens",
+                "nativeName" : "Alergens",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Kosher",
+                "fieldType" : "PARSER",
+                "label" : "Kosher",
+                "nativeName" : "Kosher",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Gluten_Free",
+                "fieldType" : "PARSER",
+                "label" : "Gluten Free",
+                "nativeName" : "Gluten Free",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Organic_",
+                "fieldType" : "PARSER",
+                "label" : "Organic ",
+                "nativeName" : "Organic ",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Product_Life",
+                "fieldType" : "PARSER",
+                "label" : "Product Life",
+                "nativeName" : "Product Life",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "SHELF_LIFE",
+                "fieldType" : "PARSER",
+                "label" : "SHELF LIFE",
+                "nativeName" : "SHELF LIFE",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "MIN_TRANSFER",
+                "fieldType" : "PARSER",
+                "label" : "MIN TRANSFER",
+                "nativeName" : "MIN TRANSFER",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "MIN_DAYS_TO_RECEIVE",
+                "fieldType" : "PARSER",
+                "label" : "MIN DAYS TO RECEIVE",
+                "nativeName" : "MIN DAYS TO RECEIVE",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "MAX_DAYS_TO_RECEIVE",
+                "fieldType" : "PARSER",
+                "label" : "MAX DAYS TO RECEIVE",
+                "nativeName" : "MAX DAYS TO RECEIVE",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Product_Date_Method",
+                "fieldType" : "PARSER",
+                "label" : "Product Date Method",
+                "nativeName" : "Product Date Method",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "COO",
+                "fieldType" : "PARSER",
+                "label" : "COO",
+                "nativeName" : "COO",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Preparation_Method",
+                "fieldType" : "PARSER",
+                "label" : "Preparation Method",
+                "nativeName" : "Preparation Method",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Label_Language",
+                "fieldType" : "PARSER",
+                "label" : "Label Language",
+                "nativeName" : "Label Language",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:00:30.239Z",
+        "name" : "pack_root",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "sourcePKey"
+            },
+            "name" : "sourcePKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "businessId"
+            },
+            "name" : "businessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sourceSystem"
+            },
+            "name" : "sourceSystem",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "creationDate"
+            },
+            "name" : "creationDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "lastUpdateDate"
+            },
+            "name" : "lastUpdateDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "state"
+            },
+            "name" : "state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "createdBy"
+            },
+            "name" : "createdBy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "updatedBy"
+            },
+            "name" : "updatedBy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "originalBusinessId"
+            },
+            "name" : "originalBusinessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mergedBusinessId"
+            },
+            "name" : "mergedBusinessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 30000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "validationStatus"
+            },
+            "name" : "validationStatus",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "populationName"
+            },
+            "name" : "populationName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "notReadyForMatch"
+            },
+            "name" : "notReadyForMatch",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "matchMergeState"
+            },
+            "name" : "matchMergeState",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "states_validation"
+            },
+            "name" : "states_validation",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_unit_descriptor"
+            },
+            "name" : "Shipping_Packaging_unit_descriptor",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_gtin"
+            },
+            "name" : "Shipping_Packaging_gtin",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_purchasable_by_consumer"
+            },
+            "name" : "Shipping_Packaging_purchasable_by_consumer",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_included_each_item"
+            },
+            "name" : "Shipping_Packaging_included_each_item",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_total_consumer_units_in_pack"
+            },
+            "name" : "Shipping_Packaging_total_consumer_units_in_pack",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_description"
+            },
+            "name" : "Shipping_Packaging_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_packaging_material"
+            },
+            "name" : "Shipping_Packaging_packaging_material",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_related_pack"
+            },
+            "name" : "Shipping_Packaging_related_pack",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_number_of_different_products"
+            },
+            "name" : "Shipping_Packaging_number_of_different_products",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging_count_of_each_specific_product_non_mix_case_"
+            },
+            "name" : "Shipping_Packaging_count_of_each_specific_product_non_mix_case_",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Shipping_Packaging__cm_sourceLastUpdateDate"
+            },
+            "name" : "Shipping_Packaging__cm_sourceLastUpdateDate",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@k0yJnaoonaaiNqVW8Nkl4B",
+          "connectionName" : "PIM_fepConnection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging",
+            "label" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging",
+            "objectName" : "shipping_packaging",
+            "objectType" : "flatmdmentity",
+            "path" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "sourcePKey",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourcePKey",
+                "nativeName" : "sourcePKey",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_sourcePKey"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "businessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "businessId",
+                "nativeName" : "businessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_businessId"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "sourceSystem",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourceSystem",
+                "nativeName" : "sourceSystem",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_sourceSystem"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "creationDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "creationDate",
+                "nativeName" : "creationDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_creationDate"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "lastUpdateDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "lastUpdateDate",
+                "nativeName" : "lastUpdateDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_lastUpdateDate"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "state",
+                "fieldType" : "CONNECTOR",
+                "label" : "state",
+                "nativeName" : "state",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_state"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "createdBy",
+                "fieldType" : "CONNECTOR",
+                "label" : "createdBy",
+                "nativeName" : "createdBy",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_createdBy"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "updatedBy",
+                "fieldType" : "CONNECTOR",
+                "label" : "updatedBy",
+                "nativeName" : "updatedBy",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_updatedBy"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "originalBusinessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "originalBusinessId",
+                "nativeName" : "originalBusinessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_originalBusinessId"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "mergedBusinessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "mergedBusinessId",
+                "nativeName" : "mergedBusinessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 30000,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_mergedBusinessId"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "validationStatus",
+                "fieldType" : "CONNECTOR",
+                "label" : "validationStatus",
+                "nativeName" : "validationStatus",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_validationStatus"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "populationName",
+                "fieldType" : "CONNECTOR",
+                "label" : "populationName",
+                "nativeName" : "populationName",
+                "nativeType" : "reference",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_populationName"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "notReadyForMatch",
+                "fieldType" : "CONNECTOR",
+                "label" : "notReadyForMatch",
+                "nativeName" : "notReadyForMatch",
+                "nativeType" : "boolean",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_notReadyForMatch"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "matchMergeState",
+                "fieldType" : "CONNECTOR",
+                "label" : "matchMergeState",
+                "nativeName" : "matchMergeState",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_matchMergeState"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "states_validation",
+                "fieldType" : "CONNECTOR",
+                "label" : "states.validation",
+                "nativeName" : "states.validation",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "validation"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "states"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_unit_descriptor",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.unit_descriptor",
+                "nativeName" : "Shipping Packaging.unit_descriptor",
+                "nativeType" : "reference",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "unit_descriptor"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_gtin",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.gtin",
+                "nativeName" : "Shipping Packaging.gtin",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "gtin"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_purchasable_by_consumer",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.purchasable_by_consumer",
+                "nativeName" : "Shipping Packaging.purchasable_by_consumer",
+                "nativeType" : "boolean",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "purchasable_by_consumer"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_included_each_item",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.included_each_item",
+                "nativeName" : "Shipping Packaging.included_each_item",
+                "nativeType" : "entityreferencefield",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "included_each_item"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_total_consumer_units_in_pack",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.total_consumer_units_in_pack",
+                "nativeName" : "Shipping Packaging.total_consumer_units_in_pack",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "total_consumer_units_in_pack"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "0"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.description",
+                "nativeName" : "Shipping Packaging.description",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 2000,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "description"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_packaging_material",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.packaging_material",
+                "nativeName" : "Shipping Packaging.packaging_material",
+                "nativeType" : "reference",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "packaging_material"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_related_pack",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.related_pack",
+                "nativeName" : "Shipping Packaging.related_pack",
+                "nativeType" : "entityreferencefield",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "related_pack"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_number_of_different_products",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.number_of_different_products",
+                "nativeName" : "Shipping Packaging.number_of_different_products",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "number_of_different_products"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "0"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging_count_of_each_specific_product_non_mix_case_",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging.count_of_each_specific_product_non_mix_case_",
+                "nativeName" : "Shipping Packaging.count_of_each_specific_product_non_mix_case_",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "count_of_each_specific_product_non_mix_case_"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "0"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              },
+              {
+                "name" : "Shipping_Packaging__cm_sourceLastUpdateDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "Shipping Packaging._cm.sourceLastUpdateDate",
+                "nativeName" : "Shipping Packaging._cm.sourceLastUpdateDate",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "sourceLastUpdateDate"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Shipping Packaging.Shipping Packaging._cm"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "allowMany",
+                "value" : "false"
+              },
+              {
+                "name" : "recordType",
+                "value" : "BusinessEntity"
+              },
+              {
+                "name" : "dataType",
+                "value" : "Object"
+              },
+              {
+                "name" : "solutionName",
+                "value" : "CUSTOM"
+              },
+              {
+                "name" : "guid",
+                "value" : "shipping_packaging"
+              },
+              {
+                "name" : "storageType",
+                "value" : "BusinessEntity"
+              },
+              {
+                "name" : "metaFields",
+                "value" : "{}"
+              },
+              {
+                "name" : "fepGuid",
+                "value" : "shipping_packaging"
+              },
+              {
+                "name" : "storage",
+                "value" : "ent"
+              },
+              {
+                "name" : "sharded",
+                "value" : "true"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "sourcePKey"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "businessId"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "U_M",
+              "toField" : {
+                "name" : "Shipping_Packaging_unit_descriptor"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "Shipping_Packaging_gtin"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "o_CaseName",
+              "toField" : {
+                "name" : "Shipping_Packaging_description"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Item_number____",
+              "toField" : {
+                "name" : "Shipping_Packaging_included_each_item"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Pack_Size",
+              "toField" : {
+                "name" : "Shipping_Packaging_count_of_each_specific_product_non_mix_case_"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Pack_Size",
+              "toField" : {
+                "name" : "Shipping_Packaging_total_consumer_units_in_pack"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:17:29.315Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_CaseName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'Case of '|| Pack_Size ||Name"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_depth",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'depth'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_height",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'height'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_weight",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'weight'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_width",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'width'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_grossWeight",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'gross_weight'"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "o_relName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'packaging_of_trade_item'"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:00:30.239Z",
+        "name" : "pack_weight",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "sourcePKey"
+            },
+            "name" : "sourcePKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "fieldGroup_State"
+            },
+            "name" : "fieldGroup_State",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "measurement_name"
+            },
+            "name" : "measurement_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "measurement_value"
+            },
+            "name" : "measurement_value",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 34,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "measurement_uom"
+            },
+            "name" : "measurement_uom",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sourceSystem"
+            },
+            "name" : "sourceSystem",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "pack_measurements_parentId"
+            },
+            "name" : "pack_measurements_parentId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@k0yJnaoonaaiNqVW8Nkl4B",
+          "connectionName" : "PIM_fepConnection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging.pack_measurements",
+            "label" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging.pack_measurements",
+            "objectName" : "shipping_packaging.pack_measurements",
+            "objectType" : "flatmdmentity",
+            "path" : "Home/Custom Assets/Business Entities/Shipping Packaging(id=shipping_packaging)/shipping_packaging.pack_measurements",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "sourcePKey",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourcePKey",
+                "nativeName" : "sourcePKey",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "sourcePKey"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "fieldGroup_State",
+                "fieldType" : "CONNECTOR",
+                "label" : "fieldGroup_State",
+                "nativeName" : "fieldGroup_State",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "fieldGroup_State"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "measurement_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "measurement_name",
+                "nativeName" : "measurement_name",
+                "nativeType" : "reference",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "measurement_name"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "measurement_value",
+                "fieldType" : "CONNECTOR",
+                "label" : "measurement_value",
+                "nativeName" : "measurement_value",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 34,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "measurement_value"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "measurement_uom",
+                "fieldType" : "CONNECTOR",
+                "label" : "measurement_uom",
+                "nativeName" : "measurement_uom",
+                "nativeType" : "reference",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "measurement_uom"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "sourceSystem",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourceSystem",
+                "nativeName" : "sourceSystem",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "sourceSystem"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              },
+              {
+                "name" : "pack_measurements_parentId",
+                "fieldType" : "CONNECTOR",
+                "label" : "pack_measurements.parentId",
+                "nativeName" : "pack_measurements.parentId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "pack_measurements.parentId"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "shipping_packaging.pack_measurements"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "allowMany",
+                "value" : "true"
+              },
+              {
+                "name" : "recordType",
+                "value" : "BusinessEntity"
+              },
+              {
+                "name" : "dataType",
+                "value" : "Object"
+              },
+              {
+                "name" : "solutionName",
+                "value" : "CUSTOM"
+              },
+              {
+                "name" : "guid",
+                "value" : "shipping_packaging"
+              },
+              {
+                "name" : "storageType",
+                "value" : "BusinessEntity"
+              },
+              {
+                "name" : "metaFields",
+                "value" : "{}"
+              },
+              {
+                "name" : "fepGuid",
+                "value" : "shipping_packaging.pack_measurements"
+              },
+              {
+                "name" : "storage",
+                "value" : "ent"
+              },
+              {
+                "name" : "sharded",
+                "value" : "true"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "GK_o_DimensionKey",
+              "toField" : {
+                "name" : "sourcePKey"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "o_DimensionKey",
+              "toField" : {
+                "name" : "measurement_name"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "o_DimensionValue",
+              "toField" : {
+                "name" : "measurement_value"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "pack_measurements_parentId"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:21:35.001Z",
+        "name" : "Normalizer",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createGKField" : "true",
+        "fieldMappingMode" : "MANUAL",
+        "fieldsMode" : "NOT_PARAMETERIZED",
+        "inputFields" : [
+          {
+            "name" : "Case_UPC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "Case_UPC"
+            }
+          },
+          {
+            "name" : "Item_number____",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "Item_number____"
+            }
+          },
+          {
+            "name" : "o_DimensionKey_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionKey_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 2,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionKey_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 3,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionKey_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 4,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionKey_5",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 5,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionValue_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "o_DimensionValue_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 2,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "o_DimensionValue_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 3,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "o_DimensionValue_4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 4,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "o_DimensionValue_5",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 5,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          }
+        ],
+        "outputFields" : [
+          {
+            "name" : "Case_UPC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Case_UPC"
+            }
+          },
+          {
+            "name" : "Item_number____",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Item_number____"
+            }
+          },
+          {
+            "name" : "o_DimensionKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "o_DimensionValue",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "GCID_o_DimensionKey",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          },
+          {
+            "name" : "GCID_o_DimensionValue",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "o_DimensionValue"
+            }
+          },
+          {
+            "name" : "GK_o_DimensionKey",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "o_DimensionKey"
+            }
+          }
+        ],
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "Case_UPC"
+              }
+            },
+            {
+              "fromFieldName" : "Item_number____",
+              "toField" : {
+                "name" : "Item_number____"
+              }
+            },
+            {
+              "fromFieldName" : "o_height",
+              "toField" : {
+                "name" : "o_DimensionKey_1"
+              }
+            },
+            {
+              "fromFieldName" : "o_weight",
+              "toField" : {
+                "name" : "o_DimensionKey_2"
+              }
+            },
+            {
+              "fromFieldName" : "o_width",
+              "toField" : {
+                "name" : "o_DimensionKey_3"
+              }
+            },
+            {
+              "fromFieldName" : "o_depth",
+              "toField" : {
+                "name" : "o_DimensionKey_4"
+              }
+            },
+            {
+              "fromFieldName" : "__Case_Height",
+              "toField" : {
+                "name" : "o_DimensionValue_1"
+              }
+            },
+            {
+              "fromFieldName" : "_Case_Width_",
+              "toField" : {
+                "name" : "o_DimensionValue_3"
+              }
+            },
+            {
+              "fromFieldName" : "_Case_Length",
+              "toField" : {
+                "name" : "o_DimensionValue_4"
+              }
+            },
+            {
+              "fromFieldName" : "Case_Unit_Weight",
+              "toField" : {
+                "name" : "o_DimensionValue_2"
+              }
+            },
+            {
+              "fromFieldName" : "o_grossWeight",
+              "toField" : {
+                "name" : "o_DimensionKey_5"
+              }
+            },
+            {
+              "fromFieldName" : "__Case_Gross_Weight",
+              "toField" : {
+                "name" : "o_DimensionValue_5"
+              }
+            }
+          ]
+        },
+        "normalizerFields" : {
+          "fieldList" : [
+            {
+              "name" : "Case_UPC",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 256,
+              "scale" : 0,
+              "occurs" : 1
+            },
+            {
+              "name" : "Item_number____",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 256,
+              "scale" : 0,
+              "occurs" : 1
+            },
+            {
+              "name" : "o_DimensionKey",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0,
+              "occurs" : 5
+            },
+            {
+              "name" : "o_DimensionValue",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0,
+              "occurs" : 5
+            }
+          ]
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-09-30T19:00:30.239Z",
+        "name" : "pack_rel_itemtoCase",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "sourcePKey"
+            },
+            "name" : "sourcePKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "businessId"
+            },
+            "name" : "businessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sourceSystem"
+            },
+            "name" : "sourceSystem",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "creationDate"
+            },
+            "name" : "creationDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "lastUpdateDate"
+            },
+            "name" : "lastUpdateDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "createdBy"
+            },
+            "name" : "createdBy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "updatedBy"
+            },
+            "name" : "updatedBy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "state"
+            },
+            "name" : "state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "relationship_id"
+            },
+            "name" : "relationship_id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "relationship_name"
+            },
+            "name" : "relationship_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_businessEntity_id"
+            },
+            "name" : "Packaging_of_Trade_Item__from_businessEntity_id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_businessEntity_name"
+            },
+            "name" : "Packaging_of_Trade_Item__from_businessEntity_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_id_sourcePKey"
+            },
+            "name" : "Packaging_of_Trade_Item__from_id_sourcePKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_id_sourceSystem"
+            },
+            "name" : "Packaging_of_Trade_Item__from_id_sourceSystem",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_id_businessId"
+            },
+            "name" : "Packaging_of_Trade_Item__from_id_businessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__from_state"
+            },
+            "name" : "Packaging_of_Trade_Item__from_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_businessEntity_id"
+            },
+            "name" : "Packaging_of_Trade_Item__to_businessEntity_id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_businessEntity_name"
+            },
+            "name" : "Packaging_of_Trade_Item__to_businessEntity_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_id_sourcePKey"
+            },
+            "name" : "Packaging_of_Trade_Item__to_id_sourcePKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_id_sourceSystem"
+            },
+            "name" : "Packaging_of_Trade_Item__to_id_sourceSystem",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_id_businessId"
+            },
+            "name" : "Packaging_of_Trade_Item__to_id_businessId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Packaging_of_Trade_Item__to_state"
+            },
+            "name" : "Packaging_of_Trade_Item__to_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@k0yJnaoonaaiNqVW8Nkl4B",
+          "connectionName" : "PIM_fepConnection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Home/Custom Assets/Relationships/Packaging of Trade Item(id=packaging_of_trade_item)/packaging_of_trade_item",
+            "label" : "Home/Custom Assets/Relationships/Packaging of Trade Item(id=packaging_of_trade_item)/packaging_of_trade_item",
+            "objectName" : "packaging_of_trade_item",
+            "objectType" : "flatmdmentity",
+            "path" : "Home/Custom Assets/Relationships/Packaging of Trade Item(id=packaging_of_trade_item)/packaging_of_trade_item",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "sourcePKey",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourcePKey",
+                "nativeName" : "sourcePKey",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_sourcePKey"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "businessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "businessId",
+                "nativeName" : "businessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_businessId"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "sourceSystem",
+                "fieldType" : "CONNECTOR",
+                "label" : "sourceSystem",
+                "nativeName" : "sourceSystem",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_sourceSystem"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "creationDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "creationDate",
+                "nativeName" : "creationDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_creationDate"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "lastUpdateDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "lastUpdateDate",
+                "nativeName" : "lastUpdateDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_lastUpdateDate"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "createdBy",
+                "fieldType" : "CONNECTOR",
+                "label" : "createdBy",
+                "nativeName" : "createdBy",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_createdBy"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "updatedBy",
+                "fieldType" : "CONNECTOR",
+                "label" : "updatedBy",
+                "nativeName" : "updatedBy",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_updatedBy"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "state",
+                "fieldType" : "CONNECTOR",
+                "label" : "state",
+                "nativeName" : "state",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "systemFieldsIdentifier_state"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "false"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "relationship_id",
+                "fieldType" : "CONNECTOR",
+                "label" : "relationship.id",
+                "nativeName" : "relationship.id",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "relationship.id"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "relationship_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "relationship.name",
+                "nativeName" : "relationship.name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "relationship.name"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_businessEntity_id",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.businessEntity.id",
+                "nativeName" : "Packaging of Trade Item._from.businessEntity.id",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.businessEntity.id"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "p360.item"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_businessEntity_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.businessEntity.name",
+                "nativeName" : "Packaging of Trade Item._from.businessEntity.name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.businessEntity.name"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "Item"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_id_sourcePKey",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.id.sourcePKey",
+                "nativeName" : "Packaging of Trade Item._from.id.sourcePKey",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.id.sourcePKey"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_id_sourceSystem",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.id.sourceSystem",
+                "nativeName" : "Packaging of Trade Item._from.id.sourceSystem",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.id.sourceSystem"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_id_businessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.id.businessId",
+                "nativeName" : "Packaging of Trade Item._from.id.businessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.id.businessId"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__from_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._from.state",
+                "nativeName" : "Packaging of Trade Item._from.state",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._from.state"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_businessEntity_id",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.businessEntity.id",
+                "nativeName" : "Packaging of Trade Item._to.businessEntity.id",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.businessEntity.id"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "shipping_packaging"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_businessEntity_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.businessEntity.name",
+                "nativeName" : "Packaging of Trade Item._to.businessEntity.name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.businessEntity.name"
+                  },
+                  {
+                    "name" : "defaultValue",
+                    "value" : "Shipping Packaging"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_id_sourcePKey",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.id.sourcePKey",
+                "nativeName" : "Packaging of Trade Item._to.id.sourcePKey",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.id.sourcePKey"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_id_sourceSystem",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.id.sourceSystem",
+                "nativeName" : "Packaging of Trade Item._to.id.sourceSystem",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.id.sourceSystem"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_id_businessId",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.id.businessId",
+                "nativeName" : "Packaging of Trade Item._to.id.businessId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.id.businessId"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              },
+              {
+                "name" : "Packaging_of_Trade_Item__to_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "Packaging of Trade Item._to.state",
+                "nativeName" : "Packaging of Trade Item._to.state",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "fieldName",
+                    "value" : "Packaging of Trade Item._to.state"
+                  },
+                  {
+                    "name" : "fieldGroupName",
+                    "value" : "Relationship"
+                  },
+                  {
+                    "name" : "isFieldGroupField",
+                    "value" : "true"
+                  },
+                  {
+                    "name" : "isFieldGroupAllowMany",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "packaging_of_trade_item"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "allowMany",
+                "value" : "false"
+              },
+              {
+                "name" : "recordType",
+                "value" : "Relationship"
+              },
+              {
+                "name" : "dataType",
+                "value" : "Object"
+              },
+              {
+                "name" : "solutionName",
+                "value" : "CUSTOM"
+              },
+              {
+                "name" : "guid",
+                "value" : "packaging_of_trade_item"
+              },
+              {
+                "name" : "storageType",
+                "value" : "Relationship"
+              },
+              {
+                "name" : "metaFields",
+                "value" : "{\"_fromBusinessEntity\":\"p360.item\",\"_toBusinessEntityName\":\"Shipping Packaging\",\"_toBusinessEntity\":\"shipping_packaging\",\"_fromBusinessEntityName\":\"Item\"}"
+              },
+              {
+                "name" : "fepGuid",
+                "value" : "packaging_of_trade_item"
+              },
+              {
+                "name" : "storage",
+                "value" : "graph"
+              },
+              {
+                "name" : "sharded",
+                "value" : "true"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "sourcePKey"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "businessId"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Item_number____",
+              "toField" : {
+                "name" : "Packaging_of_Trade_Item__from_id_businessId"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "Packaging_of_Trade_Item__to_id_businessId"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "o_relName",
+              "toField" : {
+                "name" : "relationship_id"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Item_number____",
+              "toField" : {
+                "name" : "Packaging_of_Trade_Item__from_id_sourcePKey"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Case_UPC",
+              "toField" : {
+                "name" : "Packaging_of_Trade_Item__to_id_sourcePKey"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "jobInstanceId",
+        "platformType" : {
+          "name" : "string"
+        },
+        "precision" : 30,
+        "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+        "scale" : 0
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-06-23 06:20:19 PDT"
+}

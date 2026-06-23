@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "5C0pNoVinojitxskLJQDal",
+    "name" : "mplt_UpperCase",
+    "type" : "DMAPPLET",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010WU440000000000018"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Changes alphabetic characters to uppercase.",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-06-23T13:20:28.391Z",
+  "objectRefs" : [ {
+    "id" : "7G23QDfXdwueD2c2doZtQ2",
+    "name" : "c_Uppercase",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7G23QDfXdwueD2c2doZtQ2"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts the input text to uppercase.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

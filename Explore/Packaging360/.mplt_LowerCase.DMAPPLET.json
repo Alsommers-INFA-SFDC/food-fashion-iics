@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "al6jylSjy7HeL3kBUjXDs5",
+    "name" : "mplt_LowerCase",
+    "type" : "DMAPPLET",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010WU44000000000001B"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Converts input text to lowercase characters.",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-06-23T13:20:28.374Z",
+  "objectRefs" : [ {
+    "id" : "15JWEyWnYMrdSziAZJBQgr",
+    "name" : "c_Lowercase",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "15JWEyWnYMrdSziAZJBQgr"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts the input text to lowercase.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

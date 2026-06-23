@@ -1,0 +1,230 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>PBBeMHck5qbbfUr-gt-169630-2025-10-02T22:14:16.674Z::pd.xml</types1:EntryId>
+      <types1:Name>Process_PalletCount_validation_-_Copy_1</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>mauricio.grocery</types1:CreatedBy>
+      <types1:CreationDate>2025-10-02T22:14:17Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="ay3tUKHVva2gtDMHjOH2ki"
+                  displayName="Process_PalletCount_validation  - Copy 1"
+                  name="Process_PalletCount_validation_-_Copy_1"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="Business entity ID"
+                          name="BE_id"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="Business entity type"
+                          name="BE_type"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="child ID for the shipping package"
+                      name="op_pallet_child_ID"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="total items in the shipping package"
+                      name="op_shipping_packaging_total_units"
+                      type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="number of cases"
+                      name="op_pallet_count_of_case"
+                      type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="number of cases in a layer"
+                      name="op_pallet_TI"
+                      type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="number of layers" name="op_pallet_HI" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="op_pallet_total_count_of_each" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="calculated value" name="op_total_item_calc" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="IsValid" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="temp_pallet_res" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="" name="temp_shipping_package_res" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+            </extData>
+            <flow id="w35d16a43-1504-4eae-b5b1-d61794c6b9ec">
+               <start id="ce64dd3de-4296-44bc-9b3d-33b38136bf18">
+                  <link id="z6c3c403b-02f5-403a-8a41-03facf1115c8"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Servicef76fbfd2-b883-4111-b85b-d891cb9b7102"/>
+               </start>
+               <service id="a172ZIwiN13Vrjnmrt7UVXyN-Servicef76fbfd2-b883-4111-b85b-d891cb9b7102">
+                  <title>Service_Auth</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput/>
+                  <link id="c16492619-38bb-42c3-9f77-13ac675b420e"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Service61db051d-99a7-4b85-a9b5-d6044c119971"/>
+               </service>
+               <service id="a172ZIwiN13Vrjnmrt7UVXyN-Service61db051d-99a7-4b85-a9b5-d6044c119971">
+                  <title>Service_queryPallet</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">pallet</parameter>
+                     <parameter name="businessId" source="field">input.BE_id</parameter>
+                  </serviceInput>
+                  <link id="u7a7c32c5-ed2f-4ec1-81b4-dffdbd910299"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Assignment138a0bd0-0689-4130-b201-528d21d25edc"/>
+               </service>
+               <service id="a172ZIwiN13Vrjnmrt7UVXyN-Service7cc2d4ab-e5f2-4f36-8aba-4a028057d712">
+                  <title>Service_queryChild_shippingPackaging</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">shipping_packaging</parameter>
+                     <parameter name="businessId" source="field">output.op_pallet_child_ID</parameter>
+                  </serviceInput>
+                  <link id="s4c73eb12-a6ff-4341-9c52-1d37deed8a05"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Assignment0875bebd-449d-4de4-935c-5d2e2860610c"/>
+               </service>
+               <assignment id="a172ZIwiN13Vrjnmrt7UVXyN-Assignment138a0bd0-0689-4130-b201-528d21d25edc">
+                  <title>Assignment to temp_pallet_res, op_pallet_child_ID, etc,</title>
+                  <operation source="field" to="temp.temp_pallet_res">output.beRecord</operation>
+                  <operation source="formula" to="output.op_pallet_child_ID">
+                     <expression language="XQuery">$temp.temp_pallet_res/child_gtin/businessId</expression>
+                  </operation>
+                  <operation source="formula" to="output.op_pallet_count_of_case">
+                     <expression language="XQuery">util:iif(util:isNull($temp.temp_pallet_res/count_of_case), -1, $temp.temp_pallet_res/count_of_case)</expression>
+                  </operation>
+                  <operation source="formula" to="output.op_pallet_total_count_of_each">
+                     <expression language="XQuery">util:iif(util:isNull($temp.temp_pallet_res/total_count_of_each), -1, $temp.temp_pallet_res/total_count_of_each)</expression>
+                  </operation>
+                  <operation source="formula" to="output.op_pallet_TI">
+                     <expression language="XQuery">util:iif(util:isNull($temp.temp_pallet_res/pallet_ti), -1, $temp.temp_pallet_res/pallet_ti)</expression>
+                  </operation>
+                  <operation source="formula" to="output.op_pallet_HI">
+                     <expression language="XQuery">util:iif(util:isNull($temp.temp_pallet_res/pallet_hi), -1, $temp.temp_pallet_res/pallet_hi)</expression>
+                  </operation>
+                  <link id="ld9be2a5c-4f98-414a-9f44-0654606dd1e2"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Service7cc2d4ab-e5f2-4f36-8aba-4a028057d712"/>
+               </assignment>
+               <assignment id="a172ZIwiN13Vrjnmrt7UVXyN-Assignment0875bebd-449d-4de4-935c-5d2e2860610c">
+                  <title>Assignment to temp_shipping_package_res, op_shipping_packaging_total_units</title>
+                  <operation source="field" to="temp.temp_shipping_package_res">output.beRecord</operation>
+                  <operation source="formula" to="output.op_shipping_packaging_total_units">
+                     <expression language="XQuery">util:toInteger($temp.temp_shipping_package_res/total_consumer_units_in_pack)</expression>
+                  </operation>
+                  <link id="y3d194600-4f90-46aa-afd3-3cc67fc4e0dc"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-Assignmentc1cc62f9-da00-4fae-8e4c-f00f91d18131"/>
+               </assignment>
+               <assignment id="a172ZIwiN13Vrjnmrt7UVXyN-Assignmentc1cc62f9-da00-4fae-8e4c-f00f91d18131">
+                  <title>Assignment to op_total_item_calc, IsValid</title>
+                  <operation source="formula" to="output.op_total_item_calc">
+                     <expression language="XQuery">$output.op_pallet_HI* $output.op_pallet_TI* $output.op_shipping_packaging_total_units</expression>
+                  </operation>
+                  <operation source="formula" to="output.IsValid">
+                     <expression language="XQuery">util:iif(xs:int( $output.op_total_item_calc ) = xs:int( $output.op_pallet_total_count_of_each ), "Valid", "Invalid")</expression>
+                  </operation>
+                  <link id="i64c4f259-a3d6-41d8-a80b-e72a975e3d78"
+                        targetId="a172ZIwiN13Vrjnmrt7UVXyN-end-qaddc9775-847a-45cf-9e62-ef22b3eb18c0"/>
+               </assignment>
+               <end id="a172ZIwiN13Vrjnmrt7UVXyN-end-qaddc9775-847a-45cf-9e62-ef22b3eb18c0">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>cc5608f0-aa9a-4ac4-92ed-e3546ecadd9e</ns1:Id>
+               <ns1:Name>test</ns1:Name>
+               <ns1:CreatedBy>mauricio.grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2025-10-02T22:14:17Z</ns1:CreationDate>
+               <ns1:ModifiedBy>mauricio.grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2025-10-02T22:14:17Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "BE_id": "1004133101105",
+    "BE_type": "pallet"
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>ay3tUKHVva2gtDMHjOH2ki</types1:GUID>
+      <types1:DisplayName>Process_PalletCount_validation  - Copy 1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:20:19.439Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

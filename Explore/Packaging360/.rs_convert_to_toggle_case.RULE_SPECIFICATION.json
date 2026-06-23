@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "42ENCNdIICGjdXKh9ghpMh",
+    "name" : "rs_convert_to_toggle_case",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "42ENCNdIICGjdXKh9ghpMh"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts input strings to toggle case.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-23T13:20:28.393Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "8Pf22Cf5CG0b4dTfiRde8z",
+    "name" : "mplt_TitleCase",
+    "type" : "DMAPPLET",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010WU44000000000000X"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Converts input text to title case, with dictionary-defined exceptions.",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-06-23T13:20:28.383Z",
+  "objectRefs" : [ {
+    "id" : "8jSg6c9BuSviU258N9LAwz",
+    "name" : "c_Titlecase",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "8jSg6c9BuSviU258N9LAwz"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts the input text to title case with dictionary-defined exceptions.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Packaging360"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

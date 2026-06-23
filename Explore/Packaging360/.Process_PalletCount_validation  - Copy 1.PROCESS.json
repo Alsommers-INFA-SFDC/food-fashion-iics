@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "ay3tUKHVva2gtDMHjOH2ki",
+    "name" : "Process_PalletCount_validation  - Copy 1",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "PBBeMHck5qbbfUr-gt-169630-2025-10-02T22:14:16.674Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : null,
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:20:28.376Z",
+  "objectRefs" : [ {
+    "id" : "5M2aGutT1W0cuT93uOFIi9",
+    "name" : "AppConnection-MDMSaaS",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0ZXXUfTRgpDqotx-gt-154704-2025-10-02T17:15:58.994Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "7G23QDfXdwueD2c2doZtQ2",
+    "name" : "c_Uppercase",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7G23QDfXdwueD2c2doZtQ2"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Converts the input text to uppercase.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-23T13:20:28.378Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

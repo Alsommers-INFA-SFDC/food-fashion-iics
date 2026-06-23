@@ -1,0 +1,167 @@
+{
+  "name" : "mp_inbound_goya_palletToHierarchy",
+  "runtimeEnvironmentId" : "@3UW2PyUnHdNblz2dydlzQJ",
+  "runtimeEnvironmentName" : "shared-sa-1IWbXpDC5S3dReCuulUuwb",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$Source$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "Source",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "originalPath" : "Source"
+      },
+      "sourceConnectionId" : "@aS74JYpKPaGbuOjo9Tz7U8",
+      "connectionName" : "GoogleCloudStore",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+          "label" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+          "metadataUpdated" : false
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "label" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "metadataUpdated" : false
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "dataFormat" : {
+        "formatId" : "Flat",
+        "dataFormatAttributes" : {
+          "escapeChar" : "\\",
+          "importColumnFromFirstLine" : "true",
+          "headerLineNumber" : "1",
+          "maxRowsToPreview" : "0",
+          "qualifierMode" : "MINIMAL",
+          "firstDataRow" : "2",
+          "generateHeader" : "true",
+          "delimiter" : ",",
+          "qualifier" : "\"",
+          "targetHeader" : "With Header",
+          "disableEscapeChar" : "true",
+          "codePage" : "UTF-8",
+          "fixedWidthMode" : "false"
+        }
+      },
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$hierarhcyRoot$",
+      "type" : "TARGET",
+      "label" : "hierarhcyRoot",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "hierarhcyRoot"
+      },
+      "targetConnectionId" : "@k0yJnaoonaaiNqVW8Nkl4B",
+      "connectionName" : "PIM_fepConnection",
+      "targetObject" : "Home/Custom Assets/Hierarchies/Trade Item Hierarchy(id=trade_item_hierarchy_hierarchy)/pallet_to_trade_item_hierarchy",
+      "targetObjectLabel" : "Home/Custom Assets/Hierarchies/Trade Item Hierarchy(id=trade_item_hierarchy_hierarchy)/pallet_to_trade_item_hierarchy",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "Home/Custom Assets/Hierarchies/Trade Item Hierarchy(id=trade_item_hierarchy_hierarchy)/pallet_to_trade_item_hierarchy",
+      "objectLabel" : "Home/Custom Assets/Hierarchies/Trade Item Hierarchy(id=trade_item_hierarchy_hierarchy)/pallet_to_trade_item_hierarchy",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "mappingId" : "@9Zfh0EA0wsojGMoPt0uHe1",
+  "mappingTemplateName" : "mp_inbound_goya_palletToPkg",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "inOutParameters" : [
+    {
+      "name" : "jobInstanceId",
+      "datatype" : "STRING",
+      "precision" : "30",
+      "scale" : "0",
+      "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+      "aggregationType" : "MAX"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "paramFileType" : "PARAM_FILE_LOCAL",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "specialCharacterSupport" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2026-06-23 06:20:20 PDT"
+}

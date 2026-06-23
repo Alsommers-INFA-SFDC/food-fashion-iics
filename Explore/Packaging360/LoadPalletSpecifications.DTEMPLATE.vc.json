@@ -1,0 +1,181 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "LoadPalletSpecifications",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "Pallet"
+      }
+    ],
+    "transformations" : [
+      {
+        "augmented" : "false",
+        "createTime" : "2025-11-04T20:28:05.048Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@9A7fEKxWmN7eRqGXR8hsIz",
+          "connectionName" : "Cloud Integration Hub",
+          "excludeDynamicFileNameField" : "false",
+          "object$" : {
+            "name" : "Pallet"
+          },
+          "objectType" : "PARAMETERIZED",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "augmented" : "false",
+        "createTime" : "2025-11-04T20:28:05.048Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "data"
+            },
+            "name" : "data",
+            "platformType" : {
+              "name" : "binary"
+            },
+            "precision" : 65535,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@aS74JYpKPaGbuOjo9Tz7U8",
+          "connectionName" : "GoogleCloudStore",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "label" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "objectName" : "goya_test_data_csv",
+            "objectType" : "googleStorage",
+            "path" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "data",
+                "fieldType" : "CONNECTOR",
+                "label" : "data",
+                "nativeName" : "data",
+                "nativeType" : "bytes",
+                "original" : "false",
+                "precision" : 65535,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "goya_test_data_csv"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "SegmentTitle",
+              "toField" : {
+                "name" : "data"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-06-23 06:20:19 PDT"
+}

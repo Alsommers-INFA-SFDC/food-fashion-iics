@@ -1,0 +1,147 @@
+{
+  "name" : "mt_palletSpecsUpdate",
+  "runtimeEnvironmentId" : "@bxhTOXHEE6FeYGfGx5L4WH",
+  "runtimeEnvironmentName" : "Informatica Cloud Hosted Agent",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$Source$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "Source",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objlabel" : "Pallet",
+        "objectParameterized" : "true",
+        "objectParamName" : "Pallet",
+        "objectParamType-mapping" : "DataObject",
+        "originalPath" : "Source"
+      },
+      "sourceConnectionId" : "@9A7fEKxWmN7eRqGXR8hsIz",
+      "connectionName" : "Cloud Integration Hub",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : true,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "Product_Specifications/ProductSpecifications",
+          "label" : "Product_Specifications/ProductSpecifications",
+          "metadataUpdated" : false
+        },
+        "singleMode" : false,
+        "objects" : [
+          {
+            "name" : "Product_Specifications/ProductSpecifications",
+            "label" : "Product_Specifications/ProductSpecifications",
+            "metadataUpdated" : false
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "objectParameterName" : "Pallet",
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$Target$",
+      "type" : "TARGET",
+      "label" : "Target",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "Target"
+      },
+      "targetConnectionId" : "@aS74JYpKPaGbuOjo9Tz7U8",
+      "connectionName" : "GoogleCloudStore",
+      "targetObject" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+      "targetObjectLabel" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+      "objectLabel" : "sandbox_unity_na/tech-sales/asommers/Goya/goya_test_data_csv",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "mappingId" : "@3oeOWleox38gg0fGZCPVqb",
+  "mappingTemplateName" : "LoadPalletSpecifications",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "parameterFileName" : "sandbox_unity_na/tech-sales/asommers/Goya/GPC_Data_flat.csv",
+  "paramFileType" : "PARAM_FILE_CLOUD",
+  "schemaMode" : "async",
+  "valid" : true,
+  "paramFileConnectionId" : "@aS74JYpKPaGbuOjo9Tz7U8",
+  "connectionName" : "GoogleCloudStore",
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "specialCharacterSupport" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2026-06-23 06:20:20 PDT"
+}
