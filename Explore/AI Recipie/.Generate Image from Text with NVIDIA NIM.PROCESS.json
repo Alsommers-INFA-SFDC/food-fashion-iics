@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "9AfYubSqAdfgUB69dDihOv",
+    "name" : "Generate Image from Text with NVIDIA NIM",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "WhKn7wporzYLnzY-gt-229020-2026-01-15T19:42:18.788274092Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "The process receives a query from Slack, sends to NVIDIA NIM multimodal action for creating an image from description, and returns the generated image to the Slack channel",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T16:04:01.947Z",
+  "objectRefs" : [ {
+    "id" : "91ZHSCP33JCgkBUHDWPyKS",
+    "name" : "Create Image",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "KAWa-gt-214545-2026-01-15T19:42:18.586762359Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Subprocess that creates an image from user text input using NVIDIA NIM multimodal action",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/AI Recipie"
+  }, {
+    "id" : "6JkZHVkS8GgiBJuMjBFnsz",
+    "name" : "SlackAIAgentConnection",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "xcnfXjISUXL86zq-gt-228836-2026-01-15T19:39:31.374808733Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Slack connection",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/AI Recipie"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

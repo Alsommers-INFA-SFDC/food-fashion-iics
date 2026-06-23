@@ -1,0 +1,146 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>6U4s7xvk0qZF3a-gt-204487-2026-02-03T22:00:51.926Z::pd.xml</types1:EntryId>
+      <types1:Name>listOfColorCodesUA</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-03T22:00:52Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-03T22:09:46Z</types1:ModificationDate>
+      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-03T22:06:49Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.listOfColorCodesUA/listOfColorCodesUA.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="1Qk2cLXllshgGZenShsF6Y"
+                  displayName="listOfColorCodesUA"
+                  name="listOfColorCodesUA"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="" name="UAColors" type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:R360_UAColors</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">7608YaelKzcfzdkFsMmoQO</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="o_color" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:R360_UAColors</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">7608YaelKzcfzdkFsMmoQO</option>
+                  </options>
+               </field>
+               <field description="" name="count" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="iteration" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="bae8fb54a-04c2-4abf-886f-a20b00524b03">
+               <start id="jb942fc5b-ecc3-42ed-a8e6-868d97c46d54">
+                  <link id="l238f1711-11fd-4fc5-a378-53d2931c1706"
+                        targetId="Decisiond61e5f35-20e4-40a6-85ab-6a58d87c2dbf"/>
+               </start>
+               <container id="Decisiond61e5f35-20e4-40a6-85ab-6a58d87c2dbf" type="exclusive">
+                  <title>count</title>
+                  <flow id="l68a6b65a-92a2-410f-b3a2-4b980592a7cf">
+                     <assignment id="Assignmentd535bf3d-b4d2-4e6f-9643-e2db96864ac8">
+                        <title>Assignment to o_color[1]/Name, o_color[1]/colorID</title>
+                        <operation source="formula" to="temp.o_color[1]/colorID">
+                           <expression language="XQuery">$temp.iteration</expression>
+                        </operation>
+                        <operation source="formula" to="temp.o_color[1]/Name">
+                           <expression language="XQuery">'Item '|| $temp.iteration</expression>
+                        </operation>
+                        <link id="yc87099e4-c253-4290-a071-f456f7af1033"
+                              targetId="Assignmentaa58c09c-b423-49ce-9da3-6498d1c3b32a"/>
+                     </assignment>
+                     <assignment id="Assignmentaa58c09c-b423-49ce-9da3-6498d1c3b32a">
+                        <title>Assignment 2</title>
+                        <operation source="formula" to="output.UAColors">
+                           <function name="list:append">
+                              <arg name="dest_field">{$output.UAColors}</arg>
+                              <arg name="new_field">{$temp.o_color}</arg>
+                           </function>
+                        </operation>
+                        <operation source="formula" to="temp.iteration">
+                           <expression language="XQuery">$temp.iteration + 1</expression>
+                        </operation>
+                        <link id="fad9607e6-45bd-4dfe-a945-51509ff4a1d4"
+                              targetId="Jumpf71f4b13-c233-4d63-bd7b-5c8d07d6cae6"/>
+                     </assignment>
+                     <jumpTo id="Jumpf71f4b13-c233-4d63-bd7b-5c8d07d6cae6">
+                        <link id="r84c26175-475c-4434-9d04-580491c052e3"
+                              targetId="Decisiond61e5f35-20e4-40a6-85ab-6a58d87c2dbf"/>
+                     </jumpTo>
+                  </flow>
+                  <flow id="fffea0ac3-894d-4fbe-b915-12f92d6bb81d">
+                     <link id="vec309ce9-4d2f-445f-a7ea-2bb9d55647aa"
+                           targetId="Decisiond61e5f35-20e4-40a6-85ab-6a58d87c2dbf"
+                           type="containerLink"/>
+                  </flow>
+                  <link id="i7acb40a3-c39e-4b5e-ab01-ff4cb954c5da"
+                        targetId="l68a6b65a-92a2-410f-b3a2-4b980592a7cf"
+                        type="containerLink">
+                     <condition source="formula">
+                        <function name="greater-or-equals">
+                           <arg name="left">{$temp.count}</arg>
+                           <arg name="right">{$temp.iteration}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="o0d1de330-6f72-40c3-8e84-a9d2d3867d5a"
+                        targetId="fffea0ac3-894d-4fbe-b915-12f92d6bb81d"
+                        type="containerLink"/>
+                  <link id="ieadc9cae-2565-4e44-912f-5b5c92d9d622"
+                        targetId="end-ge26bd6d0-1325-4f5c-a095-851ec1a2c652"/>
+               </container>
+               <end id="end-ge26bd6d0-1325-4f5c-a095-851ec1a2c652">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>1Qk2cLXllshgGZenShsF6Y</types1:GUID>
+      <types1:DisplayName>listOfColorCodesUA</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.559Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

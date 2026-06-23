@@ -1,0 +1,174 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>f3A1vyoY2G7QnG5-gt-190750-2026-02-03T18:52:57.093Z::pd.xml</types1:EntryId>
+      <types1:Name>FindHierachyRelationship</types1:Name>
+      <types1:ParentFlowIds>2EN15NYLonEBNjD-gt-206523-2026-02-03T23:31:25.857Z::gt.xml,A701BchMYeOm6S6-gt-188879-2026-02-03T18:53:52.43Z::gt.xml,fVvEnPCOkSSHCwk-gt-235403-2026-02-04T16:45:31.087Z::gt.xml,kYeJHQjATO9pH8s-gt-203906-2026-02-03T23:09:18.167Z::gt.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-03T18:52:57Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-04T15:43:59Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-04T15:44:02Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.FindHierachyRelationship/FindHierachyRelationship.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="1ilkvFsVF08jw7N07p2eau"
+                  displayName="FindHierachyRelationship"
+                  name="FindHierachyRelationship"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="in_businessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_relationshipCode"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_entityType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_relationshipName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_hierarchyType" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_CountOfNodes" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_NodeNames" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_relationshipBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="ca54a0d4c-356e-4f44-b7ce-8ad3d61096eb">
+               <start id="j20dcc81d-451f-4fdc-849c-f4f8142c1f49">
+                  <link id="k674c7961-0081-4bb4-a465-19f6d342837c"
+                        targetId="a11ilkvFsVF08jw7N07p2eau-Servicef03e2935-64fd-4979-97a6-305052c8b948"/>
+               </start>
+               <service id="a11ilkvFsVF08jw7N07p2eau-Servicef03e2935-64fd-4979-97a6-305052c8b948">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <link id="i13f2f69d-9179-4cc8-9eec-e06dbf785b53"
+                        targetId="a11ilkvFsVF08jw7N07p2eau-Assignmentabbdad9e-a6dd-4b74-b7c3-7e66ed979b60"/>
+               </service>
+               <service id="a11ilkvFsVF08jw7N07p2eau-Service1c71e422-ac00-4403-a816-432ae4ba858c">
+                  <title>ValidateHierarchyRelationshipExists</title>
+                  <serviceName>AppConnection-MDMSaaS:Valiate Taxonomy</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionID" source="field">output.sessionId</parameter>
+                     <parameter name="relationshipName" source="field">input.in_relationshipCode</parameter>
+                     <parameter name="body" source="field">temp.tmp_relationshipBody</parameter>
+                  </serviceInput>
+                  <link id="g95eb9aad-8403-4d61-b3d6-7373e675d5ff"
+                        targetId="a11ilkvFsVF08jw7N07p2eau-Assignmentd9b31333-8af3-4178-a566-a72fafbe25a9"/>
+               </service>
+               <assignment id="a11ilkvFsVF08jw7N07p2eau-Assignmentabbdad9e-a6dd-4b74-b7c3-7e66ed979b60">
+                  <title>Assignment to tmp_relationshipBody</title>
+                  <operation source="formula" to="temp.tmp_relationshipBody">
+                     <expression language="XQuery">let $in_entityType := $input.in_entityType
+let $in_businessId := $input.in_businessId 
+return concat(
+  '{"filter": {"_from": {"businessEntity": "', $in_entityType,
+  '", "businessId": "', $in_businessId, '"}}}'
+)
+</expression>
+                  </operation>
+                  <link id="cbc122262-4d5e-46ac-9512-5fae6c15a915"
+                        targetId="a11ilkvFsVF08jw7N07p2eau-Service1c71e422-ac00-4403-a816-432ae4ba858c"/>
+               </assignment>
+               <assignment id="a11ilkvFsVF08jw7N07p2eau-Assignmentd9b31333-8af3-4178-a566-a72fafbe25a9">
+                  <title>Assignment to o_CountOfNodes, o_NodeNames</title>
+                  <operation source="field" to="output.o_CountOfNodes">output.numberOfElements</operation>
+                  <operation source="formula" to="output.o_NodeNames">
+                     <expression language="XQuery">$output.nodeNames</expression>
+                  </operation>
+                  <link id="maf98deb1-c23b-4c7e-b645-6fe2a4e3eee7"
+                        targetId="a11ilkvFsVF08jw7N07p2eau-end-b0bcaeda9-192c-42fc-96c5-a4a656b8aa6c"/>
+               </assignment>
+               <end id="a11ilkvFsVF08jw7N07p2eau-end-b0bcaeda9-192c-42fc-96c5-a4a656b8aa6c">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>df9771ba-9e41-4e7a-a473-18f0767325b6</ns1:Id>
+               <ns1:Name>new</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-03T19:28:18Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-05T22:26:40Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_businessId": "6010002",
+    "in_relationshipCode": "infa360rtl_product_to_p360_category_1770053844",
+    "in_entityType": "infa360rtl_product"
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>1ilkvFsVF08jw7N07p2eau</types1:GUID>
+      <types1:DisplayName>FindHierachyRelationship</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.651Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

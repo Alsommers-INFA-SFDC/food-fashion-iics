@@ -1,0 +1,87 @@
+{
+  "objectInfo" : {
+    "id" : "3xiz7icghctcGT0iaq2qyD",
+    "name" : "NutritionValidation - enrichment",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "m4gkVgglxbdypKw-gt-24683-2026-01-29T22:53:54.197Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T16:04:01.946Z",
+  "objectRefs" : [ {
+    "id" : "6zFEQddDgYRl8eNbgBKnse",
+    "name" : "InputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "GQ9zbgdwUiQLnzY-gt-25294-2026-01-29T23:11:20.526Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/FoodEnrichment"
+  }, {
+    "id" : "938wFTN60RhcuT0Uv2vT8Z",
+    "name" : "FoodFacts",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Jyaaaaa-gt-157801-2025-10-02T18:18:32.569Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Integrations"
+  }, {
+    "id" : "1CBg0tY8bmqd5pSquP7pI1",
+    "name" : "OutputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "wQuoJ49ARJi4tci-gt-24991-2026-01-29T23:12:53.356Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/FoodEnrichment"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,288 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>WhKn7wporzYLnzY-gt-229020-2026-01-15T19:42:18.788274092Z::pd.xml</types1:EntryId>
+      <types1:Name>Generate_Image_from_Text_with_NVIDIA_NIM</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description>The process receives a query from Slack, sends to NVIDIA NIM multimodal action for creating an image from description, and returns the generated image to the Slack channel</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-01-15T19:42:19Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="9AfYubSqAdfgUB69dDihOv"
+                  displayName="Generate Image from Text with NVIDIA NIM"
+                  name="Generate_Image_from_Text_with_NVIDIA_NIM"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description>The process receives a query from Slack, sends to NVIDIA NIM multimodal action for creating an image from description, and returns the generated image to the Slack channel</description>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="webhook" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="Validation response" name="challenge" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="User prompt" name="Message" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Slack channel ID" name="Channel_ID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Slack team ID" name="Team_ID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Check if it is a bot response"
+                      name="Skip_Bot_Response"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Slack request object"
+                      name="Slack_Request"
+                      type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Process title" name="Title" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Image name" name="File_Name" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Image size" name="File_Size" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Slack image URL" name="Image_URL" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="Slack image ID" name="Image_ID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload inputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="recipeName">Generate Image with NVIDIA NIM</nvpair>
+            </extData>
+            <flow id="zeb3f30e2-5b5c-4d1f-a0f7-7e4eba703650">
+               <start id="v505cdc65-5f91-4eac-9d54-5aa60f9ebf72">
+                  <link id="k883f2716-4500-4837-8762-f09f46c3192f"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-Assignmentf731335b-349a-436c-b31a-c904ed0a1328"/>
+               </start>
+               <assignment id="a157pNKCGHrEwkA9wJD9yDy4-Assignmentf731335b-349a-436c-b31a-c904ed0a1328">
+                  <title>Get Data from Message</title>
+                  <operation source="formula" to="output.challenge">
+                     <expression language="XQuery">$input.webhook/challenge</expression>
+                  </operation>
+                  <operation source="formula" to="temp.Message">
+                     <expression language="XQuery">$input.webhook/event[1]//text</expression>
+                  </operation>
+                  <operation source="formula" to="temp.Channel_ID">
+                     <expression language="XQuery">$input.webhook/event/channel</expression>
+                  </operation>
+                  <operation source="formula" to="temp.Team_ID">
+                     <expression language="XQuery">$input.webhook/team_id </expression>
+                  </operation>
+                  <operation source="formula" to="temp.Skip_Bot_Response">
+                     <expression language="XQuery">$input.webhook/event/bot_id</expression>
+                  </operation>
+                  <link id="w157622f3-bcf0-4021-8415-624ab5410f3f"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-Milestone2292ec51-dea3-44cf-a7f2-28b6363351e1"/>
+               </assignment>
+               <assignment id="a157pNKCGHrEwkA9wJD9yDy4-macihohg">
+                  <title>Prepare Slack Upload File PO</title>
+                  <operation source="constant" to="temp.File_Name">image.png</operation>
+                  <operation source="formula" to="temp.File_Size">
+                     <expression language="XQuery">sff:getAttachmentSize($output.Response)</expression>
+                  </operation>
+                  <link id="b18c7ae82-dcfc-455c-9794-bf060a5093dd"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-mb92mvfo"/>
+               </assignment>
+               <assignment id="a157pNKCGHrEwkA9wJD9yDy4-mb935j6v">
+                  <title>Save Image URL</title>
+                  <operation source="formula" to="temp.Image_URL">
+                     <expression language="XQuery">$output.response/upload_url </expression>
+                  </operation>
+                  <operation source="formula" to="temp.Image_ID">
+                     <expression language="XQuery">$output.response/file_id</expression>
+                  </operation>
+                  <link id="g5aea3b51-1671-43da-a405-714ec4dbef9f"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-mb935j83"/>
+               </assignment>
+               <assignment id="a157pNKCGHrEwkA9wJD9yDy4-mb935j4o">
+                  <title>Prepare Slack Request PO</title>
+                  <operation source="formula" to="temp.Slack_Request">
+                     <expression language="XQuery">&lt;root xmlns:m="urn:informatica:ae:xquery:json2xml:meta-data"&gt;
+&lt;files m:isArray="true"&gt;
+&lt;id&gt;{$temp.Image_ID}&lt;/id&gt;
+&lt;/files&gt;
+&lt;channel_id&gt;{$temp.Channel_ID}&lt;/channel_id&gt;
+&lt;/root&gt;</expression>
+                  </operation>
+                  <link id="r3c7f2c58-d889-4b01-8eca-9a95186daad9"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-Serviceb1f53af7-12a2-4845-a415-4256a2e57f71"/>
+               </assignment>
+               <milestone id="a157pNKCGHrEwkA9wJD9yDy4-Milestone2292ec51-dea3-44cf-a7f2-28b6363351e1">
+                  <title>Milestone 1</title>
+                  <link id="ab0ac262a-5a40-4d6a-85e2-659942cabe4d"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-mab981ww"/>
+               </milestone>
+               <container id="a157pNKCGHrEwkA9wJD9yDy4-mab981ww" type="exclusive">
+                  <title>Skip Bot Response</title>
+                  <flow id="g8082794a-0a97-4fe1-ad23-10cbd5469a15">
+                     <link id="pf846c4d4-36e7-4ff2-99de-81af9a00a799"
+                           targetId="a157pNKCGHrEwkA9wJD9yDy4-mab981ww"
+                           type="containerLink"/>
+                  </flow>
+                  <flow id="q588985fd-32e4-4c82-96e5-46536113c3b0">
+                     <assignment id="a157pNKCGHrEwkA9wJD9yDy4-mafdb9g0">
+                        <title>Set Process Title</title>
+                        <operation source="formula" to="temp.Title">
+                           <expression language="XQuery">ipd:setProcessTitle("Text to Image Generation (skip bot answer)")</expression>
+                        </operation>
+                        <link id="v93376c52-399a-4055-8e80-0e206ad3347f"
+                              targetId="a157pNKCGHrEwkA9wJD9yDy4-mab981xu"/>
+                     </assignment>
+                     <end id="a157pNKCGHrEwkA9wJD9yDy4-mab981xu">
+                        <title>End</title>
+                     </end>
+                  </flow>
+                  <link id="j05c235fc-3e48-4335-b9c4-e4dc3cda27ad"
+                        targetId="g8082794a-0a97-4fe1-ad23-10cbd5469a15"
+                        type="containerLink">
+                     <condition source="formula">
+                        <function name="string-equals">
+                           <arg name="left">{$temp.Skip_Bot_Response}</arg>
+                           <arg name="right"/>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="z7ba3c917-1beb-4fda-b729-52f1801abfc8"
+                        targetId="q588985fd-32e4-4c82-96e5-46536113c3b0"
+                        type="containerLink"/>
+                  <link id="z96642a6d-ace2-407d-969d-34b9920a34ef"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-Subprocess65465563-5b33-47f9-8b2b-546b3380522a"/>
+               </container>
+               <subflow id="a157pNKCGHrEwkA9wJD9yDy4-Subprocess65465563-5b33-47f9-8b2b-546b3380522a">
+                  <title>Generate Image</title>
+                  <subflowGUID>91ZHSCP33JCgkBUHDWPyKS</subflowGUID>
+                  <subflowPath>Create_Image</subflowPath>
+                  <appliesTo/>
+                  <runForEach>false</runForEach>
+                  <input>
+                     <parameter name="User_Input" source="field" updatable="true">temp.Message</parameter>
+                  </input>
+                  <outputDef>
+                     <field description="Generated image" name="Response" type="attachment">
+                        <options>
+                           <option hide="true" name="count">1</option>
+                           <option name="maxsize">5242880</option>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                  </outputDef>
+                  <link id="m1955c519-a3e8-424b-a125-fdb97a670ae2"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-macihohg"/>
+               </subflow>
+               <service id="a157pNKCGHrEwkA9wJD9yDy4-mb92mvfo">
+                  <title>Fetch Objects</title>
+                  <serviceName>SlackAIAgentConnection:Fetch Objects</serviceName>
+                  <serviceGUID>6JkZHVkS8GgiBJuMjBFnsz</serviceGUID>
+                  <serviceInput>
+                     <parameter name="method" source="constant">files.getUploadURLExternal</parameter>
+                     <parameter name="queryParams" source="formula">
+                        <expression language="XQuery">&lt;root&gt;
+&lt;filename&gt;{$temp.File_Name }&lt;/filename&gt;
+&lt;length&gt;{$temp.File_Size }&lt;/length&gt;
+&lt;/root&gt;</expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="xf8924ac1-bf90-4ac2-bf46-f8ef7b6c1a7b"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-mb935j6v"/>
+               </service>
+               <service id="a157pNKCGHrEwkA9wJD9yDy4-mb935j83">
+                  <title>Upload File</title>
+                  <serviceName>SlackAIAgentConnection:Upload File</serviceName>
+                  <serviceGUID>6JkZHVkS8GgiBJuMjBFnsz</serviceGUID>
+                  <serviceInput>
+                     <parameter name="url" source="field">temp.Image_URL</parameter>
+                     <parameter name="file" source="field">output.Response</parameter>
+                  </serviceInput>
+                  <link id="we3e662d4-f831-4065-b877-7baff533e1e8"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-mb935j4o"/>
+               </service>
+               <service id="a157pNKCGHrEwkA9wJD9yDy4-Serviceb1f53af7-12a2-4845-a415-4256a2e57f71">
+                  <title>Update Objects</title>
+                  <serviceName>SlackAIAgentConnection:Update Objects</serviceName>
+                  <serviceGUID>6JkZHVkS8GgiBJuMjBFnsz</serviceGUID>
+                  <serviceInput>
+                     <parameter name="method" source="constant">files.completeUploadExternal</parameter>
+                     <parameter name="requestBody" source="formula">
+                        <expression language="XQuery">$temp.Slack_Request </expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="d82659434-753a-47ed-ad42-1ddbc5d505dc"
+                        targetId="a157pNKCGHrEwkA9wJD9yDy4-end-m7a377453-1ed1-4d91-bdec-bd7ad2f0a215"/>
+               </service>
+               <end id="a157pNKCGHrEwkA9wJD9yDy4-end-m7a377453-1ed1-4d91-bdec-bd7ad2f0a215">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>9AfYubSqAdfgUB69dDihOv</types1:GUID>
+      <types1:DisplayName>Generate Image from Text with NVIDIA NIM</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.538Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "cfLNRYyah4of3FYoqQtXCD",
+    "name" : "FindColorValues",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "KDC0hCHbf2XZPnE-gt-205895-2026-02-03T22:56:35.59Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T16:04:01.944Z",
+  "objectRefs" : [ {
+    "id" : "9F26HlBAtn2b7tP3cXixee",
+    "name" : "r360API",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "SlCCKpNz6HKoJBU-gt-152749-2026-02-02T21:45:22.722Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "9AsCqbnfYiehOzmGf9Zbax",
+    "name" : "Search Products",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "rJGD4ARW8UBM7zs-gt-214612-2026-01-15T19:42:41.27537758Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Process that uses all required inputs to search for and retrieve a list of matching product records within Informatica Product 360",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T16:04:01.943Z",
+  "objectRefs" : [ {
+    "id" : "auXhZikk4gHhcrwgeXkXou",
+    "name" : "MDMConnection",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "VUJQhtGci3zymbd-gt-214570-2026-01-15T19:42:40.76655813Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "App connection that retrieves data from MDM APIs",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/AI Recipie"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

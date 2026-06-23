@@ -1,0 +1,209 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>46NFuxTtlI20hEL-gt-232566-2026-02-04T15:49:29.888Z::pd.xml</types1:EntryId>
+      <types1:Name>buildProductParadigm</types1:Name>
+      <types1:ParentFlowIds>2EN15NYLonEBNjD-gt-206523-2026-02-03T23:31:25.857Z::gt.xml,fVvEnPCOkSSHCwk-gt-235403-2026-02-04T16:45:31.087Z::gt.xml,wCs4MAreFRqXpIW-gt-235812-2026-02-04T17:09:46.366Z::gt.xml,wEg80EKZhHwzZsM-gt-2597139-2026-01-08T15:36:28.367Z::gt.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-04T15:49:30Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-04T15:51:21Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-04T16:02:10Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.buildProductParadigm/buildProductParadigm.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="8R6alVFZEz6emNPZXxTlgH"
+                  displayName="buildProductParadigm"
+                  name="buildProductParadigm"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="in_fromBusinessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_relationshipName"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_hierarhcyType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_fromEntityType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_toBusinessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_toEntityType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_ppBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_postPPBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="le83af017-b340-4707-b241-c559d4e54661">
+               <start id="u7d4361c0-33ed-417b-b8b5-fc1ab22acd24">
+                  <link id="l4db44324-8259-497e-9c64-2a088f4c0f8f"
+                        targetId="a18R6alVFZEz6emNPZXxTlgH-Service8ed87b83-bd00-4db8-bb28-33676f3611bc"/>
+               </start>
+               <service id="a18R6alVFZEz6emNPZXxTlgH-Service8ed87b83-bd00-4db8-bb28-33676f3611bc">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <link id="x33d6514c-7ed2-41b8-807c-75de58dcb25b"
+                        targetId="a18R6alVFZEz6emNPZXxTlgH-Assignmentaba14641-6970-4c13-bb50-319239094ac6"/>
+               </service>
+               <assignment id="a18R6alVFZEz6emNPZXxTlgH-Assignmentaba14641-6970-4c13-bb50-319239094ac6">
+                  <title>Assignment to tmp_postHierarchyBody, in_toBusinessId, etc,</title>
+                  <operation source="formula" to="temp.tmp_postPPBody">
+                     <expression language="XQuery">let $fromEntity := $input.in_fromEntityType 
+let $fromId := $input.in_fromBusinessId 
+let $toEntity := $input.in_toEntityType 
+let $toId := $input.in_toBusinessId
+return
+  concat(
+    '{',
+      '"_from": {',
+        '"businessEntity": "', $input.in_fromEntityType , '", ',
+        '"businessId": "', $input.in_fromBusinessId , '"',
+      '}, ',
+      '"_to": {',
+        '"businessEntity": "', $input.in_toEntityType , '", ',
+        '"businessId": "', $input.in_toBusinessId , '"',
+      '}',
+    '}'
+  )
+</expression>
+                  </operation>
+                  <operation source="field" to="output.o_ppBody">temp.tmp_postPPBody</operation>
+                  <link id="t13df54be-1dc0-4b68-bd5f-a4c011344d99"
+                        targetId="a18R6alVFZEz6emNPZXxTlgH-end-s7b8d21a7-134d-4f5e-96a8-251ec00a218b"/>
+               </assignment>
+               <end id="a18R6alVFZEz6emNPZXxTlgH-end-s7b8d21a7-134d-4f5e-96a8-251ec00a218b">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>cf3ddae2-33d1-4eec-85bb-651cd6209077</ns1:Id>
+               <ns1:Name>iou</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-04T15:49:30Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-04T15:49:30Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "MDM0000000255T",
+    "in_relationshipName": "in",
+    "in_hierarhcyType": "name_of_hierarhcy",
+    "in_fromEntityType": "category",
+    "in_toBusinessId": "shoes &amp; Socks",
+    "in_toEntityType": "entity!"
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>61e03bd6-4b83-4226-98d2-b0454178000b</ns1:Id>
+               <ns1:Name>tes</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-04T15:49:30Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-04T15:49:30Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "",
+    "in_relationshipName": "",
+    "in_hierarhcyType": "",
+    "in_fromEntityType": "",
+    "in_toBusinessId": "",
+    "in_toEntityType": ""
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>166ac4b3-229b-4ffb-875b-09729e69cbae</ns1:Id>
+               <ns1:Name>test</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-04T15:49:30Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-04T15:49:30Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "",
+    "in_relationshipName": "",
+    "in_hierarhcyType": "",
+    "in_fromEntityType": "",
+    "in_toBusinessId": "",
+    "in_toEntityType": ""
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>8R6alVFZEz6emNPZXxTlgH</types1:GUID>
+      <types1:DisplayName>buildProductParadigm</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.599Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

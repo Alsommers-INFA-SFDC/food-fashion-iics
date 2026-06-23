@@ -1,0 +1,122 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>pIeIssjqluQgabc-gt-1090439-2026-05-03T22:09:00.255Z::pd.xml</types1:EntryId>
+      <types1:Name>FindReferenceCodes</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-05-03T22:09:00Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-05-03T23:01:39Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-06-23T16:02:11Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.FindReferenceCodes/FindReferenceCodes.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="4MvMepIzDYcd4B77YifQG9"
+                  displayName="FindReferenceCodes"
+                  name="FindReferenceCodes"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="in_codeValueName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_valueCode" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_GLCode" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload inputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+            </extData>
+            <flow id="tcc2fd3a8-96b9-4ff9-9ed8-ef5aeed852e8">
+               <start id="c87465f3b-c13e-444e-b383-0cc79c6845bb">
+                  <link id="pb2043397-dbe8-4c1e-9ea2-9fa99992b5d1"
+                        targetId="a1cfLNRYyah4of3FYoqQtXCD-Servicee7eb291b-967b-4917-aade-69efbfcb81bf"/>
+               </start>
+               <service id="a1cfLNRYyah4of3FYoqQtXCD-Servicee7eb291b-967b-4917-aade-69efbfcb81bf">
+                  <title>r360LogIn</title>
+                  <serviceName>r360API:r360LogIn</serviceName>
+                  <serviceGUID>9F26HlBAtn2b7tP3cXixee</serviceGUID>
+                  <serviceInput/>
+                  <link id="w4175a1c3-3eb3-4f52-97c7-1fd10c3eadc3"
+                        targetId="Service0ccbeeea-8ff4-41f8-be96-8fd94ec1b293"/>
+               </service>
+               <service id="Service0ccbeeea-8ff4-41f8-be96-8fd94ec1b293">
+                  <title>GetCodeListValueDetails</title>
+                  <serviceName>r360API:GetCodeListValueDetails</serviceName>
+                  <serviceGUID>9F26HlBAtn2b7tP3cXixee</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field" updatable="true">output.sessionId</parameter>
+                     <parameter name="codeListKey" source="constant">69f4fb1613c1e3121747181c</parameter>
+                     <parameter name="Code" source="field" updatable="true">input.in_codeValueName</parameter>
+                  </serviceInput>
+                  <link id="g9a0fd31d-3e6d-4219-89da-24b3fdcbac95"
+                        targetId="Assignmentfb536506-a942-4008-88ab-245cf8d746a5"/>
+               </service>
+               <assignment id="Assignmentfb536506-a942-4008-88ab-245cf8d746a5">
+                  <title>Assignment to o_valueCode, o_GLCode</title>
+                  <operation source="field" to="output.o_valueCode">output.Code</operation>
+                  <operation source="field" to="output.o_GLCode">output.GLCode</operation>
+                  <link id="r0f720b69-3a46-4de1-8f34-417422c1b759"
+                        targetId="a1cfLNRYyah4of3FYoqQtXCD-end-r20b7ae99-2630-447a-aea0-a13877ab700d"/>
+               </assignment>
+               <end id="a1cfLNRYyah4of3FYoqQtXCD-end-r20b7ae99-2630-447a-aea0-a13877ab700d">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>c8eabd90-cc27-43d7-9a59-6888887bf0a2</ns1:Id>
+               <ns1:Name>newcolor</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-05-03T22:09:00Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-05-03T22:09:00Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_codeValueName": "Dark Orange"
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>4MvMepIzDYcd4B77YifQG9</types1:GUID>
+      <types1:DisplayName>FindReferenceCodes</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.617Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

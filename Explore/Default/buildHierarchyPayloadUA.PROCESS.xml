@@ -1,0 +1,252 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>Fn2H0Fdw8jIw8jI-gt-190574-2026-02-03T20:02:05.02Z::pd.xml</types1:EntryId>
+      <types1:Name>buildHierarchyPayloadUA</types1:Name>
+      <types1:ParentFlowIds>2EN15NYLonEBNjD-gt-206523-2026-02-03T23:31:25.857Z::gt.xml,A701BchMYeOm6S6-gt-188879-2026-02-03T18:53:52.43Z::gt.xml,fVvEnPCOkSSHCwk-gt-235403-2026-02-04T16:45:31.087Z::gt.xml,kYeJHQjATO9pH8s-gt-203906-2026-02-03T23:09:18.167Z::gt.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-03T20:02:05Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-04T16:29:02Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-04T16:29:08Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.buildHierarchyPayloadUA/buildHierarchyPayloadUA.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="4QstRXAivZPkORo2fqEDe6"
+                  displayName="buildHierarchyPayloadUA"
+                  name="buildHierarchyPayloadUA"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="in_fromBusinessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_relationshipName"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_hierarhcyType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_fromEntityType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_toBusinessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="in_toEntityType"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_hierarchyBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_CategoryName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_categoryCode" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_postHierarchyBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="temp_toBusinessID_raw" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="qc090521d-e69d-4339-bae6-570fc2f47d41">
+               <start id="m5ef22eef-42b9-4e01-a86f-d0752a07af7e">
+                  <link id="m43c92e05-ac53-4d45-8da5-1619356ebffd"
+                        targetId="a14QstRXAivZPkORo2fqEDe6-Service8ed87b83-bd00-4db8-bb28-33676f3611bc"/>
+               </start>
+               <service id="a14QstRXAivZPkORo2fqEDe6-Service8ed87b83-bd00-4db8-bb28-33676f3611bc">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <link id="h540e4ed7-c1a3-49a8-89dd-740e5b958767"
+                        targetId="a14QstRXAivZPkORo2fqEDe6-Service7e1bbf39-db62-4912-b242-8be144d44679"/>
+               </service>
+               <service id="a14QstRXAivZPkORo2fqEDe6-Service7e1bbf39-db62-4912-b242-8be144d44679">
+                  <title>Get BE record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">infa360rtl_product</parameter>
+                     <parameter name="businessId" source="field">input.in_fromBusinessId</parameter>
+                  </serviceInput>
+                  <link id="d4aff9dcf-6d16-4021-90de-53348f00f37f"
+                        targetId="a14QstRXAivZPkORo2fqEDe6-Assignmentaba14641-6970-4c13-bb50-319239094ac6"/>
+               </service>
+               <assignment id="a14QstRXAivZPkORo2fqEDe6-Assignmentaba14641-6970-4c13-bb50-319239094ac6">
+                  <title>Assignment to tmp_postHierarchyBody, in_toBusinessId, etc,</title>
+                  <operation source="formula" to="temp.temp_toBusinessID_raw">
+                     <expression language="XQuery">if (empty( $output.productType )) then
+  $output.productCategory 
+else
+  $output.productType 
+</expression>
+                  </operation>
+                  <operation source="formula" to="input.in_toBusinessId">
+                     <expression language="XQuery">replace(
+replace(
+replace ($temp.temp_toBusinessID_raw , " &amp;amp; ", '_')
+,' ', '_')
+,'-','')</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_postHierarchyBody">
+                     <expression language="XQuery">let $fromEntity := $input.in_fromEntityType 
+let $fromId := $input.in_fromBusinessId 
+let $toEntity := $input.in_toEntityType 
+let $toId := $input.in_toBusinessId
+return
+  concat(
+    '{',
+      '"_from": {',
+        '"businessEntity": "', $input.in_fromEntityType , '", ',
+        '"businessId": "', $input.in_fromBusinessId , '"',
+      '}, ',
+      '"_to": {',
+        '"businessEntity": "', $input.in_toEntityType , '", ',
+        '"businessId": "', $input.in_toBusinessId , '"',
+      '}',
+    '}'
+  )
+</expression>
+                  </operation>
+                  <operation source="field" to="output.o_CategoryName">temp.temp_toBusinessID_raw</operation>
+                  <operation source="field" to="output.o_hierarchyBody">temp.tmp_postHierarchyBody</operation>
+                  <operation source="field" to="output.o_categoryCode">input.in_toBusinessId</operation>
+                  <link id="h17a51248-b634-42a4-a67f-32a89b9cf2da"
+                        targetId="a14QstRXAivZPkORo2fqEDe6-end-s7b8d21a7-134d-4f5e-96a8-251ec00a218b"/>
+               </assignment>
+               <end id="a14QstRXAivZPkORo2fqEDe6-end-s7b8d21a7-134d-4f5e-96a8-251ec00a218b">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>a7cbb018-4f37-4d4c-9322-25797060e754</ns1:Id>
+               <ns1:Name>iou</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-03T20:44:09Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-05T15:25:05Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "6013245",
+    "in_relationshipName": "infa360rtl_product_to_p360_category_1770053844",
+    "in_hierarhcyType": "product_classification_hierarchy",
+    "in_fromEntityType": "product",
+    "in_toBusinessId": "leggings",
+    "in_toEntityType": "p360.category"
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>9003cb7b-8bf8-45d2-990e-700c68fc49c9</ns1:Id>
+               <ns1:Name>tes</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-03T20:43:57Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-03T20:43:57Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "",
+    "in_relationshipName": "",
+    "in_hierarhcyType": "",
+    "in_fromEntityType": "",
+    "in_toBusinessId": "",
+    "in_toEntityType": ""
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>59b3b872-812f-42ed-a258-7acfb41f5397</ns1:Id>
+               <ns1:Name>test</ns1:Name>
+               <ns1:CreatedBy>Alex.Grocery</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-03T20:44:02Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Alex.Grocery</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-03T20:44:02Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "in_fromBusinessId": "",
+    "in_relationshipName": "",
+    "in_hierarhcyType": "",
+    "in_fromEntityType": "",
+    "in_toBusinessId": "",
+    "in_toEntityType": ""
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>4QstRXAivZPkORo2fqEDe6</types1:GUID>
+      <types1:DisplayName>buildHierarchyPayloadUA</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T16:04:01.561Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
