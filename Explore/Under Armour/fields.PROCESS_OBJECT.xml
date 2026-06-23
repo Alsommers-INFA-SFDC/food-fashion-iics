@@ -1,0 +1,59 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>sXL86zqzm5Y6tMF-gt-2605036-2026-01-08T20:55:44.296Z::po.xml</types1:EntryId>
+      <types1:Name>fields</types1:Name>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-08T20:55:44Z</types1:CreationDate>
+      <types1:ModifiedBy>Ben.GS1</types1:ModifiedBy>
+      <types1:ModificationDate>2026-01-09T15:44:56Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="fields"
+                        isByCopy="true"
+                        name="fields">
+            <description/>
+            <tags/>
+            <detail>
+               <field label=""
+                      name="fieldName"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label=""
+                      name="dtsp"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label=""
+                      name="sys"
+                      nullable="true"
+                      required="false"
+                      type="reference">
+                  <options>
+                     <option name="relationshipName">Child</option>
+                     <option name="referenceTo">$po:System</option>
+                     <option name="guid">6D4xjyvrt4ibteFxGPwDaq</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>iHOwAi5YEYslO9dVF4JACw</types1:GUID>
+      <types1:DisplayName>fields</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.257Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

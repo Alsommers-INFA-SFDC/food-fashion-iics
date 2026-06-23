@@ -1,0 +1,848 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>gchwAQlBWlD2pHA-gt-147854-2026-02-02T19:07:52.101Z::gt.xml</types1:EntryId>
+      <types1:Name>Create_Variants_and_SKUs_from_Product</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-02T19:07:52Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-02T20:31:45Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="Create Variants and SKUs from Product"
+                         doneOnEndStep="false"
+                         name="Create_Variants_and_SKUs_from_Product"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="null"
+                          name="in_EachBusinessId"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="null"
+                          name="in_ItemName"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="null"
+                          name="in_variantColors"
+                          required="false"
+                          type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="tmp_itemBusinessID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_itemName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_casePayload" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_hierarchyInternalId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_rootAssignBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_eachAssignBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_newHierarhcyURL" type="url">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="urlDisplayReadonlyAs">Link</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_colorVariants" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="a14MPLcDuEZFSeDbR0ORUPWS-start-udb9edc29-ea1e-411f-b4c9-a2a6a1c3d903">
+                  <title>Create Variants and SKUs from Product</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null"
+                             id="ud68a42d3-7f80-4d3d-8699-3c2557b3fe2d"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Serviceb064ad7b-9f71-495b-8361-d33278881ab0">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="a14MPLcDuEZFSeDbR0ORUPWS-Screen1736941d-f1f5-45b4-838c-9d3a2356cbf2">
+                  <title>Screen 1</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_palletPayLoad" readonly="readonly" type="text" value="tmp_palletPayLoad (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;description&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_case_description" readonly="readonly" type="text" value="tmp_case_description (temp)"&gt;&lt;/p&gt;
+&lt;p&gt;gtin&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_case_gtin" readonly="readonly" type="text" value="tmp_case_gtin (temp)"&gt;&lt;/p&gt;
+&lt;p&gt;assinBody&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_caseAssignBody" readonly="readonly" type="text" value="tmp_caseAssignBody (temp)"&gt;&lt;/p&gt;
+&lt;p&gt;casePayload&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_casePayload" readonly="readonly" type="text" value="tmp_casePayload (temp)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="q8b30f0a7-16dd-41f3-9b93-6b8202b065d1"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Servicea5c43991-c48a-4817-b6ac-282f019b53ac">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.tmp_palletPayLoad"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_case_description"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_case_gtin"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_caseAssignBody"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_casePayload"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="a14MPLcDuEZFSeDbR0ORUPWS-Screen644fe594-80a2-4082-afe4-4090d1bdbcda">
+                  <title>RootAdd</title>
+                  <body contentType="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;case to pallet&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_packToPallet" readonly="readonly" type="text" value="tmp_packToPallet (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;each to case&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_eachToPack" readonly="readonly" type="text" value="tmp_eachToPack (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;hierhacy ID&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_hierarchyInternalId" readonly="readonly" type="text" value="tmp_hierarchyInternalId (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;hierarhcy body&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_hierarchyBody" readonly="readonly" type="text" value="tmp_hierarchyBody (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;hierarhcy. name&lt;/p&gt;
+&lt;p&gt;&lt;input name="temp.tmp_hierarchyName" readonly="readonly" type="text" value="tmp_hierarchyName (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="l5351417a-b2bf-4034-aeb8-ddf3a9a4f78c"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Servicea1e9609e-fdc7-4b9b-84cf-91d39753d4d2">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.tmp_packToPallet"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_eachToPack"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_hierarchyInternalId"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_hierarchyBody"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_hierarchyName"
+                                     readonly="false"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Serviceb064ad7b-9f71-495b-8361-d33278881ab0">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <actions>
+                     <action alt="null"
+                             id="w51a4a5af-f300-4bd6-8ef7-3a0d4d811f76"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Serviceba6aa78f-9b06-4b3d-88c7-95044095d487">
+                  <title>Get Item Record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-p1cca6fc5-84bf-4d85-9fe4-91f025550182"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-vc9af8efb-397f-46e6-bc08-246cae27d671"
+                                name="beName"
+                                source="constant"
+                                updatable="false">infa360rtl_product</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-n93dd3dd9-5531-4942-b410-980f505fa8c5"
+                                name="businessId"
+                                source="field"
+                                updatable="false">input.in_EachBusinessId</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="m36f7ea77-9dcc-430c-9512-127341e7e013"
+                             targetScreen="Assignment504ade01-4f5d-4fbb-b371-e21846ac862e">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Servicea5c43991-c48a-4817-b6ac-282f019b53ac">
+                  <title>Create Case</title>
+                  <serviceName>AppConnection-MDMSaaS:Create New Record with SourcePK</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-h0c00be80-11c4-449d-9b64-776d26a28727"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-t8c9600eb-12a3-4be2-b927-7d1cebe34ea0"
+                                name="beName"
+                                source="constant"
+                                updatable="false">shipping_packaging</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-p9ea84910-bfab-42dd-83ff-b97e01f40673"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_case_gtin</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-oab59b504-8f59-47dd-b643-c04cbddc0688"
+                                name="sourcePk"
+                                source="field"
+                                updatable="false">temp.tmp_case_gtin</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-s0eee430e-ab44-4a72-b7cc-ee623b8a8b1f"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-occ436cea-10c1-4d8b-8476-2d4c969b822f"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_casePayload</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="b6c7281d9-313a-4f59-962e-ecd01790494c"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Service9a6644a2-5d9b-4233-953c-8f7bf64ad4e1">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Service9a6644a2-5d9b-4233-953c-8f7bf64ad4e1">
+                  <title>Create Pallet</title>
+                  <serviceName>AppConnection-MDMSaaS:Create New Record with SourcePK</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-eb02ee5a2-9bde-4874-9c2e-8dee6109f53a"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-eab282d24-9c92-48fe-92ec-a2d44e791850"
+                                name="beName"
+                                source="constant"
+                                updatable="false">pallet</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-ef805defa-b4ae-4cd0-90b6-84a6a9f03908"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-z65902598-bc35-4481-bfac-2cab4f102dda"
+                                name="sourcePk"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-baef4a4f0-eb69-43cc-98ae-f35f8b58cafc"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-g25a9ea53-fd75-4ff2-a5f0-91404886e3cc"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_palletPayLoad</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="ge9c11898-bc17-441d-856d-dfa354dded4c"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Assignment9955b4b9-b4b9-4a3f-a50c-bd53484c890f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Serviceda822b2d-0755-4478-9477-4eedce607dbf">
+                  <title>Post Hierarchy Instance</title>
+                  <serviceName>AppConnection-MDMSaaS:Post Hierarchy Instance</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-nfaeb4718-3fe1-4ed0-b1a4-c6a63bbd23a0"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-e9e60657b-c0c7-49a3-886f-e2ec0bef7d91"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-t65397406-dac8-4de1-aa6a-eec4f040b5b0"
+                                name="payload"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyBody</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="zaf8b4f5b-f65b-4d56-b66b-12b96a067f9a"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Service2a9e74b5-9498-4c91-9544-42769a6433e8">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Service2a9e74b5-9498-4c91-9544-42769a6433e8">
+                  <title>GET hierarchy ID by search</title>
+                  <serviceName>AppConnection-MDMSaaS:GET hierarchy ID by search</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-oeaeb4162-d6eb-41c3-a00b-07f71fbe8507"
+                                name="sessionID"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-s0bcbdea9-a22a-499c-b778-81855ee06730"
+                                name="hierarchyName"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-b8ed9d59f-fcdc-43c8-b609-9484d23a824b"
+                                name="findInstanceName"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyName</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="t1e347f7c-1bd6-4538-9dc8-3d8b9662353f"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Assignment19eb8992-335f-4d07-b48d-62e9ec45761a">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Service6717a2e8-f05e-4570-80fb-41752fec7a15">
+                  <title>Get Internal ID of BE record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get Internal ID of BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-n50ce1cc1-4602-4019-8566-b6773b3dcc48"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-nb3467df4-a02e-4115-bd09-99d8515c5003"
+                                name="beName"
+                                source="constant"
+                                updatable="false">pallet</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-ae53844ea-e657-4b72-a1a0-004eb240b382"
+                                name="businessId"
+                                source="field"
+                                updatable="false">temp.tmp_pallet_gtin</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="b4640b56d-0316-4ef9-9297-af3b57ccddcc"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Assignmente7077d38-8cfc-4c47-806b-4917406e7d74">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Servicea1e9609e-fdc7-4b9b-84cf-91d39753d4d2">
+                  <title>PUT Hierarchy Root Node </title>
+                  <serviceName>AppConnection-MDMSaaS:PUT Hierarchy Root Node </serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-ve5c28846-c1a9-40b3-86e4-10973d096fed"
+                                name="sessionID"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-l316205b0-e625-4855-b9b3-b772970f3f6d"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-w4f7b84a1-975f-4859-8b04-236172142bc9"
+                                name="hierarchyID"
+                                source="field"
+                                updatable="false">temp.tmp_hierarchyInternalId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-sed981b4a-e245-456c-9efe-d85bdb51615c"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_rootAssignBody</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="bb22518e1-58b8-40de-b7fe-a2624a22084e"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Service6e3db0fc-4c63-464f-8a6e-b924c7fa2a45">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Service6e3db0fc-4c63-464f-8a6e-b924c7fa2a45">
+                  <title>POST Hierarchy Relationship Case to Palelt</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-body"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_packToPallet</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy_hierarchy</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">shipping_packaging_to_pallet</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="l4ee9bdcb-4315-4342-ac2c-8e5ec3d3edb5"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Serviceea66be11-e942-40d4-b286-00794c70fe3d">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a14MPLcDuEZFSeDbR0ORUPWS-Serviceea66be11-e942-40d4-b286-00794c70fe3d">
+                  <title>POST Hierarchy Relationship each to Case</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">p360_item_to_shipping_packaging</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-body"
+                                name="body"
+                                source="field"
+                                updatable="false">temp.tmp_eachToPack</parameter>
+                     <parameter id="a14MPLcDuEZFSeDbR0ORUPWS-hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">trade_item_hierarchy_hierarchy</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="k3767d1cb-00c0-4827-bdbc-27bf26701b03"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-end-u710857a8-fd72-491c-9b56-c2ec61670521">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen id="a14MPLcDuEZFSeDbR0ORUPWS-end-u710857a8-fd72-491c-9b56-c2ec61670521"
+                          outcomeId="a14MPLcDuEZFSeDbR0ORUPWS-outcome-1761835168422">
+                  <title>End</title>
+                  <body contentType="text/html">&lt;p&gt;Success&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;New Case, Pallet and Hierarchy Has been Created.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_newHierarhcyURL" readonly="readonly" type="text" value="tmp_newHierarhcyURL (temp)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actions/>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.tmp_newHierarhcyURL"
+                                     readonly="true"
+                                     renderingType="url"
+                                     required="false"
+                                     type="url">
+                        <options>
+                           <option name="required">false</option>
+                           <option name="urlDisplayReadonlyAs">Link</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+                  <redirectTo name="temp.tmp_newHierarhcyURL" type="url"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <assignment id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57">
+                  <title>Validate Business ID of Each Item</title>
+                  <operation source="constant" to="temp.tmp_itemBusinessID">{$input.in_EachBusinessId}</operation>
+                  <operation source="screen" to="temp.tmp_itemName">screen.temp.tmp_itemName</operation>
+                  <screen id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment0f00cbea-7e07-49db-9ea3-cbe3834a2f57-servicescreen">
+                     <title>Validate Business ID of Each Item</title>
+                     <body contentType="text/html">&lt;p&gt;&lt;img src="https://logos-world.net/wp-content/uploads/2020/04/Under-Armour-Logo-2005-present.png" alt="Under Armour Logo, symbol, meaning, history, PNG, brand" width="549" height="258"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="input.in_ItemName" readonly="readonly" type="text" value="Style PID"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="input.in_ItemName"
+                                        readonly="true"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null"
+                             id="g55371a5f-e577-4727-aa1f-642141936eba"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Serviceba6aa78f-9b06-4b3d-88c7-95044095d487">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="Assignment504ade01-4f5d-4fbb-b371-e21846ac862e">
+                  <title>Assignment 1</title>
+                  <actions>
+                     <action alt="null"
+                             id="h071e34c1-b6e9-42e3-a555-6ab1dc66c16a"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f">
+                  <title>Add Color Variants</title>
+                  <operation source="formula" to="temp.tmp_casePayload">
+                     <expression language="XQuery">'{ "gtin": ' || '"' || $temp.tmp_case_gtin || '"'  ||',
+ "description": ' || '"' ||  $temp.tmp_case_description || '"'  ||',
+ "included_each_item": { "_businessId": ' || '"' || $input.in_EachBusinessId || '"'  ||'},
+ "unit_descriptor": { "Code":' || '"' || $temp.tmp_case_unit_descriptor_lu || '"'  ||' , "Name": "Case"}
+}'</expression>
+                  </operation>
+                  <screen id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment62ce66cc-b1e8-48e7-b698-5983eeee2b3f-servicescreen">
+                     <title>Add Color Variants</title>
+                     <body contentType="text/html">&lt;p&gt;&lt;img style="width: 300px; height: 300px; float: left;" title="https://shop.goya.com/cdn/shop/files/goya-essbea-essential-beans-variety-pack_540x.png?v=1683243633" src="https://shop.goya.com/cdn/shop/files/goya-essbea-essential-beans-variety-pack_540x.png?v=1683243633" alt="https://shop.goya.com/cdn/shop/files/goya-essbea-essential-beans-variety-pack_540x.png?v=1683243633"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Packaging GTIN : &amp;nbsp;&lt;input class="" name="screen.temp.tmp_case_gtin" type="text" value="tmp_case_gtin (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Packaging Description: &amp;nbsp;&lt;input class="" name="screen.temp.tmp_case_description" type="text" value="tmp_case_description (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Packaging Type:&amp;nbsp;&lt;input class="" name="screen.temp.tmp_case_unit_descriptor_lu" type="text" value="tmp_case_unit_descriptor_lu (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Pallet GTIN:&amp;nbsp; &lt;input class="" name="screen.temp.tmp_pallet_gtin" type="text" value="tmp_pallet_gtin (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Pallet Description:&amp;nbsp; &amp;nbsp;&lt;input class="" name="screen.temp.tmp_pallet_title" type="text" value="tmp_pallet_title (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Pallet TI: &lt;input name="screen.temp.tmp_pallet_ti" type="text" value="tmp_pallet_ti (temp)"&gt;&amp;nbsp; Pallet HI:&amp;nbsp; &lt;input name="screen.temp.tmp_pallet_hi" type="text" value="tmp_pallet_hi (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Is Stackable:&amp;nbsp; &lt;input class="" name="screen.temp.tmp_pallet_isStackable" type="text" value="tmp_pallet_isStackable (temp)"&gt;&amp;nbsp; Stack Height:&amp;nbsp; &lt;input class="" name="screen.temp.tmp_StackCount" type="text" value="tmp_StackCount (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="screen.temp.tmp_case_gtin"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath 1||$input.in_EachBusinessId</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_case_description"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath "Case of :" || $temp.tmp_case_includded_each_item || $input.in_ItemName</option>
+                              <option name="length">200</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_case_unit_descriptor_lu"
+                                        readonly="false"
+                                        renderingType="picklist"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option hide="true" name="valuelist.source">csv</option>
+                              <option hide="true" name="valuelist.csvdata">CASE, DISPLAY_SHIPPER</option>
+                              <option name="values">[{"label":"CASE","value":"CASE"},{"label":" DISPLAY_SHIPPER","value":" DISPLAY_SHIPPER"}]</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_gtin"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath 101||$input.in_EachBusinessId </option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_title"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="formula">xpath  "Pallet of: " || $input.in_ItemName </option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_ti"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_hi"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_pallet_isStackable"
+                                        readonly="false"
+                                        renderingType="picklist"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                              <option name="defaultvalue" source="constant"/>
+                              <option hide="true" name="valuelist.source">csv</option>
+                              <option hide="true" name="valuelist.csvdata">Yes, No</option>
+                              <option name="values">[{"label":"Yes","value":"Yes"},{"label":" No","value":" No"}]</option>
+                           </options>
+                        </screenDataItem>
+                        <screenDataItem name="screen.temp.tmp_StackCount"
+                                        readonly="false"
+                                        renderingType="string"
+                                        required="false"
+                                        type="string">
+                           <options>
+                              <option name="required">false</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null"
+                             id="r01b2d1f3-0da7-49aa-bf58-0ff72c65abd5"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Screen1736941d-f1f5-45b4-838c-9d3a2356cbf2">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment9955b4b9-b4b9-4a3f-a50c-bd53484c890f">
+                  <title>hierarchyBodyBuild</title>
+                  <operation source="formula" to="temp.tmp_hierarchyName">
+                     <expression language="XQuery">fn:replace( $temp.tmp_pallet_title , " ", "+")</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_hierarchyBody">
+                     <expression language="XQuery">'{ 
+  "name": ' || '"' || $temp.tmp_pallet_title ||  '"'  ||',
+  "fields": 
+    { "description":""}
+
+}'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_packToPallet">
+                     <expression language="XQuery">'{
+"_from": {
+"businessEntity":"shipping_packaging",
+"businessId": ' || '"' || $temp.tmp_case_gtin || '"'  ||'
+},
+"_to":{
+"businessEntity":"pallet",
+"businessId": ' || '"' || $temp.tmp_pallet_gtin || '"'  ||'
+}
+}'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_eachToPack">
+                     <expression language="XQuery">'{
+"_from": {
+"businessEntity":"p360.item",
+"businessId": ' || '"' || $input.in_EachBusinessId || '"'  ||'
+},
+"_to":{
+"businessEntity":"shipping_packaging",
+"businessId": ' || '"' || $temp.tmp_case_gtin || '"'  ||'
+}
+}'</expression>
+                  </operation>
+                  <actions>
+                     <action alt="null"
+                             id="p221ccc7e-2750-465f-b335-7b1deccec27b"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Serviceda822b2d-0755-4478-9477-4eedce607dbf">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a14MPLcDuEZFSeDbR0ORUPWS-Assignment19eb8992-335f-4d07-b48d-62e9ec45761a">
+                  <title>Assignment to tmp_hierarchyInternalId</title>
+                  <operation source="field" to="temp.tmp_hierarchyInternalId">output.hierarchyId</operation>
+                  <actions>
+                     <action alt="null"
+                             id="jdc476830-f82f-4514-a2af-b7dd43c6d752"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Service6717a2e8-f05e-4570-80fb-41752fec7a15">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a14MPLcDuEZFSeDbR0ORUPWS-Assignmente7077d38-8cfc-4c47-806b-4917406e7d74">
+                  <title>Assignment to tmp_rootAssignBody, tmp_palletInternalId</title>
+                  <operation source="field" to="temp.tmp_palletInternalId">output.internalId</operation>
+                  <operation source="formula" to="temp.tmp_rootAssignBody">
+                     <expression language="XQuery">'[
+{ 
+  "id": ' || '"' || $temp.tmp_palletInternalId || '"'  ||',
+  
+  "_meta": 
+    { "type":"pallet"}
+}
+]'</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_newHierarhcyURL">
+                     <expression language="XQuery">'https://usw1-mdm.dmp-us.informaticacloud.com/ui-x360-app/app/p360/hierarchy/new-hierarchy/trade_item_hierarchy_hierarchy/"'|| $temp.tmp_hierarchyInternalId || '"'  ||''</expression>
+                  </operation>
+                  <actions>
+                     <action alt="null"
+                             id="xbd913583-30c0-419e-9c6e-76d6104c8c05"
+                             targetScreen="a14MPLcDuEZFSeDbR0ORUPWS-Screen644fe594-80a2-4082-afe4-4090d1bdbcda">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>4MPLcDuEZFSeDbR0ORUPWS</types1:GUID>
+      <types1:DisplayName>Create Variants and SKUs from Product</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.12Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

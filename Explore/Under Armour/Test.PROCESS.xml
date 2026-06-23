@@ -1,0 +1,82 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>DaaabdvhxiQLnzY-gt-2605265-2026-01-08T21:07:46.479Z::pd.xml</types1:EntryId>
+      <types1:Name>Test</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-08T21:07:46Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="1XWfMKJHj7tdDRTVeZIxwF"
+                  displayName="Test"
+                  name="Test"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="request"
+                          required="false"
+                          type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:InputPerRecord</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">36hiqXXxIEvlk8GL7wnacm</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="response" type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:OutputPerRecord</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">90DD8NRDP8qloUFWG2G9Av</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <wholePayload inputWholePayload="true" outputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="mfbf29d62-7735-442c-83fe-89646a389d36">
+               <start id="x9ce0d86a-2d67-4cde-a297-434be4713805">
+                  <link id="q1e46814b-d037-4be9-b780-4ba84c4ab1e1"
+                        targetId="end-ub3762f9a-ef3b-4ff6-999f-d902a0ce368c"/>
+               </start>
+               <end id="end-ub3762f9a-ef3b-4ff6-999f-d902a0ce368c">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>1XWfMKJHj7tdDRTVeZIxwF</types1:GUID>
+      <types1:DisplayName>Test</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.534Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

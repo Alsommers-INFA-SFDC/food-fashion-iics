@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "2aqtAKHI1u4dd3RxucDZCc",
+    "name" : "RS_Net_Content_Completeness",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2aqtAKHI1u4dd3RxucDZCc"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-23T13:33:37.835Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

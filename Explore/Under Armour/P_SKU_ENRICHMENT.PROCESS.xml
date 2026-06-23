@@ -1,0 +1,248 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>bcmnBtBghuImXyc-gt-245683-2026-01-15T20:26:16.021304164Z::pd.xml</types1:EntryId>
+      <types1:Name>P_SKU_ENRICHMENT</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-15T20:26:16Z</types1:CreationDate>
+      <types1:ModifiedBy>Ben.GS1</types1:ModifiedBy>
+      <types1:ModificationDate>2026-01-20T18:09:19Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Ben.GS1</types1:PublishedBy>
+      <types1:PublicationDate>2026-01-20T18:09:38Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.P_SKU_ENRICHMENT/P_SKU_ENRICHMENT.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="3w4CkEf8W0FgubWLtvhvot"
+                  displayName="P_SKU_ENRICHMENT"
+                  name="P_SKU_ENRICHMENT"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description=""
+                          name="request"
+                          required="false"
+                          type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:SKUEnrichInputPerRecord</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">3rYPsCeX98Zivkq76i0eGc</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="response" type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:SKUEnrichOutputPerRecord</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">cKiQjpMNDyWhv0tOeyDJ4n</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_item_be" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_id" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_product_id" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_be" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_product_be" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_size" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_color" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_sku" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload inputWholePayload="true" outputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+            </extData>
+            <flow id="mbe8aa75a-ccb6-4c5b-9d60-6290e9a0ab66">
+               <start id="qcb169b26-c344-46df-80a3-027e2a4c7595">
+                  <link id="h23904009-dec3-4dbf-8c9d-36bc147d4286"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-Servicea35ba779-1b41-499a-a256-885ae94d2953"/>
+               </start>
+               <service id="a13w4CkEf8W0FgubWLtvhvot-Servicea35ba779-1b41-499a-a256-885ae94d2953">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <link id="t06a0b076-befd-4b42-9d86-f8999db68a31"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-Servicef59f3903-6db2-459f-bdec-8c97cbe0777a"/>
+               </service>
+               <service id="a13w4CkEf8W0FgubWLtvhvot-Servicef59f3903-6db2-459f-bdec-8c97cbe0777a">
+                  <title>Service_queryItem</title>
+                  <serviceName>AppConnection-MDMSaaS:GET BE Record V2</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">p360.item</parameter>
+                     <parameter name="businessId" source="field">input.request[1]/payload[1]/be_id</parameter>
+                  </serviceInput>
+                  <link id="q85b7013d-f0c4-4bd9-8d74-3e9bba55f819"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-Assignment7caa1457-8bd5-433d-bcfd-3a31f755e108"/>
+               </service>
+               <service id="a13w4CkEf8W0FgubWLtvhvot-Service5acdf30b-e59b-491e-9c42-261b01e2a491">
+                  <title>Service_queryVariant</title>
+                  <serviceName>AppConnection-MDMSaaS:GET BE Record V2</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">variant</parameter>
+                     <parameter name="businessId" source="field">temp.tmp_variant_id</parameter>
+                  </serviceInput>
+                  <link id="l777f4ca8-7bd9-4523-abb2-f14c460ded49"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-Assignment440fe639-af0b-4b16-9d7b-6fbe186e26c4"/>
+               </service>
+               <assignment id="a13w4CkEf8W0FgubWLtvhvot-Assignment7caa1457-8bd5-433d-bcfd-3a31f755e108">
+                  <title>Assignment to tmp_item_be, tmp_unit_type, etc,</title>
+                  <operation source="field" to="temp.tmp_item_be">output.beRecord</operation>
+                  <operation source="formula" to="temp.tmp_variant_id">
+                     <expression language="XQuery">$temp.tmp_item_be/X_parent_variant/businessId</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_size">
+                     <expression language="XQuery">$temp.tmp_item_be/X_size/Code</expression>
+                  </operation>
+                  <link id="gf5e260c3-f19f-426b-b0cf-2a46b4111a2a"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-Service5acdf30b-e59b-491e-9c42-261b01e2a491"/>
+               </assignment>
+               <assignment id="a13w4CkEf8W0FgubWLtvhvot-Assignment440fe639-af0b-4b16-9d7b-6fbe186e26c4">
+                  <title>Assignment to tmp_variant_be, tmp_product_cnt</title>
+                  <operation source="field" to="temp.tmp_variant_be">output.beRecord</operation>
+                  <operation source="formula" to="temp.tmp_product_id">
+                     <expression language="XQuery">$temp.tmp_variant_be/parent_product/businessId</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_color">
+                     <expression language="XQuery">$temp.tmp_variant_be/ua_color/Code</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_sku">
+                     <expression language="XQuery">$temp.tmp_product_id||'-'||$temp.tmp_color||'-'||$temp.tmp_size</expression>
+                  </operation>
+                  <operation source="formula" to="output.response[1]/payload[1]/SKU">
+                     <expression language="XQuery">$temp.tmp_product_id||'-'||$temp.tmp_color||'-'||$temp.tmp_size</expression>
+                  </operation>
+                  <link id="m6745062a-57a0-4930-8570-7b7c630063cf"
+                        targetId="a13w4CkEf8W0FgubWLtvhvot-end-c245b445e-abc1-4428-ae95-b82f40af9a33"/>
+               </assignment>
+               <end id="a13w4CkEf8W0FgubWLtvhvot-end-c245b445e-abc1-4428-ae95-b82f40af9a33">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>1dd1725f-391e-427c-a243-59e9f731f4ef</ns1:Id>
+               <ns1:Name>sku</ns1:Name>
+               <ns1:CreatedBy>Ben.GS1</ns1:CreatedBy>
+               <ns1:CreationDate>2026-01-15T20:32:41Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Ben.GS1</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-01-15T20:33:07Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "request": [
+        {
+            "payload": [
+                {
+                    "be_id": "MDM0000000AXIP",
+                    "sys": {
+                        "groupId": "X"
+                    }
+                }
+            ],
+            "docId": "1"
+        }
+    ]
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>c262716c-6c37-4695-b4d9-7a710cde7cd7</ns1:Id>
+               <ns1:Name>test</ns1:Name>
+               <ns1:CreatedBy>Ben.GS1</ns1:CreatedBy>
+               <ns1:CreationDate>2026-01-15T20:26:16Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Ben.GS1</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-01-15T20:26:16Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "request": [
+        {
+            "docId": "1",
+            "payload": [
+                {
+                    "unit_type": "BASE_UNIT_OR_EACH",
+                    "be_id": "MDM0000000AXIP",
+                    "sys": {
+                        "groupId": "X"
+                    }
+                }
+            ]
+        }
+    ]
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>3w4CkEf8W0FgubWLtvhvot</types1:GUID>
+      <types1:DisplayName>P_SKU_ENRICHMENT</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.472Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

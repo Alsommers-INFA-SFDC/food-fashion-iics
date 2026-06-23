@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "7KNGb3k3lY5joclCAGdsSi",
+    "name" : "RS_Consumer_Unit_Completeness",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7KNGb3k3lY5joclCAGdsSi"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "If the item is a consumer unit then net content and net content unit of measure must be populated",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-06-23T13:33:37.834Z",
+  "objectRefs" : [ {
+    "id" : "2aqtAKHI1u4dd3RxucDZCc",
+    "name" : "RS_Net_Content_Completeness",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2aqtAKHI1u4dd3RxucDZCc"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

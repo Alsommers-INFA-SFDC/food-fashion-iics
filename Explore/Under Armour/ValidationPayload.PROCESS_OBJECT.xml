@@ -1,0 +1,51 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>pH8sVYx8R8WrY1S-gt-2606081-2026-01-08T20:57:03.125Z::po.xml</types1:EntryId>
+      <types1:Name>ValidationPayload</types1:Name>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-08T20:57:03Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="ValidationPayload"
+                        isByCopy="true"
+                        name="ValidationPayload">
+            <description/>
+            <tags/>
+            <detail>
+               <field label=""
+                      name="passed"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label=""
+                      name="fields"
+                      nullable="true"
+                      required="false"
+                      type="objectlist">
+                  <options>
+                     <option name="relationshipName">Child</option>
+                     <option name="referenceTo">$po:fields</option>
+                     <option name="guid">iHOwAi5YEYslO9dVF4JACw</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>9sS3PKKBZUSktaycbOKTkK</types1:GUID>
+      <types1:DisplayName>ValidationPayload</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.394Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

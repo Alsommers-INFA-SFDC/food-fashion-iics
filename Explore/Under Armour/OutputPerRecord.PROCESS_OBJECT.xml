@@ -1,0 +1,52 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>hujATO9pH8sVYx8-gt-2606104-2026-01-08T20:59:11.115Z::po.xml</types1:EntryId>
+      <types1:Name>OutputPerRecord</types1:Name>
+      <types1:ParentFlowIds>BhsydsUf2hwq9bd-gt-23254-2026-01-29T21:23:22.437Z::pd.xml,DaaabdvhxiQLnzY-gt-2605265-2026-01-08T21:07:46.479Z::pd.xml,IIJ1reK8ZAZf5kc-gt-2606341-2026-01-08T22:08:31.561Z::pd.xml,JsJGD4ARW8UBM7z-gt-2606153-2026-01-08T21:00:45.577Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-08T20:59:11Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="OutputPerRecord"
+                        isByCopy="true"
+                        name="OutputPerRecord">
+            <description/>
+            <tags/>
+            <detail>
+               <field label=""
+                      name="docId"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label=""
+                      name="validation"
+                      nullable="true"
+                      required="false"
+                      type="objectlist">
+                  <options>
+                     <option name="relationshipName">Child</option>
+                     <option name="referenceTo">$po:ValidationPayload</option>
+                     <option name="guid">9sS3PKKBZUSktaycbOKTkK</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>90DD8NRDP8qloUFWG2G9Av</types1:GUID>
+      <types1:DisplayName>OutputPerRecord</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.457Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "1H9bGv6jqdGb0Wrdepva04",
+    "name" : "SKUEnrichmentOutputPayload",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "x9dwMbgbdoPVm5Y-gt-245586-2026-01-15T20:23:33.373943536Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.833Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "5wX2rBvfIG5bBDMrobCOAO",
+    "name" : "VariantCreate_v1",
+    "type" : "GUIDE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "XL86zqzm5Y6tMFy-gt-152103-2026-02-02T22:12:06.79Z::gt.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.831Z",
+  "objectRefs" : [ {
+    "id" : "5M2aGutT1W0cuT93uOFIi9",
+    "name" : "AppConnection-MDMSaaS",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0ZXXUfTRgpDqotx-gt-154704-2025-10-02T17:15:58.994Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

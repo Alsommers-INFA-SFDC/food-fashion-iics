@@ -1,0 +1,138 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>A2oHsbfYLnzYLnz-gt-282065-2026-02-05T16:35:54.434Z::pd.xml</types1:EntryId>
+      <types1:Name>patchProductRecordTEST</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-02-05T16:35:54Z</types1:CreationDate>
+      <types1:ModifiedBy>Ben.GS1</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-05T16:36:48Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Ben.GS1</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-05T16:36:51Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.patchProductRecordTEST/patchProductRecordTEST.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="e3JmwUpaCEgkEi7LAzRwYX"
+                  displayName="patchProductRecordTEST"
+                  name="patchProductRecordTEST"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="in_bussID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="in_varColor" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="in_colorSwatchURL" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="in_varColorID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="tmp_productPatchBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_Request" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="ml9n77be" targetId="ml9n77bd"/>
+               </start>
+               <service id="ml9n77bd">
+                  <title>Service 2</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput/>
+                  <link id="ml9n77bf" targetId="ml8ohp14"/>
+               </service>
+               <assignment id="ml8ohp14">
+                  <title>Assignment to tmp_productPatchBody</title>
+                  <operation source="formula" to="temp.tmp_productPatchBody">
+                     <expression language="XQuery">let $color := $input.in_varColor 
+let $swatch := $input.in_colorSwatchURL 
+let $colorID := $input.in_varColorID 
+return
+concat(
+  '{',
+    '"op":"', 'add', '",',
+    '"path":"', 'variant_colors', '",',
+    '"value":{',
+    	'"_id":"', $colorID, '",',
+        '"color":{',
+        	'"Code":"', $color, '",',
+        	'"Name":"', $color, '"',
+      '}, ',
+      '"color_preview":"', $swatch, '"',
+
+    '}',
+  '}'
+)</expression>
+                  </operation>
+                  <link id="ml9ohk82" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>6437d17f-292a-47e0-9359-7bb4d4fd59c9</ns1:Id>
+               <ns1:Name>colorTest</ns1:Name>
+               <ns1:CreatedBy>Ben.GS1</ns1:CreatedBy>
+               <ns1:CreationDate>2026-02-05T16:35:54Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Ben.GS1</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-02-05T16:35:54Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+	 "in_bussID": "1364409",
+	 "in_varColor": "Black",
+	 "in_colorSwatchURL": "https://media3.color-register.org/color-black-hex-000000-800-450-wallpaper.png",
+	 "in_varColorID": "1364934-0111"
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>e3JmwUpaCEgkEi7LAzRwYX</types1:GUID>
+      <types1:DisplayName>patchProductRecordTEST</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.031Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

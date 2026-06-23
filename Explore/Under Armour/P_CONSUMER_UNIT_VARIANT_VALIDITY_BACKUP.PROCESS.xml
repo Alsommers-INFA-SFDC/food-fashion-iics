@@ -1,0 +1,201 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>MDOp7jvpppppppp-gt-2600398-2026-01-08T17:33:16.628Z::pd.xml</types1:EntryId>
+      <types1:Name>P_CONSUMER_UNIT_VARIANT_VALIDITY_BACKUP</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-08T17:33:17Z</types1:CreationDate>
+      <types1:ModifiedBy>Ben.GS1</types1:ModifiedBy>
+      <types1:ModificationDate>2026-01-08T21:37:35Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="3knOIvdGt6HdfaNnAjfXKO"
+                  displayName="P_CONSUMER_UNIT_VARIANT_VALIDITY_BACKUP"
+                  name="P_CONSUMER_UNIT_VARIANT_VALIDITY_BACKUP"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="Business entity ID"
+                          name="BE_id"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="Business entity type"
+                          name="BE_type"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_test" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="o_calculated" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_unit_type" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_item_be" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_cnt" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_id" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_parent_id" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_parent_cnt" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variant_be" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="j4721975c-167b-4aa9-ba8d-2202cf94c657">
+               <start id="l0163bb9c-7095-4e57-8032-c9cea1b49aa5">
+                  <link id="o88b47da4-3550-4bc3-b713-0fe5f797a8a4"
+                        targetId="a13knOIvdGt6HdfaNnAjfXKO-Servicef76fbfd2-b883-4111-b85b-d891cb9b7102"/>
+               </start>
+               <service id="a13knOIvdGt6HdfaNnAjfXKO-Servicef76fbfd2-b883-4111-b85b-d891cb9b7102">
+                  <title>Service_Auth</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput/>
+                  <link id="ae28c665f-0b87-44c8-a66e-129755ebc975"
+                        targetId="a13knOIvdGt6HdfaNnAjfXKO-Service61db051d-99a7-4b85-a9b5-d6044c119971"/>
+               </service>
+               <service id="a13knOIvdGt6HdfaNnAjfXKO-Service61db051d-99a7-4b85-a9b5-d6044c119971">
+                  <title>Service_queryItem</title>
+                  <serviceName>AppConnection-MDMSaaS:GET BE Record V2</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">p360.item</parameter>
+                     <parameter name="businessId" source="field">input.BE_id</parameter>
+                  </serviceInput>
+                  <link id="r8e50fee2-f01f-4825-bfe0-5674073a8d26"
+                        targetId="a13knOIvdGt6HdfaNnAjfXKO-Assignment138a0bd0-0689-4130-b201-528d21d25edc"/>
+               </service>
+               <service id="Serviceacb03820-88c1-4b16-9e75-6db0d61d6218">
+                  <title>Service_queryVariant</title>
+                  <serviceName>AppConnection-MDMSaaS:GET BE Record V2</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.sessionId</parameter>
+                     <parameter name="beName" source="constant">variant</parameter>
+                     <parameter name="businessId" source="field">temp.tmp_variant_id</parameter>
+                  </serviceInput>
+                  <link id="ibea147a2-0b7f-4b83-a698-8a12c0b677d3"
+                        targetId="Assignment5dc44ffe-14e1-48ed-869d-d81728b5ed6b"/>
+               </service>
+               <assignment id="a13knOIvdGt6HdfaNnAjfXKO-Assignment138a0bd0-0689-4130-b201-528d21d25edc">
+                  <title>Assignment to tmp_unit_type and tmp_variant_cnt</title>
+                  <operation source="field" to="temp.tmp_item_be">output.beRecord</operation>
+                  <operation source="formula" to="temp.tmp_unit_type">
+                     <expression language="XQuery">$temp.tmp_item_be/X_infa360rtl_itemType/Code/text()</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_variant_cnt">
+                     <expression language="XQuery">list:count($temp.tmp_item_be/X_parent_variant/businessId)</expression>
+                  </operation>
+                  <operation source="formula" to="temp.tmp_variant_id">
+                     <expression language="XQuery">$temp.tmp_item_be/X_parent_variant/businessId</expression>
+                  </operation>
+                  <link id="k858602e5-ac76-48ed-9aa2-1bf03ac6261a"
+                        targetId="Serviceacb03820-88c1-4b16-9e75-6db0d61d6218"/>
+               </assignment>
+               <assignment id="Assignment5dc44ffe-14e1-48ed-869d-d81728b5ed6b">
+                  <title>Assignment to tmp_variant_parent_id, tmp_variant_be</title>
+                  <operation source="field" to="temp.tmp_variant_be">output.beRecord</operation>
+                  <operation source="formula" to="temp.tmp_variant_parent_id">
+                     <expression language="XQuery">list:count($temp.tmp_variant_be/parent_product/businessId) </expression>
+                  </operation>
+                  <link id="ncb8e9079-f67c-4b55-a100-85688e8d28c0"
+                        targetId="a13knOIvdGt6HdfaNnAjfXKO-end-qaddc9775-847a-45cf-9e62-ef22b3eb18c0"/>
+               </assignment>
+               <end id="a13knOIvdGt6HdfaNnAjfXKO-end-qaddc9775-847a-45cf-9e62-ef22b3eb18c0">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>f6f295a1-6715-4540-87cb-87f9299aee1f</ns1:Id>
+               <ns1:Name>test</ns1:Name>
+               <ns1:CreatedBy>Ben.GS1</ns1:CreatedBy>
+               <ns1:CreationDate>2026-01-08T17:33:17Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Ben.GS1</ns1:ModifiedBy>
+               <ns1:ModificationDate>2026-01-08T18:21:28Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "BE_id": "MDM0000000AXIP",
+    "BE_type": "p360.item"
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>3knOIvdGt6HdfaNnAjfXKO</types1:GUID>
+      <types1:DisplayName>P_CONSUMER_UNIT_VARIANT_VALIDITY_BACKUP</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.101Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

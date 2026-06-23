@@ -1,0 +1,256 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>XL86zqzm5Y6tMFy-gt-152103-2026-02-02T22:12:06.79Z::gt.xml</types1:EntryId>
+      <types1:Name>VariantCreate_v1</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Alex.Grocery</types1:CreatedBy>
+      <types1:CreationDate>2026-02-02T22:12:07Z</types1:CreationDate>
+      <types1:ModifiedBy>Alex.Grocery</types1:ModifiedBy>
+      <types1:ModificationDate>2026-02-02T22:41:09Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Alex.Grocery</types1:PublishedBy>
+      <types1:PublicationDate>2026-02-02T22:41:12Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.VariantCreate_v1/VariantCreate_v1.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="VariantCreate_v1"
+                         doneOnEndStep="false"
+                         name="VariantCreate_v1"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="null"
+                          name="in_businessId"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="o_variantList" type="objectlist">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="isCopy">true</option>
+                     <option hide="true" name="multiSelect">true</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="tmp_StyleRecord" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="start-e3c0a0024-03e2-4150-920e-e666acbc7232">
+                  <title>VariantCreate_v1</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null"
+                             id="sf02f5cfd-6d57-4786-9a03-8538021c0303"
+                             targetScreen="Service57625162-d0b9-44a9-9055-31ca625faa5d">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="Screen7b104e95-4ed0-444b-9ccc-4a803b7937f2">
+                  <title>Screen 1</title>
+                  <body contentType="text/html">&lt;p&gt;Test 3&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input class="" style="-moz-appearance: none; background-color: lightgrey; border: none;" name="input.in_businessId" readonly="readonly" type="text" value="in_businessId (input)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.sessionId" readonly="readonly" type="text" value="sessionId (output)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="u58bb510a-61ba-4df3-ab30-38c34a94aaf4"
+                             targetScreen="Serviced5b1883a-ec1a-4325-a8a0-8d2987cb8f41">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.in_businessId"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.sessionId"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screena070d28d-9ae4-43c8-80fd-2c468f02517e">
+                  <title>Screen 2</title>
+                  <body contentType="text/html">&lt;p&gt;Collection Name &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.collection" readonly="readonly" type="text" value="collection (output)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Style PID. &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.customer_facing_product_information_description" readonly="readonly" type="text" value="customer_facing_product_information_description (output)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;XML : &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_StyleRecord" readonly="readonly" type="text" value="tmp_StyleRecord (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;list of variant data&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.VariantColors" readonly="readonly" type="text" value="VariantColors (output)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;o_variant&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_variantList" readonly="readonly" type="text" value="o_variantList (output)"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="e4df26200-16a5-400a-a54c-5b30f355345e"
+                             targetScreen="end-h8bda5ab1-cd58-431f-9201-f1372b4dc6d2">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.collection"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                     <screenDataItem name="output.customer_facing_product_information_description"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_StyleRecord"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.VariantColors"
+                                     readonly="true"
+                                     renderingType="table"
+                                     required="false"
+                                     type="objectlist">
+                        <options>
+                           <option name="relationshipName">Child</option>
+                           <option name="referenceTo">$po:$any</option>
+                           <option name="isCopy">true</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.o_variantList"
+                                     readonly="true"
+                                     renderingType="table"
+                                     required="false"
+                                     type="objectlist">
+                        <options>
+                           <option name="required">false</option>
+                           <option name="referenceTo">$po:$any</option>
+                           <option name="isCopy">true</option>
+                           <option hide="true" name="multiSelect">true</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <service id="Service57625162-d0b9-44a9-9055-31ca625faa5d">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput/>
+                  <actions>
+                     <action alt="null"
+                             id="a7ead3527-d129-4d40-97aa-5b2961f2b619"
+                             targetScreen="Screen7b104e95-4ed0-444b-9ccc-4a803b7937f2">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="Serviced5b1883a-ec1a-4325-a8a0-8d2987cb8f41">
+                  <title>getProductData</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="m601d8476-21af-4b1c-a730-66925d9c28f2"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="y358489ca-3d04-4020-b2bd-98b6f2d370d1"
+                                name="beName"
+                                source="constant"
+                                updatable="false">infa360rtl_product</parameter>
+                     <parameter id="idfbcf185-1ce6-4e52-b815-1b1d604ce258"
+                                name="businessId"
+                                source="field"
+                                updatable="false">input.in_businessId</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="ac3b1776c-e34d-4d3e-a949-7e35b86804a2"
+                             targetScreen="Assignment6e1469ed-e4af-4752-9fb5-e5d63af48a92">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen id="end-h8bda5ab1-cd58-431f-9201-f1372b4dc6d2">
+                  <title>End</title>
+                  <actions/>
+                  <redirectTo type="current_object"/>
+               </endScreen>
+               <assignment id="Assignment6e1469ed-e4af-4752-9fb5-e5d63af48a92">
+                  <title>Assignment to tmp_StyleRecord, o_variantList</title>
+                  <operation source="constant" to="temp.tmp_StyleRecord">{$output.VariantColors}</operation>
+                  <operation source="formula" to="output.o_variantList">
+                     <function name="list:append">
+                        <arg name="dest_field">{$output.o_variantList}</arg>
+                        <arg name="new_field">{$output.VariantColors}</arg>
+                     </function>
+                  </operation>
+                  <actions>
+                     <action alt="null"
+                             id="y8189b1e0-b23e-49a7-9af2-5bb71314bc3f"
+                             targetScreen="Screena070d28d-9ae4-43c8-80fd-2c468f02517e">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>5wX2rBvfIG5bBDMrobCOAO</types1:GUID>
+      <types1:DisplayName>VariantCreate_v1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.081Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

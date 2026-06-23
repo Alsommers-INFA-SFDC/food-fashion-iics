@@ -1,0 +1,127 @@
+{
+  "objectInfo" : {
+    "id" : "7BPXWAjQUoKjSGNCfynSsx",
+    "name" : "VariantBuild_v2",
+    "type" : "GUIDE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "fVvEnPCOkSSHCwk-gt-235403-2026-02-04T16:45:31.087Z::gt.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : null,
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.833Z",
+  "objectRefs" : [ {
+    "id" : "8R6alVFZEz6emNPZXxTlgH",
+    "name" : "buildProductParadigm",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "46NFuxTtlI20hEL-gt-232566-2026-02-04T15:49:29.888Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Enrichment Categorization"
+  }, {
+    "id" : "7GqJUiqLTAsbaxiV3sAR20",
+    "name" : "buildVariantBody",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "jtmuOSSHCwkNmum-gt-228502-2026-02-04T14:23:00.315Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "4QstRXAivZPkORo2fqEDe6",
+    "name" : "buildHierarchyPayloadUA",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Fn2H0Fdw8jIw8jI-gt-190574-2026-02-03T20:02:05.02Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "1ilkvFsVF08jw7N07p2eau",
+    "name" : "FindHierachyRelationship",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "f3A1vyoY2G7QnG5-gt-190750-2026-02-03T18:52:57.093Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "5M2aGutT1W0cuT93uOFIi9",
+    "name" : "AppConnection-MDMSaaS",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0ZXXUfTRgpDqotx-gt-154704-2025-10-02T17:15:58.994Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

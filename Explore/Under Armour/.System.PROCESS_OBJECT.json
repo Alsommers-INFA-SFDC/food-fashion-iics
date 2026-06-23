@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "6D4xjyvrt4ibteFxGPwDaq",
+    "name" : "System",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "XLeG3vASaaaaa-gt-2605921-2026-01-08T20:51:26.797Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.833Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

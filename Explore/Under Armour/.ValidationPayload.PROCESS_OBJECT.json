@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "9sS3PKKBZUSktaycbOKTkK",
+    "name" : "ValidationPayload",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "pH8sVYx8R8WrY1S-gt-2606081-2026-01-08T20:57:03.125Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.832Z",
+  "objectRefs" : [ {
+    "id" : "iHOwAi5YEYslO9dVF4JACw",
+    "name" : "fields",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "sXL86zqzm5Y6tMF-gt-2605036-2026-01-08T20:55:44.296Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

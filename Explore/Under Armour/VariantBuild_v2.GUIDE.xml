@@ -1,0 +1,713 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>fVvEnPCOkSSHCwk-gt-235403-2026-02-04T16:45:31.087Z::gt.xml</types1:EntryId>
+      <types1:Name>VariantBuild_v2-1</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-02-04T16:45:31Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="VariantBuild_v2"
+                         doneOnEndStep="false"
+                         name="VariantBuild_v2-1"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="null"
+                          name="in_productID"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="tmp_productPID" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_productIdentifier" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variantColor" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_variantHeroImage" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tmp_productVariantBody" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="a10t7pMAHp9wkeM0uaJV0XIv-start-l5af1123d-b2c6-4882-a30e-3418e402c54a">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null"
+                             id="z416a98c9-bb80-4133-9ad4-0de604fe6008"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Screen6f84c79b-8509-4efb-9ab7-66bbe6a8ecf8">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="a10t7pMAHp9wkeM0uaJV0XIv-Screen6f84c79b-8509-4efb-9ab7-66bbe6a8ecf8">
+                  <title>Screen 1</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product Business ID: &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="input.in_productID" readonly="readonly" type="text" value="in_productID (input)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Step 1: Validate that your product is categorized in the Product Taxonomy&lt;/p&gt;
+&lt;p&gt;Step 1.5 : If no category is found, suggest and correct the error&lt;/p&gt;
+&lt;p&gt;Step 3: Add Variant Color Details and other details.&lt;/p&gt;
+&lt;p&gt;Step 4: Confrim and submit.&lt;/p&gt;
+&lt;p style="padding-left: 40px;"&gt;A new variant will be created, associated to the product, added to the Product Taxonomy and any dynamic attributes will now apply.&lt;/p&gt;
+&lt;p style="padding-left: 40px;"&gt;Product will be updated with a variant color tag.&lt;/p&gt;
+&lt;p&gt;Step 5: More Colors? Step 3- 5 until done.&lt;/p&gt;
+&lt;p&gt;Step 6: Fin&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="hef68c1f8-9be3-49b6-9c4b-5679c2d53751"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Process7f0cda94-215e-45c9-ab08-5b76af2f97cb">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.in_productID"
+                                     readonly="false"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="a10t7pMAHp9wkeM0uaJV0XIv-Screen7c40d6ed-2797-4476-84e1-89f55a339967">
+                  <title>Step 1.5</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Step 1: Validate that your product is categorized in the Product Taxonomy&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Suggested Product Taxonomy :&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;input class="" style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_CategoryName" readonly="readonly" type="text" value="o_CategoryName (output)"&gt;&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="s11718219-b320-40b9-9cf9-6616b47f135c"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Servicef06e6308-06af-4679-9ea4-b5cad0c5b27b">
+                        <text>Continue</text>
+                     </action>
+                     <action alt="null"
+                             id="ce675010b-c47b-440a-8f3c-4c48d0ed893b"
+                             targetScreen="ke82704c5-31dc-4951-abee-1578b58f9da1">
+                        <text>Skip</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.o_CategoryName"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="a10t7pMAHp9wkeM0uaJV0XIv-Screen244de3ae-e195-4d30-936f-13b478042f32">
+                  <title>Step 1</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Step 1: Validate that your product is categorized in the Product Taxonomy&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Current Categorization:&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_NodeNames" readonly="readonly" type="text" value="o_NodeNames (output)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="bcaf739e8-c0d6-466f-898c-5226427ca8f9"
+                             targetScreen="ye61cc1d0-1643-40f4-b35c-a43e970b558f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.o_NodeNames"
+                                     readonly="true"
+                                     renderingType="table"
+                                     required="false"
+                                     type="objectlist">
+                        <options>
+                           <option name="required">false</option>
+                           <option name="referenceTo">$po:$any</option>
+                           <option name="isCopy">true</option>
+                           <option hide="true" name="multiSelect">true</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screena28da02c-72d3-419c-9ea1-0fa6ef88a61b">
+                  <title>Step 3</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product Name: &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_productPID" readonly="readonly" type="text" value="tmp_productPID (temp)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;Product Identifer:&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.tmp_productIdentifier" readonly="readonly" type="text" value="tmp_productIdentifier (temp)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Step 3: Add Variant Color Details and other details.&lt;/p&gt;
+&lt;p&gt;Variant Color : &lt;input class="" name="temp.tmp_variantColor" type="text" value="tmp_variantColor (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Hero Image:&amp;nbsp; &lt;input name="temp.tmp_variantHeroImage" type="text" value="tmp_variantHeroImage (temp)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="t981bdf4e-c325-4990-a202-9349663a2149"
+                             targetScreen="Processc2cdc79d-540f-4d95-940f-03ebf80ef3a0">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.tmp_productPID"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_productIdentifier"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_variantColor"
+                                     readonly="false"
+                                     renderingType="picklist"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                           <option hide="true" name="valuelist.source">csv</option>
+                           <option hide="true" name="valuelist.csvdata">Dark Orange, Black, Dark Maroon, Bittersweet Pink / Posh Pink, Tourmaline Pink, Rack Green, Wham Blue, Titanium, Jasper Blue, Venom Red, Kona Brown, Green Legacy, </option>
+                           <option name="values">[{"label":"Dark Orange","value":"Dark Orange"},{"label":" Black","value":" Black"},{"label":" Dark Maroon","value":" Dark Maroon"},{"label":" Bittersweet Pink / Posh Pink","value":" Bittersweet Pink / Posh Pink"},{"label":" Tourmaline Pink","value":" Tourmaline Pink"},{"label":" Rack Green","value":" Rack Green"},{"label":" Wham Blue","value":" Wham Blue"},{"label":" Titanium","value":" Titanium"},{"label":" Jasper Blue","value":" Jasper Blue"},{"label":" Venom Red","value":" Venom Red"},{"label":" Kona Brown","value":" Kona Brown"},{"label":" Green Legacy","value":" Green Legacy"},{"label":" ","value":" "}]</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.tmp_variantHeroImage"
+                                     readonly="false"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screenb0e87df7-bb8c-48c7-b9cc-63e6f9b88782">
+                  <title>Step 4</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Variant PID: &amp;nbsp; &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_variantPID" readonly="readonly" type="text" value="o_variantPID (output)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Variant Identifier: &amp;nbsp;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_variantIdentifier" readonly="readonly" type="text" value="o_variantIdentifier (output)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Step 4: Confirm and submit.&lt;/p&gt;
+&lt;p style="padding-left: 40px;"&gt;A new variant will be created, associated to the product, added to the Product Taxonomy and any dynamic attributes will now apply.&lt;/p&gt;
+&lt;p style="padding-left: 40px;"&gt;Product will be updated with a variant color tag.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="va870dd66-fbdf-45b8-a833-2ab77e23e6c9"
+                             targetScreen="Servicea216e9ad-75bf-44e5-aa75-afe172f0d875">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.o_variantPID"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.o_variantIdentifier"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screen99467be3-7d69-4e97-a1ce-fea5c91bc9e3">
+                  <title>Step 5</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Variant PID: &amp;nbsp; &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_variantPID" readonly="readonly" type="text" value="o_variantPID (output)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Variant Identifier: &amp;nbsp;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.o_variantIdentifier" readonly="readonly" type="text" value="o_variantIdentifier (output)"&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Do you have more variants to build?&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="x9e5634ad-7bf3-46fb-a5ee-f548291d373e"
+                             targetScreen="Jumpb069f8c9-d387-4f66-bbd7-98b08f83c0e4">
+                        <text>Add More Variants</text>
+                     </action>
+                     <action alt="null"
+                             id="jf72abf52-f094-495a-a75b-11dde375796f"
+                             targetScreen="Screen9c51b95e-9bb2-43b1-9fe1-9020b94f9e16">
+                        <text>Fin</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.o_variantPID"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.o_variantIdentifier"
+                                     readonly="true"
+                                     renderingType="string"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screen9c51b95e-9bb2-43b1-9fe1-9020b94f9e16">
+                  <title>Fin</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;img style="width: 250px; height: 147px; float: center;" title="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FIN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null"
+                             id="u974eb915-63c7-40cc-acf6-a8672da2e10f"
+                             targetScreen="a2b8c3eb6-c02e-4be9-aeef-bf7456f4163b">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <service id="a10t7pMAHp9wkeM0uaJV0XIv-Serviceb2443f2b-bfbd-45e3-83ea-7e9a35feec4b">
+                  <title>Login</title>
+                  <serviceName>AppConnection-MDMSaaS:Login</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <actions>
+                     <action alt="null"
+                             id="ff1260229-8ede-49b9-9965-b8a1bcfd4d16"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Decision5c930799-739f-4df2-910f-8c33078520fd">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a10t7pMAHp9wkeM0uaJV0XIv-Servicef06e6308-06af-4679-9ea4-b5cad0c5b27b">
+                  <title>POST Hierarchy Relationship-classification</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="a10t7pMAHp9wkeM0uaJV0XIv-sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="a10t7pMAHp9wkeM0uaJV0XIv-body"
+                                name="body"
+                                source="field"
+                                updatable="false">output.o_hierarchyBody</parameter>
+                     <parameter id="a10t7pMAHp9wkeM0uaJV0XIv-relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">infa360rtl_product_to_p360_category_1770053844</parameter>
+                     <parameter id="a10t7pMAHp9wkeM0uaJV0XIv-hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">product_classification_hierarchy</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="pf2abd1b0-1493-4dba-9149-dca52395cfd5"
+                             targetScreen="ke82704c5-31dc-4951-abee-1578b58f9da1">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="Service1bef2d48-bfb4-4201-9af5-99d2c8c4b8c9">
+                  <title>Get BE record</title>
+                  <serviceName>AppConnection-MDMSaaS:Get BE record</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="r3ab02a69-d5a9-4355-9644-3422e870ae7c"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="vd90f6f3b-13ea-4521-ba8e-d7e1651ebd4e"
+                                name="beName"
+                                source="constant"
+                                updatable="false">infa360rtl_product</parameter>
+                     <parameter id="f106a84c2-30b4-4314-b6e8-0f846f7ecde6"
+                                name="businessId"
+                                source="field"
+                                updatable="false">input.in_productID</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="v318f49ec-8aed-454a-8285-f1e63531ba08"
+                             targetScreen="Assignmentc8cf2491-2eb1-48b1-9fda-9b8274012391">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="Servicea216e9ad-75bf-44e5-aa75-afe172f0d875">
+                  <title>Create New Record with SourcePK</title>
+                  <serviceName>AppConnection-MDMSaaS:Create New Record with SourcePK</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="paf5f56ba-c766-42f2-889f-faa0be85b4bd"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="v0c7081fa-1d23-4163-a714-f4cb128da328"
+                                name="beName"
+                                source="constant"
+                                updatable="false">variant</parameter>
+                     <parameter id="kdf8f134c-bb00-48b1-a04b-6e2c244c195b"
+                                name="businessId"
+                                source="field"
+                                updatable="false">output.o_variantIdentifier</parameter>
+                     <parameter id="dffe67838-81dc-47ff-a104-1a4139c8d285"
+                                name="sourcePk"
+                                source="field"
+                                updatable="false">output.o_variantIdentifier</parameter>
+                     <parameter id="keea39194-f9bf-40f4-8c90-1aa126d195ac"
+                                name="sourceSystem"
+                                source="constant"
+                                updatable="false">pxm</parameter>
+                     <parameter id="p915daba9-98a3-4ce0-b19a-3f504f83b933"
+                                name="payload"
+                                source="field"
+                                updatable="false">output.o_VariantBody</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="l7a44beeb-ca66-4d03-b2de-6ee4097603ca"
+                             targetScreen="Processe00b0683-39f7-44ee-a4b7-85cd81e5aa84">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="Service2b5c2210-6527-48ab-8d8f-26994431f2b0">
+                  <title>POST Hierarchy Relationship</title>
+                  <serviceName>AppConnection-MDMSaaS:POST Hierarchy Relationship</serviceName>
+                  <serviceGUID>5M2aGutT1W0cuT93uOFIi9</serviceGUID>
+                  <serviceInput>
+                     <parameter id="sessionId"
+                                name="sessionId"
+                                source="field"
+                                updatable="false">output.sessionId</parameter>
+                     <parameter id="body" name="body" source="field" updatable="false">output.o_ppBody</parameter>
+                     <parameter id="relationshipName"
+                                name="relationshipName"
+                                source="constant"
+                                updatable="false">variant_to_infa360rtl_product</parameter>
+                     <parameter id="hierarchyType"
+                                name="hierarchyType"
+                                source="constant"
+                                updatable="false">product_taxonomy_hierarchy</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt="null"
+                             id="q860b5ace-56b2-41d6-b610-9622c5fb291b"
+                             targetScreen="Screen99467be3-7d69-4e97-a1ce-fea5c91bc9e3">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen id="a10t7pMAHp9wkeM0uaJV0XIv-end-td358a107-0231-4f91-a03f-90c97e44531a">
+                  <title>End</title>
+                  <actions/>
+                  <redirectTo type="current_object"/>
+               </endScreen>
+               <empty gatewayType="exclusive" id="ke82704c5-31dc-4951-abee-1578b58f9da1">
+                  <actions>
+                     <action alt="null"
+                             id="q726db616-1cd7-47b5-957f-d7eec38dff89"
+                             targetScreen="ye61cc1d0-1643-40f4-b35c-a43e970b558f">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <empty gatewayType="exclusive" id="ye61cc1d0-1643-40f4-b35c-a43e970b558f">
+                  <actions>
+                     <action alt="null"
+                             id="x8f9f48df-5d49-4726-9bc0-71e3e4f0f15f"
+                             targetScreen="Service1bef2d48-bfb4-4201-9af5-99d2c8c4b8c9">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <empty gatewayType="exclusive" id="a2b8c3eb6-c02e-4be9-aeef-bf7456f4163b">
+                  <actions>
+                     <action alt="null"
+                             id="c2544b1df-a1f4-474f-92d0-e2bb9f5d5bae"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-end-td358a107-0231-4f91-a03f-90c97e44531a">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <jumpTo id="Jumpb069f8c9-d387-4f66-bbd7-98b08f83c0e4" targetTitle="Step 3">
+                  <actions>
+                     <action alt="null"
+                             id="c7ba59091-bbc0-4382-b260-f11eb3a7c655"
+                             targetScreen="Screena28da02c-72d3-419c-9ea1-0fa6ef88a61b">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </jumpTo>
+               <callProcess id="a10t7pMAHp9wkeM0uaJV0XIv-Process7f0cda94-215e-45c9-ab08-5b76af2f97cb">
+                  <title>FindHierachyRelationship</title>
+                  <subflowGUID>1ilkvFsVF08jw7N07p2eau</subflowGUID>
+                  <subflowPath>FindHierachyRelationship</subflowPath>
+                  <appliesTo/>
+                  <runForEach>false</runForEach>
+                  <serviceInput>
+                     <parameter name="in_businessId" source="field">input.in_productID</parameter>
+                     <parameter name="in_relationshipCode" source="constant">infa360rtl_product_to_p360_category_1770053844</parameter>
+                     <parameter name="in_entityType" source="constant">infa360rtl_product</parameter>
+                  </serviceInput>
+                  <subflowOutput>
+                     <field description="" name="o_relationshipName" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_hierarchyType" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_CountOfNodes" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_NodeNames" type="objectlist">
+                        <options>
+                           <option name="required">false</option>
+                           <option name="referenceTo">$po:$any</option>
+                           <option name="isCopy">true</option>
+                           <option hide="true" name="multiSelect">true</option>
+                        </options>
+                     </field>
+                  </subflowOutput>
+                  <actions>
+                     <action alt="null"
+                             id="k73c940a5-77eb-40d7-9bf3-e092949acb36"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Serviceb2443f2b-bfbd-45e3-83ea-7e9a35feec4b">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </callProcess>
+               <callProcess id="a10t7pMAHp9wkeM0uaJV0XIv-Processd7dfa93b-285f-4163-9419-c2e100461184">
+                  <title>buildHierarchyPayloadUA</title>
+                  <subflowGUID>4QstRXAivZPkORo2fqEDe6</subflowGUID>
+                  <subflowPath>buildHierarchyPayloadUA</subflowPath>
+                  <appliesTo/>
+                  <runForEach>false</runForEach>
+                  <serviceInput>
+                     <parameter name="in_fromBusinessId" source="field">input.in_productID</parameter>
+                     <parameter name="in_fromEntityType" source="constant">variant</parameter>
+                     <parameter name="in_toEntityType" source="constant">infa360rtl_product</parameter>
+                     <parameter name="in_hierarhcyType" source="constant">product_taxonomy_hierarchy</parameter>
+                     <parameter name="in_relationshipName" source="constant">infa360rtl_product_to_p360_category_1770053844</parameter>
+                  </serviceInput>
+                  <subflowOutput>
+                     <field description="" name="o_hierarchyBody" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_CategoryName" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                  </subflowOutput>
+                  <actions>
+                     <action alt="null"
+                             id="nb359de24-4aa9-44a2-93bb-5c488c53d7a1"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Screen7c40d6ed-2797-4476-84e1-89f55a339967">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </callProcess>
+               <callProcess id="Processc2cdc79d-540f-4d95-940f-03ebf80ef3a0">
+                  <title>buildVariantBody</title>
+                  <subflowGUID>7GqJUiqLTAsbaxiV3sAR20</subflowGUID>
+                  <subflowPath>buildVariantBody</subflowPath>
+                  <appliesTo/>
+                  <runForEach>false</runForEach>
+                  <serviceInput>
+                     <parameter name="in_parentPID" source="field">temp.tmp_productPID</parameter>
+                     <parameter name="in_parentIdentifier" source="field">input.in_productID</parameter>
+                     <parameter name="in_parentBusID" source="field">input.in_productID</parameter>
+                     <parameter name="in_variantColorValue" source="field">temp.tmp_variantColor</parameter>
+                     <parameter name="in_parentCollection" source="field">output.collection</parameter>
+                     <parameter name="in_varientHero" source="field">temp.tmp_variantHeroImage</parameter>
+                  </serviceInput>
+                  <subflowOutput>
+                     <field description="" name="o_VariantBody" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_variantPID" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_variantIdentifier" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                     <field description="" name="o_variant" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                  </subflowOutput>
+                  <actions>
+                     <action alt="null"
+                             id="p181ffc2f-b572-4d37-92fe-b8d6a104ca72"
+                             targetScreen="Screenb0e87df7-bb8c-48c7-b9cc-63e6f9b88782">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </callProcess>
+               <callProcess id="Processe00b0683-39f7-44ee-a4b7-85cd81e5aa84">
+                  <title>buildProductParadigm</title>
+                  <subflowGUID>8R6alVFZEz6emNPZXxTlgH</subflowGUID>
+                  <subflowPath>buildProductParadigm</subflowPath>
+                  <appliesTo/>
+                  <runForEach>false</runForEach>
+                  <serviceInput>
+                     <parameter name="in_fromBusinessId" source="field">output.o_variantIdentifier</parameter>
+                     <parameter name="in_relationshipName" source="constant">variant_to_infa360rtl_product</parameter>
+                     <parameter name="in_hierarhcyType" source="constant">product_taxonomy_hierarchy</parameter>
+                     <parameter name="in_fromEntityType" source="constant">variant</parameter>
+                     <parameter name="in_toBusinessId" source="field">output.BusinessId</parameter>
+                     <parameter name="in_toEntityType" source="constant">infa360rtl_product</parameter>
+                  </serviceInput>
+                  <subflowOutput>
+                     <field description="" name="o_ppBody" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </field>
+                  </subflowOutput>
+                  <actions>
+                     <action alt="null"
+                             id="fc085d07b-d032-4e91-8695-8873a84cf8fa"
+                             targetScreen="Service2b5c2210-6527-48ab-8d8f-26994431f2b0">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </callProcess>
+               <dataDecision id="a10t7pMAHp9wkeM0uaJV0XIv-Decision5c930799-739f-4df2-910f-8c33078520fd">
+                  <title>o_CountOfNodes</title>
+                  <dataName>output.o_CountOfNodes</dataName>
+                  <actions>
+                     <action alt="equals 0"
+                             id="u3dc9d60a-c8b9-4538-9b09-c04d80e05384"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Processd7dfa93b-285f-4163-9419-c2e100461184">
+                        <text>equals 0</text>
+                     </action>
+                     <action alt="else"
+                             id="paa241e21-26d2-4deb-b648-5d7b36ffd1e7"
+                             targetScreen="a10t7pMAHp9wkeM0uaJV0XIv-Screen244de3ae-e195-4d30-936f-13b478042f32">
+                        <text>else</text>
+                     </action>
+                  </actions>
+               </dataDecision>
+               <assignment id="Assignmentc8cf2491-2eb1-48b1-9fda-9b8274012391">
+                  <title>Assignment to tmp_productIdentifier, tmp_productPID</title>
+                  <operation source="field" to="temp.tmp_productIdentifier">output.id</operation>
+                  <operation source="field" to="temp.tmp_productPID">output.customer_facing_product_information_description</operation>
+                  <actions>
+                     <action alt="null"
+                             id="r62cb0bfe-739d-4562-be9d-0135aa2b5d46"
+                             targetScreen="Screena28da02c-72d3-419c-9ea1-0fa6ef88a61b">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>7BPXWAjQUoKjSGNCfynSsx</types1:GUID>
+      <types1:DisplayName>VariantBuild_v2</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.049Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

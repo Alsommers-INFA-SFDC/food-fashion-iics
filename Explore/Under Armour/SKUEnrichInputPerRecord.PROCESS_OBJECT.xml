@@ -1,0 +1,53 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>5ErhNzUzeA8rJ4p-gt-245628-2026-01-15T20:24:41.919265548Z::po.xml</types1:EntryId>
+      <types1:Name>SKUEnrichInputPerRecord</types1:Name>
+      <types1:ParentFlowIds>bcmnBtBghuImXyc-gt-245683-2026-01-15T20:26:16.021304164Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Ben.GS1</types1:CreatedBy>
+      <types1:CreationDate>2026-01-15T20:24:42Z</types1:CreationDate>
+      <types1:ModifiedBy>Ben.GS1</types1:ModifiedBy>
+      <types1:ModificationDate>2026-01-20T18:06:38Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="SKUEnrichInputPerRecord"
+                        isByCopy="true"
+                        name="SKUEnrichInputPerRecord">
+            <description/>
+            <tags/>
+            <detail>
+               <field label=""
+                      name="docId"
+                      nullable="true"
+                      required="false"
+                      type="string">
+                  <options/>
+               </field>
+               <field label=""
+                      name="payload"
+                      nullable="true"
+                      required="false"
+                      type="objectlist">
+                  <options>
+                     <option name="relationshipName">Child</option>
+                     <option name="referenceTo">$po:SKUEnrichmentInputPayload</option>
+                     <option name="guid">af7BJA04EzggLLgqPKiBu8</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>3rYPsCeX98Zivkq76i0eGc</types1:GUID>
+      <types1:DisplayName>SKUEnrichInputPerRecord</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-06-23T13:33:37.415Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

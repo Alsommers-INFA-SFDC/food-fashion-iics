@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "cKiQjpMNDyWhv0tOeyDJ4n",
+    "name" : "SKUEnrichOutputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "PMTD86CjqFVNN5K-gt-245655-2026-01-15T20:25:34.668075891Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.832Z",
+  "objectRefs" : [ {
+    "id" : "1H9bGv6jqdGb0Wrdepva04",
+    "name" : "SKUEnrichmentOutputPayload",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "x9dwMbgbdoPVm5Y-gt-245586-2026-01-15T20:23:33.373943536Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

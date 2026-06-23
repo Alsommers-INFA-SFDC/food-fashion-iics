@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "4MPLcDuEZFSeDbR0ORUPWS",
+    "name" : "Create Variants and SKUs from Product",
+    "type" : "GUIDE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "gchwAQlBWlD2pHA-gt-147854-2026-02-02T19:07:52.101Z::gt.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.836Z",
+  "objectRefs" : [ {
+    "id" : "5M2aGutT1W0cuT93uOFIi9",
+    "name" : "AppConnection-MDMSaaS",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0ZXXUfTRgpDqotx-gt-154704-2025-10-02T17:15:58.994Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

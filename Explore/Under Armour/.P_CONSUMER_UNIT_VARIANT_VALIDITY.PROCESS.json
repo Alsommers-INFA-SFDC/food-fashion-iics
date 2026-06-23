@@ -1,0 +1,87 @@
+{
+  "objectInfo" : {
+    "id" : "8NL6uJkLCUlcYsIcM1lvwZ",
+    "name" : "P_CONSUMER_UNIT_VARIANT_VALIDITY",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "JsJGD4ARW8UBM7z-gt-2606153-2026-01-08T21:00:45.577Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2026-06-23T13:33:37.835Z",
+  "objectRefs" : [ {
+    "id" : "90DD8NRDP8qloUFWG2G9Av",
+    "name" : "OutputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "hujATO9pH8sVYx8-gt-2606104-2026-01-08T20:59:11.115Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  }, {
+    "id" : "36hiqXXxIEvlk8GL7wnacm",
+    "name" : "InputPerRecord",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7JTqXpIW7WHK80F-gt-2605060-2026-01-08T20:58:27.93Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Under Armour"
+  }, {
+    "id" : "5M2aGutT1W0cuT93uOFIi9",
+    "name" : "AppConnection-MDMSaaS",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0ZXXUfTRgpDqotx-gt-154704-2025-10-02T17:15:58.994Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
