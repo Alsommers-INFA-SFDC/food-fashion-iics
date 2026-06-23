@@ -6,18 +6,18 @@
     "providerName" : "MDM",
     "providerLevelValidator" : {
       "solutionsToValidate" : {
-        "b360" : {
-          "version" : "202604.01"
-        },
-        "p360" : {
-          "version" : "202604.01"
-        },
         "r360" : {
           "version" : "default"
         }
       },
       "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
         "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
           "version" : "202604.01"
         },
         "mde" : {
@@ -68,7 +68,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2026-06-23T13:20:28.395Z",
+  "updateTime" : "2026-06-23T13:29:44.698Z",
   "objectRefs" : [ {
     "id" : "3TAnCDezA2tdrEekCFLuAX",
     "name" : "Shipping Packaging",
@@ -76,18 +76,18 @@
     "providerName" : "MDM",
     "providerLevelValidator" : {
       "solutionsToValidate" : {
-        "b360" : {
-          "version" : "202604.01"
-        },
-        "p360" : {
-          "version" : "202604.01"
-        },
         "r360" : {
           "version" : "default"
         }
       },
       "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
         "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
           "version" : "202604.01"
         },
         "mde" : {
@@ -149,7 +149,7 @@
       "repoInfo" : {
         "repoHandle" : "7Zv7DIqiFzFdzrZkEoP86w"
       },
-      "contextAttributes" : [ ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "Binary",
@@ -164,18 +164,18 @@
     "providerName" : "MDM",
     "providerLevelValidator" : {
       "solutionsToValidate" : {
-        "b360" : {
-          "version" : "202604.01"
-        },
-        "p360" : {
-          "version" : "202604.01"
-        },
         "r360" : {
           "version" : "default"
         }
       },
       "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
         "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
           "version" : "202604.01"
         },
         "mde" : {
@@ -232,18 +232,18 @@
     "providerName" : "MDM",
     "providerLevelValidator" : {
       "solutionsToValidate" : {
-        "b360" : {
-          "version" : "202604.01"
-        },
-        "p360" : {
-          "version" : "202604.01"
-        },
         "r360" : {
           "version" : "default"
         }
       },
       "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202604.01"
+        },
         "c360" : {
+          "version" : "202604.01"
+        },
+        "p360" : {
           "version" : "202604.01"
         },
         "mde" : {
